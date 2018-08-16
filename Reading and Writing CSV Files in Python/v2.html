@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>v1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<style type="text/css">
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+.pl-c {
+    color: #969896;
+}
+
+.pl-c1,.pl-mdh,.pl-mm,.pl-mp,.pl-mr,.pl-s1 .pl-v,.pl-s3,.pl-sc,.pl-sv {
+    color: #0086b3;
+}
+
+.pl-e,.pl-en {
+    color: #795da3;
+}
+
+.pl-s1 .pl-s2,.pl-smi,.pl-smp,.pl-stj,.pl-vo,.pl-vpf {
+    color: #333;
+}
+
+.pl-ent {
+    color: #63a35c;
+}
+
+.pl-k,.pl-s,.pl-st {
+    color: #a71d5d;
+}
+
+.pl-pds,.pl-s1,.pl-s1 .pl-pse .pl-s2,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,.pl-sr .pl-sre,.pl-src,.pl-v {
+    color: #df5000;
+}
+
+.pl-id {
+    color: #b52a1d;
+}
+
+.pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+}
+
+.pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+}
+
+.pl-ml {
+    color: #693a17;
+}
+
+.pl-mh,.pl-mh .pl-en,.pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+}
+
+.pl-mq {
+    color: #008080;
+}
+
+.pl-mi {
+    color: #333;
+    font-style: italic;
+}
+
+.pl-mb {
+    color: #333;
+    font-weight: bold;
+}
+
+.pl-md,.pl-mdhf {
+    background-color: #ffecec;
+    color: #bd2c00;
+}
+
+.pl-mdht,.pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+}
+
+.pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+}
+
+.pl-mo {
+    color: #1d3e81;
+}
+.task-list {
+padding-left:10px;
+margin-bottom:0;
+}
+
+.task-list li {
+    margin-left: 20px;
+}
+
+.task-list-item {
+list-style-type:none;
+padding-left:10px;
+}
+
+.task-list-item label {
+font-weight:400;
+}
+
+.task-list-item.enabled label {
+cursor:pointer;
+}
+
+.task-list-item+.task-list-item {
+margin-top:3px;
+}
+
+.task-list-item-checkbox {
+display:inline-block;
+margin-left:-20px;
+margin-right:3px;
+vertical-align:1px;
+}
+</style>
+</head>
+<body>
+<h1 id="-csv-python">Чтение и запись CSV-файлов в Python</h1>
+<p>Посмотрим правде в глаза: вам нужно получать информацию из своих программ не только через клавиатуру и консоль. Обмен информацией через текстовые файлы является самым распространенным способом обмена информацией между программами. Одним из самых популярных форматов обмена данными является формат CSV. Но как вы его используете?  </p>
+<p>Давайте поймем одно: вам не нужно (и вы не будете) создавать свой собственный синтаксический анализатор (парсер) файлов в формате CSV с нуля. Существует несколько подходящих библиотек, которые вы можете использовать для этих целей. Python библиотеки <a href="https://docs.python.org/3/library/csv.html">csv</a> будет достаточно в большинстве случаев. Если ваша работа требует большого количества данных и использует численный анализ, то в библиотеке <a href="http://pandas.pydata.org/">pandas</a> также есть возможности синтаксического анализа файлов в формате CSV, которые должны будут позже будут обработаны.</p>
+<p>В этой статье вы узнаете, как читать, обрабатывать и анализировать CSV из текстовых файлов с помощью Python. Вы увидите, файлы CSV в работе, изучите все самое важной в библиотеке <a href="https://docs.python.org/3/library/csv.html">csv</a>, встроенной в Python, и посмотрите, как работает синтаксический анализ CSV (парсинг) с использованием библиотеки <a href="http://pandas.pydata.org/">pandas</a>.  </p>
+<p> Давайте начнем!</p>
+<h2 id="-csv">Что такое файл в формате CSV</h2>
+<p>CSV-файл (Comma Separated Values file - файл со значениями разделительными запятыми) представляет собой тип простого текстового файла, который использует специальную структуризацию для организации табличных данных. Поскольку это простой текстовый файл, он может содержать только строчные текстовые данные, другими словами, печатные символы <a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> или <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a>.<br>Структура CSV-файла определяется его названием. Обычно CSV-файлы используют запятую для разделения каждого конкретного значения данных. Вот как выглядит эта структура:</p>
+<pre><code>column 1 name,column 2 name, column 3 name
+first row data 1,first row data 2,first row data 3
+second row data 1,second row data 2,second row data 3
+...
+</code></pre><p>Обратите внимание, что каждая часть данных разделяется запятой. Обычно первая строка идентифицирует каждый фрагмент данных, другими словами, это имя столбца данных. Каждая последующая строка после этого является фактическими данными и ограничена только ограничениями размерами файла.<br>В общем случае разделяющий значения символ называется разделителем, а запятая не является единственным символом, который может использоваться в качестве разделителя. Другие популярные символы, использующиеся в качестве разделителя: <em>tab</em> (<em>\t</em>), двоеточие ( : ) и  точка с запятой ( ; ). Правильный синтаксический анализ (парсинг) CSV-файла требует от нас знать, какой разделитель используется в этом файле.  </p>
+<h3 id="-csv-">Откуда появились CSV файлы?</h3>
+<p>Файлы CSV обычно создаются программами, которые обрабатывают большие объемы данных. Они представляют собой удобный способ экспортировать данные из электронных таблиц и баз данных, а также импортировать их и использовать в других программах. Например, вы можете экспортировать результаты работы программы статистического анализа данных в файл CSV, а затем импортировать их в электронную таблицу для дальнейшего анализа, построения графиков для презентации или подготовки отчета для публикации.   </p>
+<p>Файлы CSV очень просты и удобны при работе с прикладным программным обеспечением. Любой язык, поддерживающий ввод текстовых файлов и манипулирование строками (например, Python), может напрямую работать с файлами CSV.</p>
+<h2 id="-csv-python-csv-">Разбор (парсинг) CSV-файлов с помощью встроенной в Python библиотекой для обработки CSV данных</h2>
+<p>Библиотека <a href="https://docs.python.org/3/library/csv.html">csv</a> предлагает нам функционал как чтения и для записи данных в файлы CSV. Разработанная для работы с CSV-файлами, созданными в Excel, она также легко адаптируется для работы с различными форматами CSV. Библиотека <a href="https://docs.python.org/3/library/csv.html">csv</a> содержит объекты и методы для чтения и обработки данных из CSV-файлов, а также записи в них.</p>
+<h3 id="-csv-csv-">Чтение CSV файлов с помощью библиотеки <em>csv</em></h3>
+<p>Чтение из файла CSV выполняется с использованием объекта <em>reader</em>. CSV-файл открывается как обычный текстовый файл с встроенной в Python функцией <em>open()</em>, которая возвращает объект типа файл. Затем это этот объект передается объекту <em>reader</em>.</p>
+<p>Возьмем например файл <em>employee_birthday.txt</em> со следующим содержимым:</p>
+<pre><code>name,department,birthday month
+John Smith,Accounting,November
+Erica Meyers,IT,March
+</code></pre><p>Вот код для его чтения:</p>
+<pre><code>import csv
+
+with open(&#39;employee_birthday.txt&#39;) as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=&#39;,&#39;)
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f&#39;Column names are {&quot;, &quot;.join(row)}&#39;)
+            line_count += 1
+        else:
+            print(f&#39;\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.&#39;)
+            line_count += 1
+    print(f&#39;Processed {line_count} lines.&#39;)
+</code></pre><p>Его выполнение приведет к следующему результату:</p>
+<pre><code>Column names are name, department, birthday month
+    John Smith works in the Accounting department, and was born in November.
+    Erica Meyers works in the IT department, and was born in March.
+Processed 3 lines.
+</code></pre><p>Каждая строка, возвращаемая объектом <em>reader</em>, представляет собой список элементов типа <em>String</em>, содержащих данные, с удаленными разделителями. Первая строка возвращает имена столбцов, которые обрабатываются особым образом.</p>
+<h3 id="-csv-dict-csv-">Чтение CSV файлов в словарь <em>dict</em> с помощью библиотеки <em>csv</em></h3>
+<p>Вместо того, чтобы иметь дело со списком отдельных элементов <em>String</em>, вы можете считывать данные CSV непосредственно в словарь (технически в <a href="https://docs.python.org/3/library/collections.html#collections.OrderedDict">Ordered Dictionary</a>).</p>
+<p>Наш входной файл <em>employee_birthday.txt</em> будет выглядеть следующим образом:</p>
+<pre><code>import csv
+
+with open(&#39;employee_birthday.txt&#39;, mode=&#39;r&#39;) as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f&#39;Column names are {&quot;, &quot;.join(row)}&#39;)
+            line_count += 1
+        print(f&#39;\t{row[&quot;name&quot;]} works in the {row[&quot;department&quot;]} department, and was born in {row[&quot;birthday month&quot;]}.&#39;)
+        line_count += 1
+    print(f&#39;Processed {line_count} lines.&#39;)
+</code></pre><p>Это приведет к тому же результату, что и раньше:</p>
+<pre><code>Column names are name, department, birthday month
+    John Smith works in the Accounting department, and was born in November.
+    Erica Meyers works in the IT department, and was born in March.
+Processed 3 lines.
+</code></pre><p>Откуда взялись значения ключей для словаря? Предполагается, что первая строка файла CSV содержит ключи для создания словаря. Если их нет в вашем CSV-файле, вы должны указать свои собственные ключи, установив необязательный параметр <em>fieldnames</em> в виде списка, содержащего их.</p>
+<h3 id="-reader-csv-">Необязательные параметры объекта <em>reader</em> библиотеки <em>csv</em></h3>
+<p>Объект <em>reader</em> может обрабатывать различные виды файлов CSV, указывая <a href="https://docs.python.org/3/library/csv.html?highlight=csv#csv-fmt-params">дополнительные параметры</a>, некоторые из которых показаны ниже:</p>
+<ul>
+<li><em>delimiter</em> указывает символ, используемый для разделения каждого поля. По умолчанию используется запятая (&#39;,&#39;).</li><li><em>quotechar</em> указывает символ, используемый для окружения полей, содержащих символ разделителя. По умолчанию используются двойные кавычки (&#39; &quot; &#39;).</li><li><em>escapechar</em> указывает символ, используемый для экранирования символа разделителя, если кавычки не используются. Значение по умолчанию <em>escape</em> символ экранирования отсутствует.</li></ul>
+<p>Применение этих параметров требует объяснения. Предположим, вы работаете со следующим файлом <em>employee_addresses.txt</em>:</p>
+<pre><code>name,address,date joined
+john smith,1132 Anywhere Lane Hoboken NJ, 07030,Jan 4
+erica meyers,1234 Smith Lane Hoboken NJ, 07030,March 2
+</code></pre><p>Этот CSV файл содержит три поля: имя, адрес и дата присоединения, разделенные запятыми. Проблема в том, что данные для поля адреса также содержат запятую, для того чтобы обозначить почтовый индекс.</p>
+<p>Существует три различных способа справиться с этой ситуацией:</p>
+<ul>
+<li><strong>Использовать другой разделитель</strong>. Таким образом, запятая может безопасно использоваться в самих данных. Вы используете необязательный параметр <em>delimiter</em>, чтобы указать новый разделитель.</li><li><strong>Обернуть данные поля в кавычки</strong>. Специальный тип выбранного вами разделителя игнорируется в цитируемых (обернутых в кавычки) строках. Поэтому вы можете указать символ, используемый для цитирования (обертывания) с необязательным параметром <em>quotechar</em>. Пока этот символ не отображается в данных поля, все будет нормально.</li><li><strong>Экранирование символа разделителя <em>delimiter</em> в данных поля</strong>. Экранирующие <em>escape</em> символы работают так же, как в форматированных строках, не позволяя интерпретацию символа, который экранируется (в данном случае символа разделителя <em>delimiter</em>). Если используется <em>escape</em> символ, его необходимо указать с помощью необязательного параметра <em>escapechar</em>.</li></ul>
+<h3 id="-csv-csv-">Запись CSV файлов с помощью библиотеки <em>csv</em></h3>
+<p>Вы можете записать в CSV файл, используя объект <em>writer</em> и метод <em>write_row()</em>:</p>
+<pre><code>import csv
+
+with open(&#39;employee_file.csv&#39;, mode=&#39;w&#39;) as employee_file:
+    employee_writer = csv.writer(employee_file, delimiter=&#39;,&#39;, quotechar=&#39;&quot;&#39;, quoting=csv.QUOTE_MINIMAL)
+
+    employee_writer.writerow([&#39;John Smith&#39;, &#39;Accounting&#39;, &#39;November&#39;])
+    employee_writer.writerow([&#39;Erica Meyers&#39;, &#39;IT&#39;, &#39;March&#39;])
+</code></pre><p>Необязательный параметр <em>quotechar</em> указывает объекту <em>writer</em>, какой символ использовать для определения (цитирования) полей при записи (например, обернуть значение поля в кавычки). Однако, используется ли цитирование или нет, определяется необязательным параметром <em>quoting</em>:</p>
+<ul>
+<li>Если для цитирования <em>quoting</em> задано значение <em>csv.QUOTE_MINIMAL</em>, то <em>.writerow()</em> при записи цитировать поля (например, оборачивать в кавычки) только в том случае, если они содержат разделитель или <em>quotechar</em>. Это случай по умолчанию.</li><li>Если для цитирования <em>quoting</em> задано значение <em>csv.QUOTE_ALL</em>, то <em>.writerow()</em> будет цитировать все поля.</li><li>Если для цитирования <em>quoting</em> установлено значение <em>csv.QUOTE_NONNUMERIC</em>, то <em>.writerow()</em> будет цитировать все поля, содержащие текстовые данные, и преобразовывать все числовые поля в тип данных <em>float</em>.</li><li>Если для цитирования <em>quoting</em> задано значение <em>csv.QUOTE_NONE</em>, то <em>.writerow()</em> будет экранировать разделители вместо цитирования. В этом случае вы также должны указать значение для необязательного параметра <em>escapechar</em>.</li></ul>
+<p>Чтение файла обратно в простой текстовый вид показывает, что созданный файл будет следующим:</p>
+<pre><code>John Smith,Accounting,November
+Erica Meyers,IT,March
+</code></pre><h3 id="-csv-dictionary-csv-">Запись CSV файла из словаря <em>dictionary</em> с помощью библиотеки <em>csv</em></h3>
+<p>Поскольку вы можете читать данные из словаря, справедливо, что вы также сможете записывать их из словаря:</p>
+<pre><code>import csv
+
+with open(&#39;employee_file2.csv&#39;, mode=&#39;w&#39;) as csv_file:
+    fieldnames = [&#39;emp_name&#39;, &#39;dept&#39;, &#39;birth_month&#39;]
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow({&#39;emp_name&#39;: &#39;John Smith&#39;, &#39;dept&#39;: &#39;Accounting&#39;, &#39;birth_month&#39;: &#39;November&#39;})
+    writer.writerow({&#39;emp_name&#39;: &#39;Erica Meyers&#39;, &#39;dept&#39;: &#39;IT&#39;, &#39;birth_month&#39;: &#39;March&#39;})
+</code></pre><p>В отличие от класса <em>DictReader</em>, для работы класса <em>DictWriter</em> требуется параметр <em>fieldnames</em> при записи данных из словаря в файл. Без списка имен полей <em>fieldnames</em> <em>DictWriter</em> не сможет узнать, какие ключи использовать для извлечения значений из ваших словарей. Он также использует имена ключей для записи первой строки в качестве имен полей столбцов.</p>
+<p>Приведенный выше код генерирует следующий выходной файл:</p>
+<pre><code>emp_name,dept,birth_month
+John Smith,Accounting,November
+Erica Meyers,IT,March
+</code></pre><h2 id="-csv-pandas-">Синтаксический анализ (парсинг) CSV файлов с помощью библиотеки <em>pandas</em></h2>
+<p>Конечно, библиотека Python <a href="https://docs.python.org/3/library/csv.html">csv</a> - не единственная в своем роде. Чтение CSV файлов возможно и с помощью библиотеки <a href="http://pandas.pydata.org/index.html">pandas</a>. Это настоятельно рекомендуется, если у вас есть очень много данных для анализа. </p>
+<p><a href="http://pandas.pydata.org/index.html">pandas</a> - это библиотека Python с открытым исходным кодом, которая предоставляет высокопроизводительные инструменты анализа данных и простые в использовании структуры данных. <em>pandas</em> доступна для всех версий Python, она является основной частью дистрибутива <a href="https://anaconda.org/anaconda/python">Anaconda</a> и хорошо работает совместно с <a href="https://jupyter.org/">Jupyter notebooks</a> для обмена данными, кодом, результатами анализа, с использованием визуализации и сопутствующим описанием.</p>
+<p>Установка <em>pandas</em> и его зависимостей в <em>Anaconda</em> выполняется легко:</p>
+<pre><code>$ conda install pandas
+</code></pre><p>Также с использованием <em>pip/pipenv</em> другого установщика пакетов Python:</p>
+<pre><code>$ pip install pandas
+</code></pre><p>Мы не будем вникать в особенности того, как работает <em>pandas</em> или как ее использовать. Для углубленного изучения использования <em>pandas</em> для чтения и анализа больших наборов данных ознакомьтесь с превосходной статьей Shantnu Tiwari <a href="https://realpython.com/team/stiwari/">О работе с большими файлами Excel в <em>pandas</em></a>.</p>
+<h3 id="-csv-pandas-">Чтение файлов CSV с <em>pandas</em></h3>
+<p>Чтобы показать некоторые возможности <em>pandas</em> по работе с CSV, я создал более сложный файл для чтения и назвал его <em>hrdata.csv</em>. Он содержит данные о сотрудниках компании:</p>
+<pre><code>Name,Hire Date,Salary,Sick Days remaining
+Graham Chapman,03/15/14,50000.00,10
+John Cleese,06/01/15,65000.00,8
+Eric Idle,05/12/14,45000.00,10
+Terry Jones,11/01/13,70000.00,3
+Terry Gilliam,08/12/14,48000.00,7
+Michael Palin,05/23/13,66000.00,8
+</code></pre><p>Чтение CSV файла с использованием <em>pandas</em> класса <em>DataFrame</em> происходит просто:</p>
+<pre><code>import pandas
+df = pandas.read_csv(&#39;hrdata.csv&#39;)
+print(df)
+</code></pre><p>Это все: три строки кода и только одна из них выполняет фактическую работу.<br><em>pandas.read_csv()</em> открывает, анализирует и читает предоставленный CSV-файл, сохраняет данные в структуру данных класса <em>DataFrame</em>. Печать структуры данных <em>DataFrame</em> выведет следующее:</p>
+<pre><code>             Name Hire Date   Salary  Sick Days remaining
+0  Graham Chapman  03/15/14  50000.0                   10
+1     John Cleese  06/01/15  65000.0                    8
+2       Eric Idle  05/12/14  45000.0                   10
+3     Terry Jones  11/01/13  70000.0                    3
+4   Terry Gilliam  08/12/14  48000.0                    7
+5   Michael Palin  05/23/13  66000.0                    8
+</code></pre><p>Вот несколько соображений:</p>
+<ul>
+<li>Во-первых, <em>pandas</em> распознала, что первая строка CSV содержит имена столбцов и автоматически использует их. Я называю это великим Добром.</li><li>Тем не менее, <em>pandas</em> также использует, начинающиеся с нуля, целочисленные индексы в <em>DataFrame</em>. Это потому, что мы не определили, какими должны быть индексы.</li><li>Кроме того, если вы посмотрите на типы данных наших столбцов, вы увидите, что <em>pandas</em> правильно преобразовала значения столбцов <em>Salary</em> and <em>Sick Days</em> в числа, но столбец <em>Hire Date</em> по-прежнему остался строкой <em>String</em>. Это легко проверить в интерактивном режиме:</li></ul>
+<pre><code>&gt;&gt;&gt; print(type(df[&#39;Hire Date&#39;][0]))
+&lt;class &#39;str&#39;&gt;
+</code></pre><blockquote>
+<p>Индексы - это специальные структуры в базах данных, которые позволяют ускорить поиск и сортировку по определенному полю или набору полей в таблице, а также используются для обеспечения уникальности данных. Проще всего индексы сравнить с указателями в книгах. Если нет указателя, то нам придется просмотреть всю книгу, чтобы найти нужное место, а с указателем то же действие можно выполнить намного быстрее.</p>
+</blockquote>
+<p>Давайте решать эти проблемы по одной. Чтобы использовать один из столбцов столбец в качестве индекса <em>DataFrame</em>, добавьте необязательный параметр <em>index_col</em>:</p>
+<pre><code>import pandas
+df = pandas.read_csv(&#39;hrdata.csv&#39;, index_col=&#39;Name&#39;)
+print(df)
+</code></pre><p>Теперь поле <em>Name</em> - наш индекс в структуре данных <em>DataFrame</em>:</p>
+<pre><code>               Hire Date   Salary  Sick Days remaining
+Name                                                  
+Graham Chapman  03/15/14  50000.0                   10
+John Cleese     06/01/15  65000.0                    8
+Eric Idle       05/12/14  45000.0                   10
+Terry Jones     11/01/13  70000.0                    3
+Terry Gilliam   08/12/14  48000.0                    7
+Michael Palin   05/23/13  66000.0                    8
+</code></pre><p>Теперь давайте исправим тип данных поля «Hire Date». Вы можете заставить <em>pandas</em> читать значения полей данных как дату, используя необязательный параметр <em>parse_dates</em>, который определяется как список <em>list</em> имен столбцов для обработки в формате дат:</p>
+<pre><code>import pandas
+df = pandas.read_csv(&#39;hrdata.csv&#39;, index_col=&#39;Name&#39;, parse_dates=[&#39;Hire Date&#39;])
+print(df)
+</code></pre><p>Обратите внимание на разницу в выходе:</p>
+<pre><code>                Hire Date   Salary  Sick Days remaining
+Name                                                   
+Graham Chapman 2014-03-15  50000.0                   10
+John Cleese    2015-06-01  65000.0                    8
+Eric Idle      2014-05-12  45000.0                   10
+Terry Jones    2013-11-01  70000.0                    3
+Terry Gilliam  2014-08-12  48000.0                    7
+Michael Palin  2013-05-23  66000.0                    8
+</code></pre><p>Теперь дата отформатирована правильно, что легко проверяется в интерактивном режиме:</p>
+<pre><code>&gt;&gt;&gt; print(type(df[&#39;Hire Date&#39;][0]))
+&lt;class &#39;pandas._libs.tslibs.timestamps.Timestamp&#39;&gt;
+</code></pre><p>Если ваши CSV файлы не имеют имен столбцов в первой строке, вы можете использовать необязательный параметр <em>names</em> для предоставления списка <em>list</em> имен столбцов. Вы также можете использовать эту возможность, если хотите переопределить имена столбцов, указанных в первой строке вашего файла. В этом случае вы должны указать методу <em>pandas.read_csv()</em>, чтобы игнорировать существующие имена столбцов, используя необязательный параметр <em>header=0</em>:</p>
+<pre><code>import pandas
+df = pandas.read_csv(&#39;hrdata.csv&#39;, 
+            index_col=&#39;Employee&#39;, 
+            parse_dates=[&#39;Hired&#39;], 
+            header=0, 
+            names=[&#39;Employee&#39;, &#39;Hired&#39;,&#39;Salary&#39;, &#39;Sick Days&#39;])
+print(df)
+</code></pre><p>Обратите внимание, что поскольку имена столбцов изменены, столбцы, указанные в необязательных параметрах <em>index_col</em> и <em>parse_dates</em>, также должны быть изменены. Теперь это приведет к следующему результату:</p>
+<pre><code>                    Hired   Salary  Sick Days
+Employee                                     
+Graham Chapman 2014-03-15  50000.0         10
+John Cleese    2015-06-01  65000.0          8
+Eric Idle      2014-05-12  45000.0         10
+Terry Jones    2013-11-01  70000.0          3
+Terry Gilliam  2014-08-12  48000.0          7
+Michael Palin  2013-05-23  66000.0          8
+</code></pre><h3 id="-csv-pandas-">Запись CSV файлов с помощью <em>pandas</em></h3>
+<p>Конечно, если вы не сможете снова получить свои данные <em>pandas</em>, это не принесет вам много пользы. Запись <em>DataFrame</em> в CSV-файл так же просто, как чтение одного. Давайте запишем данные с новыми именами столбцов в новый файл CSV: </p>
+<pre><code>import pandas
+df = pandas.read_csv(&#39;hrdata.csv&#39;, 
+            index_col=&#39;Employee&#39;, 
+            parse_dates=[&#39;Hired&#39;],
+            header=0, 
+            names=[&#39;Employee&#39;, &#39;Hired&#39;, &#39;Salary&#39;, &#39;Sick Days&#39;])
+df.to_csv(&#39;hrdata_modified.csv&#39;)
+</code></pre><p>Единственное различие между этим кодом и приведенным выше для чтения данных из файла заключается в том, что вызов <em>print(df)</em> был заменен на <em>df.to_csv()</em>, указав имя файла. Новый CSV файл будет выглядеть так:</p>
+<pre><code>Employee,Hired,Salary,Sick Days
+Graham Chapman,2014-03-15,50000.0,10
+John Cleese,2015-06-01,65000.0,8
+Eric Idle,2014-05-12,45000.0,10
+Terry Jones,2013-11-01,70000.0,3
+Terry Gilliam,2014-08-12,48000.0,7
+Michael Palin,2013-05-23,66000.0,8
+</code></pre><h2 id="-">Выводы</h2>
+<p>Если вы поймете основы работы с CSV файлами, то когда вам нужно будет импортировать данные, вы уже будете вооружены этими знаниями. Большинство задач чтения, обработки и записи CSV могут быть легко решены использованием встроенной в Python библиотеку <em>csv</em>. Если у вас много данных для чтения и обработки, библиотека <em>pandas</em> обеспечивает быструю и удобную работу с данными в формате CSV.</p>
+<p>Существуют ли другие способы анализа текстовых файлов? Конечно! Это такие библиотеки, как <a href="http://www.antlr.org/">ANTLR</a>, <a href="http://www.dabeaz.com/ply/">PLY</a> и <a href="https://pypi.org/project/PlyPlus/">PlyPlus</a>, могут помочь при технической реализации сложного синтаксического анализа (парсинга), а если простые манипуляции с <em>String</em> не будут работать, то всегда есть регулярные выражения. Но это темы для других статей ...</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>v1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Работа с данными в формате JSON в Python</h1>
+<p>С момента своего создания <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> быстро стал стандартом де-факто для организации обмена информацией. Скорее всего, вы читаете эту статью, потому что вам нужно передавать куда либо некоторые данные. Возможно, вы собираете информацию через API вашего приложения и затем сохраняете свои данные в базе данных. Так или иначе, ты добрался до JSON, и необходимо обработать данные с помощью Python. <br />
+К счастью, это довольно распространенная задача, как и в большинстве подобных задач, Python делает ее почти пренебрежительно легкой. Не бойся, товарищ Питоньеры и Питонисты. Это будет легче легкого!  </p>
+<blockquote>
+<p>Итак, мы используем JSON для хранения и обмена данными? Так точно! Это не что иное, как стандартизованный формат, который сообщество разработчиков использует для передачи данных.Имейте в виду, что JSON - не единственный формат, доступный для такого рода задач, однако только <a href="https://en.wikipedia.org/wiki/XML">XML</a> и <a href="http://yaml.org/">YAML</a>, вероятно, являются единственными другими, которые стоит упомянуть в первую очередь.  
+</p>
+</blockquote>
+<h2>(Очень) Краткое введение в JSON</h2>
+<p>Не удивительно, что <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation создавался под вдохновением подмножества языка программирования JavaScript, и связан своим синтаксисом с описанием объектного литерала в JavaScript. Существует <a href="https://www.json.org/">отличный сайт</a>, который поясняет все это. Не волнуйтесь: JSON уже давно стал агностиком языка и существует как <a href="https://tools.ietf.org/html/rfc8259">собственный стандарт</a>, поэтому мы можем с удовольствием избежать обсуждения JavaScript в этой дискуссии.<br />
+В конечном итоге сообщество разработчиков в целом приняло JSON, потому что его легко создавать и понимать людям и машинам.</p>
+<h2>Внимание, это JSON!</h2>
+<p>Приготовьтесь. Я собираюсь показать вам реальную жизнь JSON - точно так же, как вы можете наблюдать ее в дикой природе. Внимание: файлы в формате JSON будут доступны для чтения всем, кто использует язык C-стиля, а Python - язык C-стиля ... так что это вы!</p>
+<pre><code>{
+    &quot;firstName&quot;: &quot;Jane&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;hobbies&quot;: [&quot;running&quot;, &quot;sky diving&quot;, &quot;singing&quot;],
+    &quot;age&quot;: 35,
+    &quot;children&quot;: [
+        {
+            &quot;firstName&quot;: &quot;Alice&quot;,
+            &quot;age&quot;: 6
+        },
+        {
+            &quot;firstName&quot;: &quot;Bob&quot;,
+            &quot;age&quot;: 8
+        }
+    ]
+} 
+</code></pre>
+
+<p>Как вы можете видеть, JSON поддерживает примитивные типы, такие как строки и числа, а также сложные типы данных, такие как списки и объекты с произвольной вложенностью.</p>
+<blockquote>
+<p>Это похоже на словарь Python. На данный момент это универсальная нотация для описания объектов.</p>
+</blockquote>
+<h2>Python поддерживает JSON изначально!</h2>
+<p>Python поставляется с стандартным (встроенным) модулем <a href="https://docs.python.org/3/library/json.html">json</a> для кодирования и декодирования данных в формате JSON.<br />
+Просто вставьте вверху вашего файла следующее:</p>
+<pre><code>import json
+</code></pre>
+
+<h3>Маленький словарь</h3>
+<p>Процесс кодирования JSON обычно называются <strong>сериализацией</strong> (serialization). Этот термин относится к преобразованию данных в последовательность байтов для хранения или передачи по сети.
+Вы также можете услышать термин «маршалинг» (marshaling), но это тема для еще одной <a href="https://stackoverflow.com/questions/770474/what-is-the-difference-between-serialization-and-marshaling">дискуссии</a>. Естественно, <strong>десериализация</strong> (deserialization) является обратным процессом декодирования данных, которые были сохранены или представлены в формате JSON.</p>
+<blockquote>
+<p>Так это звучит на техническом языке. Но на самом деле все, о чем мы говорим, - это чтение и запись данных. Думайте об этом так: кодирование предназначено для записи данных на диск, а декодирование - для чтения данных в память.</p>
+</blockquote>
+<h3>Сериализация JSON</h3>
+<p>Что происходит после того, как компьютер обработает много информации? Он должен записать дамп данных. Соответственно, модуль <strong>json</strong> предоставляет метод <em>dump()</em> для записи данных в файл. Существует также метод <em>dumps()</em> для записи в строку Python.<br />
+Простые объекты Python переводятся в JSON в соответствии с довольно интуитивным правилом для преобразования. Правила для преобразования представлены в таблице ниже.   </p>
+<table>
+<thead>
+<tr>
+	<th>Python</th>
+	<th>JSON</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>dict</td>
+	<td>объект</td>
+</tr>
+<tr>
+	<td>list, tuple</td>
+	<td>массив</td>
+</tr>
+<tr>
+	<td>str</td>
+	<td>строка</td>
+</tr>
+<tr>
+	<td>int, long, float</td>
+	<td>число</td>
+</tr>
+<tr>
+	<td>True</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>False</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>None</td>
+	<td>null</td>
+</tr>
+</tbody>
+</table>
+<h3>Пример простой процедуры сериализации данных</h3>
+<p>Представьте, что вы работаете с объектом Python в памяти, который выглядит примерно так: <br />
+data = {</p>
+<pre><code>&quot;president&quot;: {
+    &quot;name&quot;: &quot;Zaphod Beeblebrox&quot;,
+    &quot;species&quot;: &quot;Betelgeusian&quot;
+}
+</code></pre>
+
+<p>}  </p>
+<p>Важно сохранить эту информацию на диске, поэтому ваша задача - записать ее в файл. <br />
+Используя диспетчер контекстов Python, вы можете создать файл с именем data_file.json и открыть его в режиме записи. (Файлы JSON заканчиваются расширением .json.)  </p>
+<pre><code>with open(&quot;data_file.json&quot;, &quot;w&quot;) as write_file:
+    json.dump(data, write_file)  
+</code></pre>
+
+<p>Обратите внимание, что <em>dump()</em> принимает два позиционных аргумента: (1) объект данных, подлежащий сериализации, и (2) файлоподобный объект, в который будут записываться байты данных. <br />
+Или, если вы так хотите продолжать использовать эти сериализованные данные в формате JSON в своем приложении далее, вы можете записать их в нативный объект Python типа <em>str</em> (строка).  </p>
+<pre><code>json_string = json.dumps(data)  
+</code></pre>
+
+<p>Обратите внимание, что файлоподобный объект отсутствует, так как вы на самом деле не записываете данные на диск. Кроме этой особенности, функция <em>dumps()</em> аналогична <em>dump()</em>.</p>
+<h3>Некоторые полезные именованные аргументы</h3>
+<p>Помните, что JSON должен быть легко читаемым людьми, но читаемого синтаксиса недостаточно, если все будет сплющено вместе (упаковано в одну строку без отступов и разделения по строкам). Кроме того, у вас, вероятно, свой стиль форматирования и вам может быть проще читать код, отформатированный по вашему вкусу.</p>
+<blockquote>
+<p><strong>ПРИМЕЧАНИЕ.</strong> Оба метода <em>dump()</em> и <em>dumps()</em> используют одни и те же именованные аргументы.</p>
+</blockquote>
+<p>Первый вариант, который большинство людей хочет изменить, - это количество пробельных символов. Вы можете использовать именованный аргумент <em>indent</em>, чтобы указать размер отступа для вложенных структур. Заметьте разницу, используя данные, которые мы определили выше, выполнив следующие команды в консоли:  </p>
+<pre><code>&gt;&gt;&gt; json.dumps(data)
+&gt;&gt;&gt; json.dumps(data, indent=4)
+</code></pre>
+
+<p>Другой вариант форматирования - это именованный аргумент <em>separators</em>. По умолчанию это ряд (строка) из двух частей, разделительных строками (&quot;, &quot;, &quot;: &quot;), но обычной альтернативой для более компактного вида JSON является (&quot;,&quot;, &quot;:&quot;). Взгляните на пример JSON выше еще раз, чтобы увидеть, как вид разделителей изменит общую картину.  </p>
+<h3>Десериализация JSON ###</h3>
+<p>В модуле <strong>json</strong> вы найдете функции <em>load()</em> и <em>load()</em> для преобразования кодированных в JSON данных в объекты Python.<br />
+Подобно сериализации, существует простая таблица преобразования типов для десериализации, хотя вы, вероятно, уже можете догадаться, как она выглядит:  </p>
+<table>
+<thead>
+<tr>
+	<th>JSON</th>
+	<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>объект</td>
+	<td>dict</td>
+</tr>
+<tr>
+	<td>массив</td>
+	<td>list</td>
+</tr>
+<tr>
+	<td>строка</td>
+	<td>str</td>
+</tr>
+<tr>
+	<td>число (int)</td>
+	<td>int</td>
+</tr>
+<tr>
+	<td>число (float)</td>
+	<td>float</td>
+</tr>
+<tr>
+	<td>true</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>false</td>
+	<td>False</td>
+</tr>
+<tr>
+	<td>null</td>
+	<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>Технически это преобразование не является в точности обратным к таблице сериализации, приведенной выше. В общем случае это означает, что если вы кодируете объект, а затем декодируете его позже, вы можете получить обратно не тот же самый объект.<br />
+Самым простым примером этого будет кодирование данных в виде кортежа <em>tuple</em> и получение списка <em>list</em> после декодирования, например:  </p>
+<pre><code>&gt;&gt;&gt; blackjack_hand = (8, &quot;Q&quot;)
+&gt;&gt;&gt; encoded_hand = json.dumps(blackjack_hand)
+&gt;&gt;&gt; decoded_hand = json.loads(encoded_hand)
+
+&gt;&gt;&gt; blackjack_hand == decoded_hand
+False
+&gt;&gt;&gt; type(blackjack_hand)
+&lt;class 'tuple'&gt;
+&gt;&gt;&gt; type(decoded_hand)
+&lt;class 'list'&gt;
+&gt;&gt;&gt; blackjack_hand == tuple(decoded_hand)
+True
+</code></pre>
+
+<h3>Простой пример десериализации данных</h3>
+<p>На этот раз представьте, что у вас есть данные, хранящиеся на диске, которыми вы хотите манипулировать в памяти. Вы все также будете использовать диспетчер контекста, но на этот раз вы откроете существующий файл data_file.json в режиме чтения.  </p>
+<pre><code>with open(&quot;data_file.json&quot;, &quot;r&quot;) as read_file:
+    data = json.load(read_file)
+</code></pre>
+
+<p>Здесь все довольно просто, но имейте в виду, что результат выполнения этого кода может вернуть один из представленных выше типов данных из таблицы преобразования. Это важно, только если вы загружаете из файла данные, состав которых ранее вам был неизвестен ранее. В большинстве случаев корневой объект будет представлять собой словарь <em>dict</em> или список <em>list</em>.<br />
+Если вы получаете данные JSON из другой программы или в случае получения строки форматированных данных JSON в Python, вы можете легко десериализовать это с помощью функции <em>load()</em>, которые просто загружаются из строки:  </p>
+<pre><code>json_string = &quot;&quot;&quot;
+{
+    &quot;researcher&quot;: {
+        &quot;name&quot;: &quot;Ford Prefect&quot;,
+        &quot;species&quot;: &quot;Betelgeusian&quot;,
+        &quot;relatives&quot;: [
+            {
+                &quot;name&quot;: &quot;Zaphod Beeblebrox&quot;,
+                &quot;species&quot;: &quot;Betelgeusian&quot;
+            }
+        ]
+    }
+}
+&quot;&quot;&quot;
+data = json.loads(json_string)
+</code></pre>
+
+<h3>Пример (как бы) из реальной жизни</h3>
+<p>Для нашего примера мы будете использовать <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>, отличный источник поддельных данных в формате JSON для отладки ваших приложений. Сначала создайте файл сценария с именем scratch.py ​​или любым другим.<br />
+Вам нужно будет сформировать запрос <em>request</em> к служебному API <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>, для этого проще использовать модуль <a href="http://docs.python-requests.org/en/master/">requests</a>, который проделает всю тяжелую работу за вас. Для этого добавьте эти объявления импорта <em>import</em> в начало файла:  </p>
+<pre><code>import json
+import requests  
+</code></pre>
+
+<p>Теперь мы будем работать со списком <a href="https://jsonplaceholder.typicode.com/todos"><em>TODO</em></a>, обращаясь к интерфейсу API <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> относительно входной точки <em>/todos</em>. Если вы не знакомы с модулем <a href="http://docs.python-requests.org/en/master/">requests</a>, вы можете использовать еще один удобный метод <em>json()</em>, который будет выполнять всю вашу работу. Но мы будем практиковать использование модуля <a href="https://docs.python.org/3/library/json.html">json</a> для десериализации атрибута <em>text</em> объекта ответа <em>response</em>, полученного при помощи <a href="http://docs.python-requests.org/en/master/">requests</a>. Это должно выглядеть примерно так:  </p>
+<pre><code>response = requests.get(&quot;https://jsonplaceholder.typicode.com/todos&quot;)
+todos = json.loads(response.text)  
+</code></pre>
+
+<p>Вы не верите, что это работает? Хорошо, запустите файл в интерактивном режиме и протестируйте его самостоятельно. Пока вы делаете это, проверьте тип объекта <em>todos</em>. Загляните в элементы списка.  </p>
+<pre><code>&gt;&gt;&gt; todos == response.json()
+True
+&gt;&gt;&gt; type(todos)
+&lt;class 'list'&gt;
+&gt;&gt;&gt; todos[:10]
+...  
+</code></pre>
+
+<p>Вы можете увидеть структуру данных, посетив входную точку с помощью браузера, например так перейдя по ссылке <a href="https://jsonplaceholder.typicode.com/todos">TODO</a>:  </p>
+<pre><code>{
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;delectus aut autem&quot;,
+    &quot;completed&quot;: false
+}  
+</code></pre>
+
+<p>Существует несколько пользователей, каждый из которых имеет уникальный идентификатор <em>userId</em>, каждая задача имеет свойство <em>complete</em> типа <em>Boolean</em>. Как можно определить, какие пользователи выполнили наибольшее количество задач? </p>
+<pre><code># таблица userId спользователей полности выполнивших все задачи из TODO
+todos_by_user = {}
+
+# Подсчет количества задач из списка TODO выполненных каждым пользователем
+for todo in todos:
+    if todo[&quot;completed&quot;]:
+        try:
+            # Суммируем (с помощью оператора инкремента) количество выполненных пользователем задач.
+            todos_by_user[todo[&quot;userId&quot;]] += 1
+        except KeyError:
+            # Этот пользователь ничего не сделал. Зададим количество задач равным 1.
+            todos_by_user[todo[&quot;userId&quot;]] = 1
+
+# Создадим сортированный список пар (userId, num_complete)
+top_users = sorted(todos_by_user.items(), 
+                   key=lambda x: x[1], reverse=True)
+
+# Зададим максимальное количество выполненных задач TODO в списке
+max_complete = top_users[0][1]
+
+# Создадим список list всех пользователей, которые имеют максимальное количество выполненных задач из TODO 
+users = []
+for user, num_complete in top_users:
+    if num_complete &lt; max_complete:
+        break
+    users.append(str(user))
+
+max_users = &quot; and &quot;.join(users)  
+</code></pre>
+
+<p>Таким образом теперь мы можем манипулировать считанными из файла в формате JSON данными как обыкновенным объектом Python.
+Когда мы запустим сценарий, то получим следующий результат:  </p>
+<pre><code>&gt;&gt;&gt; s = &quot;s&quot; if len(users) &gt; 1 else &quot;&quot;
+&gt;&gt;&gt; print(f&quot;user{s} {max_users} completed {max_complete} TODOs&quot;)
+users 5 and 10 completed 12 TODOs
+# пользователи 5 и 10 выполнили 12 задач из TODO  
+</code></pre>
+
+<p>Для окончательного выполнения нашего задания создадим файл JSON, который будет содержать заполненные TODO для каждого из пользователей, которые завершили максимальное количество задач из TODO. <br />
+Все, что вам нужно сделать, это отфильтровать задачи <em>todos</em> и записать полученный список в файл. Назовем выходной файл <em>filter_data_file.json</em>. Существует несколько способов, которым можно это сделать, но вот один из них:  </p>
+<pre><code># Определим функцию для фильтрации пользователей,
+# выполнивших максимальное количество заданий из TODO
+def keep(todo):
+    is_complete = todo[&quot;completed&quot;]
+    has_max_count = todo[&quot;userId&quot;] in users
+    return is_complete and has_max_count
+
+# Запишем отфильтрованные данные в файл
+with open(&quot;filtered_data_file.json&quot;, &quot;w&quot;) as data_file:
+    filtered_todos = list(filter(keep, todos))
+    json.dump(filtered_todos, data_file, indent=2)
+</code></pre>
+
+<p>Отлично, мы сохранили нужные нам данные в файл, отфильтровав все ненужное. Запустите сценарий еще раз и проверьте файл <em>filter_data_file.json</em>, чтобы убедиться, что все работает как нам нужно. Он будет в том же каталоге, что и <em>scratch.py</em> ​​при его запуске.  </p>
+<h2>Кодирование и декодирование пользовательских объектов Python ##</h2>
+<p>Что происходит, когда мы пытаемся сериализовать класс <em>Elf</em> из приложения <em>Dungeons &amp; Dragons</em>, над которым, например, вы работаете?  </p>
+<pre><code>class Elf:
+    def __init__(self, level, ability_scores=None):
+        self.level = level
+        self.ability_scores = {
+            &quot;str&quot;: 11, &quot;dex&quot;: 12, &quot;con&quot;: 10,
+            &quot;int&quot;: 16, &quot;wis&quot;: 14, &quot;cha&quot;: 13
+        } if ability_scores is None else ability_scores
+        self.hp = 10 + self.ability_scores[&quot;con&quot;]
+</code></pre>
+
+<p>Не удивительно, что Python жалуется, что Elf не может быть сериализован (<em>serializable</em>):</p>
+<pre><code>&gt;&gt;&gt; elf = Elf(level=4)
+&gt;&gt;&gt; json.dumps(elf)
+TypeError: Object of type 'Elf' is not JSON serializable
+</code></pre>
+
+<p>Хотя модуль <em>json</em> может обрабатывать большинство встроенных типов данных Python, он не понимает, как по умолчанию кодировать сложные пользовательские типы данных. Это похоже на попытку поместить квадратный штифт в круглое отверстие.  </p>
+<h3>Упрощение структур данных</h3>
+<p>Таким образом, теперь вопрос заключается в том, как работать с более сложными структурами данных. Ну, вы можете попытаться кодировать и декодировать JSON вручную, но есть более изящное решение, которое сэкономит ваше время работы. Вместо того, чтобы попытаться напрямую перейти от пользовательского типа данных к формату JSON, вы можете сделать это через промежуточный шаг.</p>
+<p>Все, что вам нужно сделать, это представить ваши данные с точки зрения встроенных в Python типов данных, которые модуль <em>json</em> уже понимает. По сути, вы должны перевести сложный объект в более простое представление, которое модуль <em>json</em> затем трансформирует в JSON. Это похоже на транзитивное свойство отношений элементов в математике: если <strong>A = B</strong> и <strong>B = C</strong>, то <strong>A = C</strong>. </p>
+<p>Чтобы опробовать это, нам понадобится сложный объект для обработки. Вы можете использовать любой пользовательский класс, который вам нравится, но Python имеет встроенный тип, называемый <a href="https://www.mathsisfun.com/numbers/complex-numbers.html">complex</a> для представления комплексных чисел, по умолчанию он не сериализуем. Итак, для этих примеров наш сложный объект будет иметь тип <a href="https://www.mathsisfun.com/numbers/complex-numbers.html">complex</a>.  </p>
+<pre><code>&gt;&gt;&gt; z = 3 + 8j
+&gt;&gt;&gt; type(z)
+&lt;class 'complex'&gt;
+&gt;&gt;&gt; json.dumps(z)
+TypeError: Object of type 'complex' is not JSON serializable
+</code></pre>
+
+<p>Хороший вопрос, который нужно задать себе при работе с пользовательскими типами данных. <strong>Каков минимальный объем информации, необходим для воссоздания этого объекта?</strong> В случае комплексных чисел вам нужно знать только значения реальных и мнимых частей числа, которые вы можете получить как атрибуты объекта типа <a href="https://www.mathsisfun.com/numbers/complex-numbers.html">complex</a>:  </p>
+<pre><code>&gt;&gt;&gt; z.real
+3.0
+&gt;&gt;&gt; z.imag
+8.0
+</code></pre>
+
+<p>Передача тех же, что и в коде выше, чисел в конструктор <em>complex</em> достаточно, чтобы оператор сравнения <em>__eq__</em> вернул значение <em>True</em>:  </p>
+<pre><code>&gt;&gt;&gt; complex(3, 8) == z
+True
+</code></pre>
+
+<p>Разбиение пользовательских типов данных до их составляющих элементов имеет решающее значение как для процессов сериализации, так и для десериализации.</p>
+<h3>Кодирование пользовательских типов данных</h3>
+<p>Для того чтобы перевести пользовательский объект в формат JSON, вам необходимо предусмотреть функцию кодирования для параметра <em>default</em> (по умолчанию) функции <em>dump()</em>. Модуль <em>json</em> будет вызывать эту функцию для любых объектов, которые не могут быть сериализованы нативным способом. Вот простая функция декодирования, которую вы можете использовать на практике:  </p>
+<pre><code>def encode_complex(z):
+    if isinstance(z, complex):
+        return (z.real, z.imag)
+    else:
+        type_name = z.__class__.__name__
+        raise TypeError(f&quot;Object of type '{type_name}' is not JSON serializable&quot;)  
+</code></pre>
+
+<p>Обратите внимание, что вы должны генерировать исключение TypeError, если вы не получите тот объект, который ожидаете. Теперь вы можете попробовать кодировать сложные объекты.  </p>
+<pre><code>&gt;&gt;&gt; json.dumps(9 + 5j, default=encode_complex)
+'[9.0, 5.0]'
+&gt;&gt;&gt; json.dumps(elf, default=encode_complex)
+TypeError: Object of type 'Elf' is not JSON serializable
+</code></pre>
+
+<blockquote>
+<p><strong>Почему мы кодировали комплексное число как кортеж <em>tuple</em>?</strong> Хороший вопрос. Это, безусловно, не единственный и не лучший выбор. На самом деле, это было бы не очень хорошим представлением, если бы вы захотели позже декодировать объект и вы вскоре убедитесь в этом.</p>
+</blockquote>
+<p>Другой общий подход заключается в применении подкласса стандартного <em>JSONEncoder</em> и переопределении его метода default()**:  </p>
+<pre><code>class ComplexEncoder(json.JSONEncoder):
+    def default(self, z):
+        if isinstance(z, complex):
+            return (z.real, z.imag)
+        else:
+            super().default(self, z)
+</code></pre>
+
+<p>Вместо того, чтобы генерировать исключение типа TypeError самостоятельно, вы можете просто позволить базовому классу обработать его. Вы можете использовать это либо непосредственно в методе <em>dump()</em> через параметр <em>cls</em>, либо путем создания экземпляра кодера <em>encoder</em> и вызова его метода <em>encode()</em>:  </p>
+<pre><code>&gt;&gt;&gt; json.dumps(2 + 5j, cls=ComplexEncoder)
+'[2.0, 5.0]'
+
+&gt;&gt;&gt; encoder = ComplexEncoder()
+&gt;&gt;&gt; encoder.encode(3 + 6j)
+'[3.0, 6.0]'
+</code></pre>
+
+<h3>Декодирование пользовательских типов данных</h3>
+<p>Хотя реальные и мнимые части комплексного числа абсолютно необходимы, на самом деле их недостаточно для воссоздания объекта. Это происходит, когда вы пытаетесь кодировать комплексное число с помощью <em>ComplexEncoder</em> и затем декодируете результат:  </p>
+<pre><code>&gt;&gt;&gt; complex_json = json.dumps(4 + 17j, cls=ComplexEncoder)
+&gt;&gt;&gt; json.loads(complex_json)
+[4.0, 17.0]
+</code></pre>
+
+<p>Вы получаете список <em>list</em>, и вам нужно будет передать значения в конструктор <em>complex</em>, если вы захотите снова создать объект комплексного числа. Напомним о нашей дискуссии о трудности декодирования выше. Отсутствуют метаданные или информация о типе данных, которые вы кодируете.
+Я полагаю, что вопрос, который вы действительно должны задать себе - <strong>Каков минимальный объем информации, который необходим и достаточен для воссоздания этого объекта?</strong></p>
+<p>Модуль jso**n ожидает, что все пользовательские типы будут отображаться как объекты <em>objects</em> в стандарте форматирования JSON. Для разнообразия вы можете создать JSON-файл на этот раз с именем <em>complex_data.json</em> и добавить следующий объект <em>object</em>, представляющий комплексное число:</p>
+<pre><code>{
+    &quot;__complex__&quot;: true,
+    &quot;real&quot;: 42,
+    &quot;imag&quot;: 36
+}  
+</code></pre>
+
+<p>Этот ключ &quot;<em>__complex__</em>&quot; - это метаданные, о которых мы только что говорили ранее. На самом деле не имеет значения, с каким значением он ассоциирован. Чтобы этот маленький <em>хак</em> работал, все, что вам нужно сделать это проверить существует ли этот ключ:  </p>
+<pre><code>def decode_complex(dct):
+    if &quot;__complex__&quot; in dct:
+        return complex(dct[&quot;real&quot;], dct[&quot;imag&quot;])
+    return dct
+</code></pre>
+
+<p>Если &quot;<em>__complex__</em>&quot; не находится в словаре, вы можете просто вернуть объект и разрешить декодировать декодером по умолчанию.<br />
+Каждый раз, когда метод <em>load()</em> пытается проанализировать объект <em>object</em>, вам предоставляется возможность изменить его поведение перед тем, как дешифратор по умолчанию начнет работать с данными. Вы можете сделать это, передав вашу функцию декодирования через параметр <em>object_hook</em>.<br />
+Запустим на выполнение следующий код:  </p>
+<pre><code>&gt;&gt;&gt; with open(&quot;complex_data.json&quot;) as complex_data:
+...     data = complex_data.read()
+...     z = json.loads(data, object_hook=decode_complex)
+... 
+&gt;&gt;&gt; type(z)
+&lt;class 'complex'&gt;
+</code></pre>
+
+<p>Хотя параметр <em>object_hook</em> может показаться аналогичным <em>default</em>, параметру по умолчанию для  <em>dump()</em>, это не так.
+Это работает не только с одним объектом. Попробуйте поместить список <em>list</em> комплексных чисел в <em>complex_data.json</em> и снова запустить скрипт:  </p>
+<pre><code>[
+  {
+    &quot;__complex__&quot;:true,
+    &quot;real&quot;:42,
+    &quot;imag&quot;:36
+  },
+  {
+    &quot;__complex__&quot;:true,
+    &quot;real&quot;:64,
+    &quot;imag&quot;:11
+  }
+]
+</code></pre>
+
+<p>Если все пойдет хорошо, вы получите список объектов типа <em>complex</em>:</p>
+<pre><code>&gt;&gt;&gt; with open(&quot;complex_data.json&quot;) as complex_data:
+...     data = complex_data.read()
+...     numbers = json.loads(data, object_hook=decode_complex)
+... 
+&gt;&gt;&gt; numbers
+[(42+36j), (64+11j)]  
+</code></pre>
+
+<p>Вы также можете попробовать использовать подкласс класса <em>JSONDecoder</em> и переопределить <em>object_hook</em>, но лучше всего придерживаться простого решения, когда это возможно.</p>
+<h2>Все готово</h2>
+<p>Поздравляю теперь вы можете использовать всю мощь формата JSON для реализации ваших приложений на языке Python.  </p>
+<p>Хотя примеры, с которыми мы работали здесь, безусловно, чрезмерно упрощены, они иллюстрируют рабочий процесс. Вы можете применить их к решению следующих задач:  </p>
+<ol>
+<li>Импорт модуля <em>json</em>.  </li>
+<li>Чтение данных с использованием функций <em>load()</em> или <em>loads()</em>.  </li>
+<li>Обработка данных.  </li>
+<li>Запись измененных данные с помощью функций <em>dump()</em> или <em>dumps()</em>.</li>
+</ol>
+<p>То, что вы будете делать с данными после их загрузки в память, будет зависеть от конкретного варианта использования. Как правило, вашей целью будет получение данных из источника, извлечение полезной информации и передача информации далее или запись ее.  </p>
+<p>Изучение стандартного модуля <em>json</em> делает проще изучение следующих модулей Python, использующихся для сериализации данных: <a href="https://docs.python.org/3/library/pickle.html">pickle</a> и <a href="https://docs.python.org/3/library/marshal.html">marshal</a>.</p>
+<p>Удачи всем в ваших будущих начинаниях при изучении  Python!</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
