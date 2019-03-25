@@ -1,0 +1,3422 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://bitsofco.de/understanding-the-virtual-dom/
+Subject: =?utf-8?Q?=D0=9F=D0=BE=D0=BD=D0=B8=D0=BC=D0=B0=D0=BD=D0=B8=D0=B5=20=D0=B2?=
+ =?utf-8?Q?=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0?=
+ =?utf-8?Q?=BE=20DOM?=
+Date: Wed, 13 Feb 2019 11:16:09 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3----"
+
+
+------MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3----
+Content-Type: text/html
+Content-ID: <frame-551D58683B58B32787C0832CD7563901@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://bitsofco.de/understanding-the-virtual-dom/
+
+<!DOCTYPE html><html lang=3D"ru" class=3D"translated-ltr"><head><meta http-=
+equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+   =20
+    <title>=D0=9F=D0=BE=D0=BD=D0=B8=D0=BC=D0=B0=D0=BD=D0=B8=D0=B5 =D0=B2=D0=
+=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM</title>
+
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width initial-scale=
+=3D1">
+    <meta name=3D"description" content=3D"">
+    <meta name=3D"flattr:id" content=3D"12dxv3">
+
+    <link rel=3D"icon" href=3D"https://bitsofco.de/favicon.ico">
+
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://bitsofco.de/=
+assets/built/global.css?v=3Db2bce31307" class=3D"versionedAsset">
+
+    <link rel=3D"manifest" href=3D"https://bitsofco.de/assets/manifest.json=
+?v=3Db2bce31307">
+    <meta name=3D"theme-color" content=3D"#ffdb3a">
+
+    <link rel=3D"icon" type=3D"image/png" sizes=3D"32x32" href=3D"https://b=
+itsofco.de/assets/icons/icon_32.png?v=3Db2bce31307">
+    <link rel=3D"icon" type=3D"image/png" sizes=3D"48x48" href=3D"https://b=
+itsofco.de/assets/icons/icon_48.png?v=3Db2bce31307">
+    <link rel=3D"icon" type=3D"image/png" sizes=3D"128x128" href=3D"https:/=
+/bitsofco.de/assets/icons/icon_128.png?v=3Db2bce31307">
+    <link rel=3D"icon" type=3D"image/png" sizes=3D"256x256" href=3D"https:/=
+/bitsofco.de/assets/icons/icon_256.png?v=3Db2bce31307">
+
+    <meta name=3D"apple-mobile-web-app-title" content=3D"bitsofcode">
+    <link rel=3D"apple-touch-icon" sizes=3D"152x152" href=3D"https://bitsof=
+co.de/assets/icons/icon_152.png?v=3Db2bce31307">
+
+    <meta name=3D"msapplication-TileColor" content=3D"#ffdb3a">
+    <meta name=3D"msapplication-TileImage" content=3D"/assets/icons/icon_14=
+4.png?v=3Db2bce31307">
+
+    <meta property=3D"og:locale" content=3D"en_US">
+    <meta property=3D"og:type" content=3D"website">
+    <meta property=3D"og:image" content=3D"/assets/icons/icon_128.png?v=3Db=
+2bce31307">
+    <meta property=3D"og:site_name" content=3D"bitsofcode">
+    <meta property=3D"og:url" content=3D"https://bitsofco.de">
+
+    <!-- Google Analytics -->
+   =20
+
+    <link rel=3D"shortcut icon" href=3D"https://bitsofco.de/favicon.png" ty=
+pe=3D"image/png">
+    <link rel=3D"canonical" href=3D"https://bitsofco.de/understanding-the-v=
+irtual-dom/">
+    <meta name=3D"referrer" content=3D"no-referrer-when-downgrade">
+   =20
+    <meta property=3D"og:site_name" content=3D"bitsofcode">
+    <meta property=3D"og:type" content=3D"article">
+    <meta property=3D"og:title" content=3D"Understanding the Virtual DOM">
+    <meta property=3D"og:description" content=3D"I=E2=80=99ve recently been=
+ writing about what exactly the DOM and the shadow DOM are and how they dif=
+fer. To recap, the Document Object Model is an object-based representation =
+of an HTML document and an interface to manipulating that object. The shado=
+w DOM can be thought of as a =E2=80=9Clite=E2=80=9D">
+    <meta property=3D"og:url" content=3D"https://bitsofco.de/understanding-=
+the-virtual-dom/">
+    <meta property=3D"article:published_time" content=3D"2018-12-24T08:06:2=
+1.000Z">
+    <meta property=3D"article:modified_time" content=3D"2018-12-24T08:06:21=
+.000Z">
+    <meta property=3D"article:tag" content=3D"javascript">
+   =20
+    <meta property=3D"article:publisher" content=3D"https://www.facebook.co=
+m/bitsofcodeblog">
+    <meta name=3D"twitter:card" content=3D"summary">
+    <meta name=3D"twitter:title" content=3D"Understanding the Virtual DOM">
+    <meta name=3D"twitter:description" content=3D"I=E2=80=99ve recently bee=
+n writing about what exactly the DOM and the shadow DOM are and how they di=
+ffer. To recap, the Document Object Model is an object-based representation=
+ of an HTML document and an interface to manipulating that object. The shad=
+ow DOM can be thought of as a =E2=80=9Clite=E2=80=9D">
+    <meta name=3D"twitter:url" content=3D"https://bitsofco.de/understanding=
+-the-virtual-dom/">
+    <meta name=3D"twitter:label1" content=3D"Written by">
+    <meta name=3D"twitter:data1" content=3D"Ire Aderinokun">
+    <meta name=3D"twitter:label2" content=3D"Filed under">
+    <meta name=3D"twitter:data2" content=3D"javascript">
+    <meta name=3D"twitter:site" content=3D"@botsofcode">
+    <meta name=3D"twitter:creator" content=3D"@ireaderinokun">
+   =20
+   =20
+
+   =20
+
+    <meta name=3D"generator" content=3D"Ghost 1.25">
+    <link rel=3D"alternate" type=3D"application/rss+xml" title=3D"bitsofcod=
+e" href=3D"https://bitsofco.de/rss/">
+    <style>
+    .token.cdata, .token.comment, .token.doctype, .token.prolog {
+        color: rgba(255, 255, 255, 0.55);
+    }
+   =20
+    .code-result {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"He=
+lvetica Neue",Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        position: relative;
+      =20
+        margin-top: -1.4em; /* change in .code-addendum too  */
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+   =20
+    .post__content img {
+        display: inline-block;
+    }
+   =20
+    .post__content figcaption {
+        font-size: 1.4rem;
+        font-style: italic;
+        text-align: center;
+        display: block;
+        margin-top: -20px;
+        margin-bottom: 20px
+    }
+   =20
+    .post__content ol {
+        list-style-type: decimal;
+    }
+   =20
+    @media (min-width: 600px) {
+        .post__content img.float-left {
+            float: left;
+            max-width: 40%;
+            margin-top: 0;
+            margin-right: 2em;
+        }
+    }
+   =20
+    .post__content ins {
+        text-decoration: none;
+        margin-bottom: 2em;
+        display: block;
+        font-style: italic;
+       =20
+        border-left: 5px solid #e6e6e6;
+        padding-left: 1.5rem;
+
+    }
+   =20
+    ul.dom-tree li span > span {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+       =20
+        color: #f28596;
+        font-size: 0.85em;
+        padding-left: 0.5em;
+    }
+   =20
+    .sr-only {
+        left: -9999px;
+        top: -9999px;
+    }
+   =20
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+   =20
+  =20
+</style>
+<link type=3D"text/css" rel=3D"stylesheet" charset=3D"UTF-8" href=3D"https:=
+//translate.googleapis.com/translate_static/css/translateelement.css"></hea=
+d>
+<body class=3D"post-template tag-javascript" style=3D"">
+
+<header class=3D"site__header">
+    <div class=3D"wrapper wrapper--flex">
+        <button type=3D"button" class=3D"anchorButton no-btn site__nav__ope=
+n">
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=9E=D1=82=D0=BA=D1=80=D1=8B=
+=D1=82=D0=B0=D1=8F =D0=BD=D0=B0=D0=B2=D0=B8=D0=B3=D0=B0=D1=86=D0=B8=D1=8F =
+=D0=BF=D0=BE =D1=81=D0=B0=D0=B9=D1=82=D1=83</font></font></span>
+            <svg width=3D"14" height=3D"10" viewBox=3D"0 0 14 10" class=3D"=
+fill" fill=3D"#3C3C3C" aria-hidden=3D"true">
+    <rect width=3D"14" height=3D"2"></rect>
+    <rect width=3D"14" height=3D"2" y=3D"4"></rect>
+    <rect width=3D"14" height=3D"2" y=3D"8"></rect>
+</svg>        </button>
+        <h1 class=3D"site__title">
+            <a href=3D"https://bitsofco.de/" class=3D"no-ul">
+                <span class=3D"sr-only"><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">bitsofcode</font></font></sp=
+an>
+                <svg id=3D"logo" width=3D"94px" height=3D"15px" viewBox=3D"=
+0 0 94 15" aria-hidden=3D"true">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" fill-rule=3D"nonzero" fill=3D"#3C3C3C">
+
+            <!-- B itsofcode -->
+            <path class=3D"logo-letter-b logo-placement-1 logo-section-left=
+" d=3D"M8.39551451,4.83471074 C7.58944591,4.33884298 6.68416887,4.10330579 =
+5.67968338,4.10330579 C4.30316623,4.10330579 3.16226913,4.54958678 2.256992=
+08,5.45454545 L2.25699208,2.15702479 L2.25699208,0.917355372 C2.25699208,0.=
+384297521 1.99656992,0.123966942 1.46332454,0.123966942 L0.793667546,0.1239=
+66942 C0.260422164,0.123966942 0,0.384297521 0,0.917355372 L0,13.8471074 C0=
+,14.3801653 0.260422164,14.6404959 0.793667546,14.6404959 L1.46332454,14.64=
+04959 C1.99656992,14.6404959 2.25699208,14.3801653 2.25699208,13.8471074 L2=
+.25699208,13.5247934 C3.16226913,14.4297521 4.30316623,14.8760331 5.6796833=
+8,14.8760331 C6.67176781,14.8760331 7.57704485,14.6280992 8.39551451,14.144=
+6281 C9.20158311,13.6487603 9.83403694,13.0041322 10.2804749,12.1735537 C10=
+.7269129,11.3553719 10.9501319,10.4628099 10.9501319,9.48347107 C10.9501319=
+,8.51652893 10.7269129,7.62396694 10.2804749,6.79338843 C9.84643799,5.98760=
+331 9.21398417,5.33057851 8.39551451,4.83471074 Z M7.6762533,11.8760331 C7.=
+03139842,12.5206612 6.22532982,12.8553719 5.2828496,12.8553719 C4.62559367,=
+12.8553719 4.01794195,12.6942149 3.47229551,12.3595041 C2.92664908,12.02479=
+34 2.5298153,11.5785124 2.25699208,11.0082645 L2.25699208,7.99586777 C2.529=
+8153,7.43801653 2.93905013,6.97933884 3.48469657,6.6446281 C4.03034301,6.29=
+752066 4.62559367,6.13636364 5.2828496,6.13636364 C6.22532982,6.13636364 7.=
+01899736,6.45867769 7.6762533,7.11570248 C8.32110818,7.76033058 8.65593668,=
+8.5661157 8.65593668,9.49586777 C8.65593668,10.4380165 8.33350923,11.231405=
+ 7.6762533,11.8760331 Z"></path>
+
+            <!-- b I tsofcode -->
+            <path class=3D"logo-letter-i logo-placement-2 logo-section-left=
+" d=3D"M13.8643799,4.33884298 L13.1823219,4.33884298 C12.6490765,4.33884298=
+ 12.3886544,4.59917355 12.3886544,5.1322314 L12.3886544,13.8471074 C12.3886=
+544,14.3801653 12.6490765,14.6404959 13.1823219,14.6404959 L13.8643799,14.6=
+404959 C14.3976253,14.6404959 14.6580475,14.3801653 14.6580475,13.8471074 L=
+14.6580475,5.1322314 C14.6580475,4.59917355 14.3976253,4.33884298 13.864379=
+9,4.33884298 Z"></path>
+
+            <!-- bi T sofcode -->
+            <path class=3D"logo-letter-t logo-placement-3 logo-section-left=
+" d=3D"M20.9453826,12.9049587 C20.9329815,12.892562 20.9329815,12.8677686 2=
+0.9205805,12.8553719 C20.8585752,12.7933884 20.7965699,12.7438017 20.709762=
+5,12.7066116 L20.7097625,12.7066116 C20.6229551,12.6694215 20.5237467,12.65=
+70248 20.4121372,12.6446281 L20.4121372,12.6446281 C20.4121372,12.6322314 2=
+0.362533,12.6322314 20.3005277,12.6322314 L20.2881266,12.6322314 C20.077308=
+7,12.6322314 19.6804749,12.6570248 19.6432718,12.6570248 C19.3704485,12.657=
+0248 19.0852243,12.6446281 18.8496042,12.4834711 C18.353562,12.1363636 18.3=
+783641,11.553719 18.3783641,11.0082645 L18.3783641,10.9586777 L18.3783641,9=
+.68181818 L18.3783641,9.26033058 L18.3783641,6.33471074 L20.1889182,6.33471=
+074 C20.7221636,6.33471074 20.9825858,6.07438017 20.9825858,5.54132231 L20.=
+9825858,5.1446281 C20.9825858,4.61157025 20.7221636,4.35123967 20.1889182,4=
+.35123967 L18.3783641,4.35123967 L18.3783641,2.19421488 C18.3783641,1.93388=
+43 18.3039578,1.7231405 18.1675462,1.58677686 C18.0311346,1.45041322 17.820=
+3166,1.40082645 17.5598945,1.42561983 L16.8778364,1.48760331 C16.3693931,1.=
+52479339 16.121372,1.80991736 16.121372,2.31818182 L16.121372,4.33884298 L1=
+6.121372,6.32231405 L16.121372,6.99173554 L16.121372,9.24793388 L16.121372,=
+10.5495868 C16.121372,11.3057851 16.0841689,12.0867769 16.3073879,12.818181=
+8 C16.4437995,13.2892562 16.6918206,13.7231405 17.0638522,14.0578512 C17.90=
+7124,14.7768595 18.9984169,14.6280992 20.0153034,14.6280992 L20.2013193,14.=
+6280992 C20.2633245,14.6280992 20.3377309,14.6280992 20.4121372,14.6157025 =
+L20.4245383,14.6157025 C20.4741425,14.6157025 20.5113456,14.6157025 20.5733=
+509,14.6033058 C20.9329815,14.5785124 21.1189974,14.3057851 21.1189974,13.7=
+85124 L21.1189974,13.4132231 C21.1189974,13.2892562 21.1065963,13.177686 21=
+.0693931,13.0909091 C21.0197889,13.0165289 20.9825858,12.9669421 20.9453826=
+,12.9049587 Z"></path>
+
+            <!-- bit S ofcode -->
+            <path class=3D"logo-letter-s logo-placement-4 logo-section-left=
+" d=3D"M26.7366755,8.45454545 C25.521372,8.20661157 24.9013193,7.73553719 2=
+4.9013193,7.04132231 C24.9013193,6.73140496 25.0501319,6.49586777 25.335356=
+2,6.30991736 C25.6205805,6.13636364 25.9926121,6.03719008 26.4390501,6.0371=
+9008 C26.9350923,6.03719008 27.4435356,6.2107438 27.976781,6.54545455 C28.4=
+23219,6.84297521 28.7952507,6.79338843 29.105277,6.39669421 L29.328496,6.11=
+157025 C29.4897098,5.91322314 29.5641161,5.71487603 29.551715,5.50413223 C2=
+9.539314,5.30578512 29.4153034,5.1322314 29.2044855,4.99586777 C28.2992084,=
+4.38842975 27.3195251,4.09090909 26.2654354,4.09090909 C25.1741425,4.090909=
+09 24.2936675,4.36363636 23.6364116,4.90909091 C22.9791557,5.45454545 22.64=
+43272,6.14876033 22.6443272,6.99173554 C22.6443272,7.85950413 22.9171504,8.=
+55371901 23.4627968,9.08677686 C24.0084433,9.61983471 24.851715,10.0041322 =
+26.0050132,10.2272727 C26.7242744,10.3760331 27.2327177,10.5619835 27.53034=
+3,10.785124 C27.8279683,11.0082645 27.976781,11.3057851 27.976781,11.677686=
+ C27.976781,12.0495868 27.8155673,12.3595041 27.4931398,12.5826446 C27.1707=
+124,12.8057851 26.7490765,12.9173554 26.2034301,12.9173554 C25.4469657,12.9=
+173554 24.7525066,12.6818182 24.1200528,12.1983471 C23.6860158,11.8636364 2=
+3.3139842,11.8760331 23.0039578,12.2603306 L22.7435356,12.5702479 C22.39630=
+61,12.9917355 22.4211082,13.3636364 22.7931398,13.6859504 C23.7480211,14.47=
+93388 24.9385224,14.8636364 26.3522427,14.8636364 C27.5427441,14.8636364 28=
+.4852243,14.5661157 29.1920844,13.9834711 C29.8865435,13.4008264 30.2337731=
+,12.6446281 30.2337731,11.7272727 C30.2337731,10.8471074 29.9485488,10.1404=
+959 29.3905013,9.60743802 C28.8200528,9.08677686 27.9395778,8.70247934 26.7=
+366755,8.45454545 Z"></path>
+
+
+            <!-- bits O fcode (opening) -->
+            <path class=3D"logo-letter-o-opening logo-placement-5 logo-sect=
+ion-left" d=3D"M35.3182058,14.6652893 C35.2313984,14.6652893 35.13219,14.65=
+28926 35.0453826,14.6280992 C32.7015831,14.0206612 31.0770449,11.9008264 31=
+.0770449,9.48347107 C31.0770449,7.0661157 32.7139842,4.94628099 35.0453826,=
+4.33884298 C35.6406332,4.19008264 36.2358839,4.53719008 36.3846966,5.119834=
+71 C36.5335092,5.70247934 36.1862797,6.30991736 35.6034301,6.45867769 C34.2=
+269129,6.81818182 33.2720317,8.05785124 33.2720317,9.48347107 C33.2720317,1=
+0.9090909 34.2269129,12.1487603 35.6034301,12.5082645 C36.1862797,12.657024=
+8 36.5459103,13.2644628 36.3846966,13.8471074 C36.248285,14.3429752 35.8018=
+47,14.6652893 35.3182058,14.6652893 Z"></path>
+
+            <!-- bits O fcode (closing) -->
+            <path class=3D"logo-letter-o-closing logo-placement-6 logo-sect=
+ion-middle" d=3D"M38.0712401,14.6280992 C37.5875989,14.6280992 37.1411609,1=
+4.3057851 37.0171504,13.8099174 C36.8683377,13.2272727 37.2155673,12.632231=
+4 37.7984169,12.4710744 C39.174934,12.1115702 40.1298153,10.8719008 40.1298=
+153,9.44628099 C40.1298153,8.02066116 39.174934,6.78099174 37.7984169,6.421=
+4876 C37.2155673,6.27272727 36.8559367,5.66528926 37.0171504,5.08264463 C37=
+.1659631,4.5 37.7612137,4.15289256 38.3564644,4.30165289 C40.7002639,4.9090=
+9091 42.3248021,7.02892562 42.3248021,9.44628099 C42.3248021,11.8636364 40.=
+6878628,13.9834711 38.3564644,14.5909091 C38.2572559,14.6157025 38.1580475,=
+14.6280992 38.0712401,14.6280992 Z"></path>
+
+            <!-- bitso F code -->
+            <path class=3D"logo-letter-f logo-placement-7 logo-section-midd=
+le" d=3D"M46.1567282,2.26859504 C46.3799472,2.10743802 46.6775726,2.0950413=
+2 46.9503958,2.09504132 C46.9875989,2.09504132 47.3844327,2.11983471 47.595=
+2507,2.11983471 L47.6076517,2.11983471 C47.669657,2.11983471 47.7192612,2.1=
+1983471 47.7192612,2.10743802 L47.7192612,2.10743802 C47.8308707,2.09504132=
+ 47.9300792,2.08264463 48.0168865,2.04545455 L48.0168865,2.04545455 C48.103=
+6939,2.00826446 48.1656992,1.95867769 48.2277045,1.89669421 C48.2401055,1.8=
+8429752 48.2525066,1.85950413 48.2525066,1.84710744 C48.2897098,1.79752066 =
+48.3269129,1.73553719 48.351715,1.66115702 C48.3765172,1.56198347 48.401319=
+3,1.46280992 48.4013193,1.33884298 L48.4013193,0.966942149 C48.4013193,0.44=
+6280992 48.2153034,0.173553719 47.8556728,0.148760331 C47.8060686,0.1487603=
+31 47.7564644,0.148760331 47.7068602,0.136363636 L47.6944591,0.136363636 C4=
+7.6200528,0.136363636 47.5456464,0.123966942 47.4836412,0.123966942 L47.297=
+6253,0.123966942 C46.2683377,0.123966942 45.1770449,-0.0247933884 44.346174=
+1,0.694214876 C43.9617414,1.01652893 43.7261214,1.45041322 43.5897098,1.933=
+8843 C43.3788918,2.66528926 43.4036939,3.44628099 43.4036939,4.20247934 L43=
+.4036939,5.50413223 L43.4036939,9.06198347 L43.4036939,9.73140496 L43.40369=
+39,11.714876 L43.4036939,13.7355372 C43.4036939,14.2561983 43.651715,14.528=
+9256 44.1601583,14.5661157 L44.8422164,14.6280992 C45.1026385,14.6528926 45=
+.3134565,14.6033058 45.4498681,14.4669421 C45.5862797,14.3305785 45.660686,=
+14.1322314 45.660686,13.8595041 L45.660686,6.29752066 L47.4960422,6.2975206=
+6 C48.0292876,6.29752066 48.2897098,6.03719008 48.2897098,5.50413223 L48.28=
+97098,5.10743802 C48.2897098,4.57438017 48.0292876,4.31404959 47.4960422,4.=
+31404959 L45.6854881,4.31404959 L45.6854881,3.79338843 L45.6854881,3.743801=
+65 C45.6854881,3.2107438 45.660686,2.62809917 46.1567282,2.26859504 Z"></pa=
+th>
+
+            <!-- bitsof C ode -->
+            <path class=3D"logo-letter-c logo-placement-8 logo-section-midd=
+le" d=3D"M57.6525066,12.3471074 C57.3548813,11.9752066 56.9828496,11.938016=
+5 56.5364116,12.2231405 C55.8915567,12.6446281 55.2094987,12.8553719 54.502=
+6385,12.8553719 C53.5601583,12.8553719 52.7664908,12.5330579 52.1092348,11.=
+8760331 C51.4643799,11.231405 51.1295515,10.4256198 51.1295515,9.48347107 C=
+51.1295515,8.54132231 51.4519789,7.74793388 52.1092348,7.10330579 C52.75408=
+97,6.45867769 53.5601583,6.12396694 54.5026385,6.12396694 C55.1474934,6.123=
+96694 55.8047493,6.32231405 56.4496042,6.70661157 C56.8960422,6.97933884 57=
+.2680739,6.91735537 57.5532982,6.49586777 L57.8509235,6.04958678 C58.148548=
+8,5.59090909 58.0741425,5.23140496 57.6401055,4.95867769 C56.7224274,4.3760=
+3306 55.6683377,4.09090909 54.5026385,4.09090909 C53.4361478,4.09090909 52.=
+4688654,4.32644628 51.6007916,4.80991736 C50.7327177,5.29338843 50.0506596,=
+5.93801653 49.5670185,6.76859504 C49.0833773,7.59917355 48.8353562,8.504132=
+23 48.8353562,9.48347107 C48.8353562,10.4752066 49.0833773,11.3801653 49.56=
+70185,12.1983471 C50.0506596,13.0289256 50.7327177,13.6735537 51.6007916,14=
+.1570248 C52.4688654,14.6404959 53.4361478,14.8760331 54.5026385,14.8760331=
+ C55.8047493,14.8760331 56.9456464,14.5289256 57.9377309,13.8347107 C58.309=
+7625,13.5619835 58.3221636,13.2024793 57.9873351,12.768595 L57.6525066,12.3=
+471074 Z"></path>
+
+            <!-- bitsofc O de (opening) -->
+            <path class=3D"logo-letter-o-opening logo-placement-9 logo-sect=
+ion-middle" d=3D"M62.5013193,14.6280992 C62.4145119,14.6280992 62.3153034,1=
+4.6157025 62.228496,14.5909091 C59.8846966,13.9834711 58.2601583,11.8636364=
+ 58.2601583,9.44628099 C58.2601583,7.02892562 59.8970976,4.90909091 62.2284=
+96,4.30165289 C62.8113456,4.15289256 63.4189974,4.5 63.56781,5.08264463 C63=
+.7166227,5.66528926 63.3693931,6.27272727 62.7865435,6.4214876 C61.4100264,=
+6.78099174 60.4551451,8.02066116 60.4551451,9.44628099 C60.4551451,10.87190=
+08 61.4100264,12.1115702 62.7865435,12.4710744 C63.3693931,12.6198347 63.72=
+90237,13.2272727 63.56781,13.8099174 C63.4437995,14.3057851 62.9973615,14.6=
+280992 62.5013193,14.6280992 Z"></path>
+
+            <!-- bitsofc O de (closing) -->
+            <path class=3D"logo-letter-o-closing logo-placement-10 logo-sec=
+tion-right" d=3D"M65.2791557,14.6280992 C64.7955145,14.6280992 64.3490765,1=
+4.3057851 64.225066,13.8099174 C64.0762533,13.2272727 64.4234828,12.6322314=
+ 65.0063325,12.4710744 C66.3828496,12.1115702 67.3377309,10.8719008 67.3377=
+309,9.44628099 C67.3377309,8.02066116 66.3828496,6.78099174 65.0063325,6.42=
+14876 C64.4234828,6.27272727 64.0638522,5.66528926 64.225066,5.08264463 C64=
+.3738786,4.5 64.9691293,4.15289256 65.5643799,4.30165289 C67.9081794,4.9090=
+9091 69.5327177,7.02892562 69.5327177,9.44628099 C69.5327177,11.8636364 67.=
+8957784,13.9834711 65.5643799,14.5909091 C65.4651715,14.6157025 65.3659631,=
+14.6280992 65.2791557,14.6280992 Z"></path>
+
+            <!-- bitsofco D e -->
+            <path class=3D"logo-letter-d logo-placement-11 logo-section-rig=
+ht" d=3D"M80.8176781,0.123966942 L80.1356201,0.123966942 C79.6023747,0.1239=
+66942 79.3419525,0.384297521 79.3419525,0.917355372 L79.3419525,5.45454545 =
+C78.4366755,4.54958678 77.2957784,4.10330579 75.9192612,4.10330579 C74.9271=
+768,4.10330579 74.0218997,4.35123967 73.2034301,4.83471074 C72.3849604,5.33=
+057851 71.7649077,5.98760331 71.3184697,6.80578512 C70.8720317,7.62396694 7=
+0.6488127,8.51652893 70.6488127,9.49586777 C70.6488127,10.4628099 70.872031=
+7,11.3553719 71.3184697,12.1859504 C71.7649077,13.0041322 72.3973615,13.661=
+157 73.2034301,14.1570248 C74.0094987,14.6528926 74.9147757,14.8884298 75.9=
+192612,14.8884298 C77.2957784,14.8884298 78.4366755,14.4421488 79.3419525,1=
+3.5371901 L79.3419525,13.8595041 C79.3419525,14.392562 79.6023747,14.652892=
+6 80.1356201,14.6528926 L80.8176781,14.6528926 C81.3509235,14.6528926 81.61=
+13456,14.392562 81.6113456,13.8595041 L81.6113456,0.917355372 C81.6113456,0=
+.384297521 81.3509235,0.123966942 80.8176781,0.123966942 Z M79.3419525,10.9=
+958678 C79.0691293,11.5661157 78.6598945,12.0123967 78.1266491,12.3471074 C=
+77.5810026,12.6818182 76.985752,12.8429752 76.316095,12.8429752 C75.3736148=
+,12.8429752 74.5799472,12.5206612 73.9226913,11.8636364 C73.2778364,11.2190=
+083 72.9430079,10.4132231 72.9430079,9.47107438 C72.9430079,8.52892562 73.2=
+654354,7.73553719 73.9226913,7.09090909 C74.5675462,6.44628099 75.3736148,6=
+.11157025 76.316095,6.11157025 C76.9733509,6.11157025 77.5686016,6.28512397=
+ 78.114248,6.61983471 C78.6598945,6.96694215 79.0691293,7.41322314 79.34195=
+25,7.97107438 L79.3419525,10.9958678 Z"></path>
+
+            <!-- bitsofcod E -->
+            <path class=3D"logo-letter-e logo-placement-12 logo-section-rig=
+ht" d=3D"M91.3585752,4.80991736 C90.5401055,4.33884298 89.6100264,4.1033057=
+9 88.5931398,4.10330579 C87.8118734,4.10330579 87.0802111,4.23966942 86.385=
+752,4.52479339 C85.6912929,4.80991736 85.1084433,5.18181818 84.6248021,5.66=
+528926 C84.1411609,6.14876033 83.7567282,6.71900826 83.471504,7.37603306 C8=
+3.1862797,8.03305785 83.0498681,8.73966942 83.0498681,9.48347107 C83.049868=
+1,10.2272727 83.1862797,10.9214876 83.471504,11.5909091 C83.7443272,12.2479=
+339 84.1287599,12.8181818 84.6248021,13.3016529 C85.1208443,13.785124 85.71=
+6095,14.1694215 86.4353562,14.4545455 C87.1546174,14.7396694 87.9234828,14.=
+8760331 88.7667546,14.8760331 C90.3168865,14.8760331 91.6313984,14.4421488 =
+92.7226913,13.5743802 C93.1319261,13.2272727 93.1319261,12.8429752 92.71029=
+02,12.446281 L92.3258575,12.0743802 C91.978628,11.7520661 91.6065963,11.752=
+0661 91.1973615,12.0619835 C90.428496,12.6322314 89.5976253,12.9173554 88.7=
+047493,12.9173554 C87.8614776,12.9173554 87.1174142,12.6694215 86.4973615,1=
+2.161157 C85.8773087,11.6528926 85.505277,11.0082645 85.3688654,10.214876 L=
+93.107124,10.214876 C93.3551451,10.214876 93.5659631,10.1528926 93.7147757,=
+10.0289256 C93.8635884,9.90495868 93.9379947,9.71900826 93.9503958,9.483471=
+07 C93.9627968,9.4338843 93.9627968,9.37190083 93.9627968,9.28512397 C93.96=
+27968,8.34297521 93.7395778,7.47520661 93.2807388,6.69421488 C92.8218997,5.=
+91322314 92.1894459,5.28099174 91.3585752,4.80991736 Z M85.4556728,8.355371=
+9 C85.6664908,7.68595041 86.0633245,7.12809917 86.6461741,6.69421488 C87.22=
+90237,6.26033058 87.8738786,6.04958678 88.5931398,6.04958678 C89.3248021,6.=
+04958678 89.9572559,6.26033058 90.4905013,6.69421488 C91.0237467,7.12809917=
+ 91.3833773,7.67355372 91.5693931,8.3553719 L85.4556728,8.3553719 Z"></path=
+>
+
+        </g>
+    </g>
+</svg>            </a>
+        </h1>
+        <a href=3D"https://bitsofco.de/search" class=3D"site__search__open"=
+>
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=B8=D1=81=D0=BA =
+=D0=BF=D0=BE =D1=81=D0=B0=D0=B9=D1=82=D1=83</font></font></span>
+            <svg width=3D"12px" height=3D"12px" viewBox=3D"0 0 12 12">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" transform=3D"translate(-1089.000000, -28.000000)"=
+ fill=3D"#3C3C3C">
+            <g transform=3D"translate(0.000000, 24.000000)">
+                <path d=3D"M1100.8061,14.9012567 L1098.60862,12.7037702 C10=
+99.36266,11.7342908 1099.77199,10.5709156 1099.77199,9.38599641 C1099.77199=
+,6.41292639 1097.35907,4 1094.386,4 C1091.41293,4 1089,6.41292639 1089,9.38=
+599641 C1089,12.3590664 1091.41293,14.7719928 1094.386,14.7719928 C1095.592=
+46,14.7719928 1096.77738,14.3626571 1097.70377,13.6086176 L1099.90126,15.80=
+61041 C1100.03052,15.935368 1100.18133,16 1100.35368,16 C1100.52603,16 1100=
+.67684,15.935368 1100.8061,15.8061041 C1101.06463,15.5475763 1101.06463,15.=
+1597846 1100.8061,14.9012567 Z M1098.47935,9.40754039 C1098.47935,11.669658=
+9 1096.64811,13.5008977 1094.386,13.5008977 C1092.12388,13.5008977 1090.292=
+64,11.6696589 1090.29264,9.40754039 C1090.29264,7.1454219 1092.12388,5.3141=
+8312 1094.386,5.31418312 C1096.64811,5.31418312 1098.47935,7.1454219 1098.4=
+7935,9.40754039 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>        </a>
+    </div>
+</header>
+
+<div class=3D"dialog dialog--nav" aria-hidden=3D"true">
+    <nav class=3D"site__nav">
+
+        <button type=3D"button" class=3D"anchorButton no-btn focus--theme s=
+ite__nav__close">
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=97=D0=B0=D0=BA=D1=80=D1=8B=
+=D1=82=D1=8C =D0=BD=D0=B0=D0=B2=D0=B8=D0=B3=D0=B0=D1=86=D0=B8=D1=8E</font><=
+/font></span>
+            <svg width=3D"16px" height=3D"16px" viewBox=3D"0 0 16 16">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" transform=3D"translate(-1045.000000, -29.000000)"=
+ fill=3D"#3C3C3C">
+            <path d=3D"M1054.19239,36.7781746 L1059.85504,31.1155243 C1060.=
+2344,30.7361632 1060.23977,30.0976311 1059.84924,29.7071068 C1059.456,29.31=
+38598 1058.82815,29.3139875 1058.44082,29.7013107 L1052.77817,35.363961 L10=
+47.11552,29.7013107 C1046.73616,29.3219497 1046.09763,29.3165825 1045.70711=
+,29.7071068 C1045.31386,30.1003537 1045.31399,30.7282011 1045.70131,31.1155=
+243 L1051.36396,36.7781746 L1045.70131,42.4408249 C1045.32195,42.820186 104=
+5.31658,43.4587181 1045.70711,43.8492424 C1046.10035,44.2424894 1046.7282,4=
+4.2423617 1047.11552,43.8550385 L1052.77817,38.1923882 L1058.44082,43.85503=
+85 C1058.82019,44.2343995 1059.45872,44.2397667 1059.84924,43.8492424 C1060=
+.24249,43.4559954 1060.24236,42.8281481 1059.85504,42.4408249 L1054.19239,3=
+6.7781746 Z"></path>
+        </g>
+    </g>
+</svg>        </button>
+
+        <ul class=3D"nav" role=3D"menu">
+    <li class=3D"nav-home" role=3D"menuitem"><a href=3D"https://bitsofco.de=
+/"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=93=D0=BB=D0=B0=D0=B2=D0=BD=D0=B0=D1=8F</font></font></a></li>
+    <li class=3D"nav-your-saved-articles" role=3D"menuitem"><a href=3D"http=
+s://bitsofco.de/saved/"><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">=D0=92=D0=B0=D1=88=D0=B8 =D1=81=D0=BE=D1=85=
+=D1=80=D0=B0=D0=BD=D0=B5=D0=BD=D0=BD=D1=8B=D0=B5 =D1=81=D1=82=D0=B0=D1=82=
+=D1=8C=D0=B8</font></font></a></li>
+    <li class=3D"nav-subscribe" role=3D"menuitem"><a href=3D"https://bitsof=
+co.de/subscribe"><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">=D0=9F=D0=BE=D0=B4=D0=BF=D0=B8=D1=81=D1=8B=D0=B2=D0=
+=B0=D0=B9=D1=81=D1=8F</font></font></a></li>
+</ul>
+
+
+    </nav>
+</div>
+
+
+
+
+<div class=3D"site__body">
+    <div class=3D"wrapper wrapper--flex">
+        <main class=3D"site__main"><article class=3D"post post-full post ta=
+g-javascript">
+    <header class=3D"post__header m-b-lg">
+        <h1 class=3D"post__title h1"><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=BD=D0=B8=D0=BC=
+=D0=B0=D0=BD=D0=B8=D0=B5 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=
+=D0=BD=D0=BE=D0=B3=D0=BE DOM</font></font></h1>
+        <div class=3D"post__meta">
+            <button type=3D"button" id=3D"save">
+                <span class=3D"icon" aria-hidden=3D"true"><svg width=3D"16p=
+x" height=3D"16px" viewBox=3D"0 0 100 100">
+ <path d=3D"m11.109 11.129c0-3.0781 2.5-5.5742 5.5938-5.5742h66.594c3.0859 =
+0 5.5938 2.4453 5.5938 5.5742v80.172c0 3.0781-1.9844 4.0391-4.3867 2.1758l-=
+30.117-23.352c-2.4219-1.8789-6.3672-1.8633-8.7734 0l-30.117 23.352c-2.4219 =
+1.8789-4.3867 0.95703-4.3867-2.1758z" fill-rule=3D"evenodd"></path>
+</svg></span>
+                <span class=3D"label"><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;">=D0=A1=D0=BE=D1=85=D1=80=D0=B0=
+=D0=BD=D0=B8=D1=82=D1=8C =D1=81=D1=82=D0=B0=D1=82=D1=8C=D1=8E =D0=B4=D0=BB=
+=D1=8F =D0=BE=D1=84=D1=84=D0=BB=D0=B0=D0=B9=D0=BD</font></font></span>
+            </button>
+            <em class=3D"post__meta__date"><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">24 =D0=B4=D0=B5=D0=BA=D0=
+=B0=D0=B1=D1=80=D1=8F 2018 =D0=B3. </font></font></em>
+                <em class=3D"post__meta__tags"><a href=3D"https://bitsofco.=
+de/tag/javascript/"><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">JavaScript</font></font></a></em>
+        </div>
+    </header>
+
+    <div class=3D"post__content p-b-xlg m-b-lg">
+        <div class=3D"kg-card-markdown"><p><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">=D0=9D=D0=B5=D0=B4=D0=B0=
+=D0=B2=D0=BD=D0=BE =D1=8F =D0=BF=D0=B8=D1=81=D0=B0=D0=BB =D0=BE =D1=82=D0=
+=BE=D0=BC, =D1=87=D1=82=D0=BE =D1=82=D0=B0=D0=BA=D0=BE=D0=B5 </font></font>=
+<a href=3D"https://bitsofco.de/what-exactly-is-the-dom/"><font style=3D"ver=
+tical-align: inherit;"><font style=3D"vertical-align: inherit;">DOM</font><=
+/font></a><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;"> =D0=B8 </font><a href=3D"https://bitsofco.de/what-exactly=
+-is-the-dom/"><font style=3D"vertical-align: inherit;">DOM</font></a><font =
+style=3D"vertical-align: inherit;"> - </font></font><a href=3D"https://bits=
+ofco.de/what-is-the-shadow-dom/"><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">=D1=82=D0=B5=D0=BD=D0=B8</font></fo=
+nt></a><font style=3D"vertical-align: inherit;"><font style=3D"vertical-ali=
+gn: inherit;"> =D0=B8 =D1=87=D0=B5=D0=BC =D0=BE=D0=BD=D0=B8 =D0=BE=D1=82=D0=
+=BB=D0=B8=D1=87=D0=B0=D1=8E=D1=82=D1=81=D1=8F. </font><font style=3D"vertic=
+al-align: inherit;">=D0=9D=D0=B0=D0=BF=D0=BE=D0=BC=D0=BD=D0=B8=D0=BC, =D1=
+=87=D1=82=D0=BE =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BD=D0=B0=D1=8F =D0=
+=BC=D0=BE=D0=B4=D0=B5=D0=BB=D1=8C =D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=
+=BD=D1=82=D0=B0 - =D1=8D=D1=82=D0=BE =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=
+=D0=BD=D0=BE=D0=B5 =D0=BF=D1=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=
+=D0=B5=D0=BD=D0=B8=D0=B5 =D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=82=
+=D0=B0 HTML =D0=B8 =D0=B8=D0=BD=D1=82=D0=B5=D1=80=D1=84=D0=B5=D0=B9=D1=81 =
+=D0=B4=D0=BB=D1=8F =D1=83=D0=BF=D1=80=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=
+=D1=8F =D1=8D=D1=82=D0=B8=D0=BC =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BE=
+=D0=BC. </font><font style=3D"vertical-align: inherit;">=D0=A2=D0=B5=D0=BD=
+=D0=B5=D0=B2=D0=BE=D0=B9 DOM =D0=BC=D0=BE=D0=B6=D0=BD=D0=BE =D1=80=D0=B0=D1=
+=81=D1=81=D0=BC=D0=B0=D1=82=D1=80=D0=B8=D0=B2=D0=B0=D1=82=D1=8C =D0=BA=D0=
+=B0=D0=BA =C2=AB=D0=BE=D0=B1=D0=BB=D0=B5=D0=B3=D1=87=D0=B5=D0=BD=D0=BD=D1=
+=83=D1=8E=C2=BB =D0=B2=D0=B5=D1=80=D1=81=D0=B8=D1=8E DOM. </font><font styl=
+e=3D"vertical-align: inherit;">=D0=AD=D1=82=D0=BE =D1=82=D0=B0=D0=BA=D0=B6=
+=D0=B5 =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BD=D0=BE-=D0=BE=D1=80=D0=B8=
+=D0=B5=D0=BD=D1=82=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D0=BD=D0=BD=D0=BE=D0=B5 =
+=D0=BF=D1=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=
+=B5 =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D0=BE=D0=B2 HTML, =D0=BD=D0=
+=BE =D0=BD=D0=B5 =D0=BF=D0=BE=D0=BB=D0=BD=D0=BE=D1=81=D1=82=D1=8C=D1=8E =D0=
+=B0=D0=B2=D1=82=D0=BE=D0=BD=D0=BE=D0=BC=D0=BD=D0=BE=D0=B3=D0=BE =D0=B4=D0=
+=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=82=D0=B0. </font><font style=3D"vertic=
+al-align: inherit;">=D0=92=D0=BC=D0=B5=D1=81=D1=82=D0=BE =D1=8D=D1=82=D0=BE=
+=D0=B3=D0=BE =D1=82=D0=B5=D0=BD=D0=B5=D0=B2=D0=BE=D0=B9 DOM =D0=BF=D0=BE=D0=
+=B7=D0=B2=D0=BE=D0=BB=D1=8F=D0=B5=D1=82 =D0=BD=D0=B0=D0=BC =D1=80=D0=B0=D0=
+=B7=D0=B4=D0=B5=D0=BB=D0=B8=D1=82=D1=8C =D0=BD=D0=B0=D1=88 DOM =D0=BD=D0=B0=
+ =D0=BC=D0=B5=D0=BD=D1=8C=D1=88=D0=B8=D0=B5 =D0=B8=D0=BD=D0=BA=D0=B0=D0=BF=
+=D1=81=D1=83=D0=BB=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D0=BD=D0=BD=D1=8B=D0=B5 =
+=D0=B1=D0=B8=D1=82=D1=8B, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=B5 =D0=BC=
+=D0=BE=D0=B6=D0=BD=D0=BE =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=
+=D0=B2=D0=B0=D1=82=D1=8C =D0=B2 =D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=
+=D1=82=D0=B0=D1=85 HTML.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=95=D1=89=D0=B5 =D0=BE=D0=B4=D0=B8=D0=BD =D0=BF=D0=BE=D1=85=D0=
+=BE=D0=B6=D0=B8=D0=B9 =D1=82=D0=B5=D1=80=D0=BC=D0=B8=D0=BD, =D1=81 =D0=BA=
+=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=BC =D0=B2=D1=8B, =D0=B2=D0=BE=D0=B7=D0=BC=
+=D0=BE=D0=B6=D0=BD=D0=BE, =D1=81=D1=82=D0=B0=D0=BB=D0=BA=D0=B8=D0=B2=D0=B0=
+=D0=BB=D0=B8=D1=81=D1=8C, =D1=8D=D1=82=D0=BE =C2=AB=D0=B2=D0=B8=D1=80=D1=82=
+=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM=C2=BB. </font><font style=3D=
+"vertical-align: inherit;">=D0=A5=D0=BE=D1=82=D1=8F =D1=8D=D1=82=D0=B0 =D0=
+=BA=D0=BE=D0=BD=D1=86=D0=B5=D0=BF=D1=86=D0=B8=D1=8F =D1=81=D1=83=D1=89=D0=
+=B5=D1=81=D1=82=D0=B2=D1=83=D0=B5=D1=82 =D1=83=D0=B6=D0=B5 =D0=BD=D0=B5=D1=
+=81=D0=BA=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =D0=BB=D0=B5=D1=82, =D0=BE=D0=BD=D0=
+=B0 =D1=81=D1=82=D0=B0=D0=BB=D0=B0 =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D0=BF=D0=
+=BE=D0=BF=D1=83=D0=BB=D1=8F=D1=80=D0=BD=D0=BE=D0=B9 =D0=B1=D0=BB=D0=B0=D0=
+=B3=D0=BE=D0=B4=D0=B0=D1=80=D1=8F =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=
+=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=B8=D1=8E =D0=B5=D0=B5 =D0=B2 =D1=81=D1=80=D0=
+=B5=D0=B4=D0=B5 React. </font><font style=3D"vertical-align: inherit;">=D0=
+=92 =D1=8D=D1=82=D0=BE=D0=B9 =D1=81=D1=82=D0=B0=D1=82=D1=8C=D0=B5 =D1=8F =
+=D1=80=D0=B0=D1=81=D1=81=D0=BA=D0=B0=D0=B6=D1=83, =D1=87=D1=82=D0=BE =D1=82=
+=D0=B0=D0=BA=D0=BE=D0=B5 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=
+=D0=BD=D1=8B=D0=B9 DOM, =D1=87=D0=B5=D0=BC =D0=BE=D0=BD =D0=BE=D1=82=D0=BB=
+=D0=B8=D1=87=D0=B0=D0=B5=D1=82=D1=81=D1=8F =D0=BE=D1=82 =D0=B8=D1=81=D1=85=
+=D0=BE=D0=B4=D0=BD=D0=BE=D0=B3=D0=BE DOM =D0=B8 =D0=BA=D0=B0=D0=BA =D0=BE=
+=D0=BD =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D1=83=D0=B5=D1=82=D1=81=
+=D1=8F.</font></font></p>
+<h2 id=3D"whydoweneedavirtualdom"><font style=3D"vertical-align: inherit;">=
+<font style=3D"vertical-align: inherit;">=D0=97=D0=B0=D1=87=D0=B5=D0=BC =D0=
+=BD=D0=B0=D0=BC =D0=BD=D1=83=D0=B6=D0=B5=D0=BD =D0=B2=D0=B8=D1=80=D1=82=D1=
+=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM?</font></font></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=A7=D1=82=D0=BE=D0=B1=D1=8B =D0=BF=D0=BE=D0=BD=D1=8F=D1=82=D1=
+=8C, =D0=BF=D0=BE=D1=87=D0=B5=D0=BC=D1=83 =D0=B2=D0=BE=D0=B7=D0=BD=D0=B8=D0=
+=BA=D0=BB=D0=B0 =D0=BA=D0=BE=D0=BD=D1=86=D0=B5=D0=BF=D1=86=D0=B8=D1=8F =D0=
+=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM, =
+=D0=B4=D0=B0=D0=B2=D0=B0=D0=B9=D1=82=D0=B5 =D0=B2=D0=B5=D1=80=D0=BD=D0=B5=
+=D0=BC=D1=81=D1=8F =D0=BA =D0=B8=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D0=BE=D0=BC=
+=D1=83 DOM. </font><font style=3D"vertical-align: inherit;">=D0=9A=D0=B0=D0=
+=BA =D1=8F =D1=83=D0=B6=D0=B5 =D1=83=D0=BF=D0=BE=D0=BC=D0=B8=D0=BD=D0=B0=D0=
+=BB, =D0=B2 DOM =D0=B5=D1=81=D1=82=D1=8C =D0=B4=D0=B2=D0=B5 =D1=87=D0=B0=D1=
+=81=D1=82=D0=B8 - =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BD=D0=BE=D0=B5 =
+=D0=BF=D1=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=
+=B5 =D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=82=D0=B0 HTML =D0=B8 API =
+=D0=B4=D0=BB=D1=8F =D1=83=D0=BF=D1=80=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=
+=D1=8F =D1=8D=D1=82=D0=B8=D0=BC =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BE=
+=D0=BC.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9D=D0=B0=D0=BF=D1=80=D0=B8=D0=BC=D0=B5=D1=80, =D0=B4=D0=B0=D0=
+=B2=D0=B0=D0=B9=D1=82=D0=B5 =D0=B2=D0=BE=D0=B7=D1=8C=D0=BC=D0=B5=D0=BC =D1=
+=8D=D1=82=D0=BE=D1=82 =D0=BF=D1=80=D0=BE=D1=81=D1=82=D0=BE=D0=B9 HTML-=D0=
+=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=82 =D1=81 =D0=BD=D0=B5=D1=83=D0=
+=BF=D0=BE=D1=80=D1=8F=D0=B4=D0=BE=D1=87=D0=B5=D0=BD=D0=BD=D1=8B=D0=BC =D1=
+=81=D0=BF=D0=B8=D1=81=D0=BA=D0=BE=D0=BC =D0=B8 =D0=BE=D0=B4=D0=BD=D0=B8=D0=
+=BC =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D0=BE=D0=BC =D1=81=D0=BF=D0=
+=B8=D1=81=D0=BA=D0=B0.</font></font></p>
+<pre class=3D" language-html"><code class=3D" language-html"><span class=3D=
+"token doctype">&lt;!doctype html&gt;</span>
+<span class=3D"token tag"><span class=3D"token tag"><span class=3D"token pu=
+nctuation">&lt;</span>html</span> <span class=3D"token attr-name">lang</spa=
+n><span class=3D"token attr-value"><span class=3D"token punctuation">=3D</s=
+pan><span class=3D"token punctuation">"</span>en<span class=3D"token punctu=
+ation">"</span></span><span class=3D"token punctuation">&gt;</span></span>
+ <span class=3D"token tag"><span class=3D"token tag"><span class=3D"token p=
+unctuation">&lt;</span>head</span><span class=3D"token punctuation">&gt;</s=
+pan></span><span class=3D"token tag"><span class=3D"token tag"><span class=
+=3D"token punctuation">&lt;/</span>head</span><span class=3D"token punctuat=
+ion">&gt;</span></span>
+ <span class=3D"token tag"><span class=3D"token tag"><span class=3D"token p=
+unctuation">&lt;</span>body</span><span class=3D"token punctuation">&gt;</s=
+pan></span>
+    <span class=3D"token tag"><span class=3D"token tag"><span class=3D"toke=
+n punctuation">&lt;</span>ul</span> <span class=3D"token attr-name">class</=
+span><span class=3D"token attr-value"><span class=3D"token punctuation">=3D=
+</span><span class=3D"token punctuation">"</span>list<span class=3D"token p=
+unctuation">"</span></span><span class=3D"token punctuation">&gt;</span></s=
+pan>
+        <span class=3D"token tag"><span class=3D"token tag"><span class=3D"=
+token punctuation">&lt;</span>li</span> <span class=3D"token attr-name">cla=
+ss</span><span class=3D"token attr-value"><span class=3D"token punctuation"=
+>=3D</span><span class=3D"token punctuation">"</span>list__item<span class=
+=3D"token punctuation">"</span></span><span class=3D"token punctuation">&gt=
+;</span></span>List item<span class=3D"token tag"><span class=3D"token tag"=
+><span class=3D"token punctuation">&lt;/</span>li</span><span class=3D"toke=
+n punctuation">&gt;</span></span>
+    <span class=3D"token tag"><span class=3D"token tag"><span class=3D"toke=
+n punctuation">&lt;/</span>ul</span><span class=3D"token punctuation">&gt;<=
+/span></span>
+  <span class=3D"token tag"><span class=3D"token tag"><span class=3D"token =
+punctuation">&lt;/</span>body</span><span class=3D"token punctuation">&gt;<=
+/span></span>
+<span class=3D"token tag"><span class=3D"token tag"><span class=3D"token pu=
+nctuation">&lt;/</span>html</span><span class=3D"token punctuation">&gt;</s=
+pan></span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=AD=D1=82=D0=BE=D1=82 =D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=
+=BD=D1=82 =D0=BC=D0=BE=D0=B6=D0=B5=D1=82 =D0=B1=D1=8B=D1=82=D1=8C =D0=BF=D1=
+=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD =D0=B2 =D0=B2=D0=
+=B8=D0=B4=D0=B5 =D1=81=D0=BB=D0=B5=D0=B4=D1=83=D1=8E=D1=89=D0=B5=D0=B3=D0=
+=BE =D0=B4=D0=B5=D1=80=D0=B5=D0=B2=D0=B0 DOM:</font></font></p>
+<ul class=3D"dom-tree">
+  <li>
+    <span><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;">HTML</font></font></span>
+    <ul>
+      <li> <!-- start head -->
+          <span><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">head </font></font><span><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">lang =3D "en"</font>=
+</font></span></span>
+      </li> <!-- end head -->
+      <li> <!-- start body -->
+        <span><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">=D1=82=D0=B5=D0=BB=D0=BE</font></font></span>
+        <ul>
+          <li>
+            <span><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">ul </font></font><span><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">class =3D "=D1=81=D0=
+=BF=D0=B8=D1=81=D0=BE=D0=BA"</font></font></span></span>
+            <ul>
+              <li>
+                <span><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">li </font></font><span><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">class =3D "list=
+__item"</font></font></span></span>
+                <ul>
+                  <li>
+                    <span><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">"=D0=AD=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=
+=82 =D1=81=D0=BF=D0=B8=D1=81=D0=BA=D0=B0"</font></font></span>
+                  </li>
+                </ul>
+              </li> <!-- end li -->
+            </ul>
+          </li> <!-- end ul -->
+        </ul>
+      </li> <!-- end body -->
+    </ul>=20
+  </li> <!-- end html -->
+</ul>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=94=D0=BE=D0=BF=D1=83=D1=81=D1=82=D0=B8=D0=BC, =D0=BC=D1=8B =
+=D1=85=D0=BE=D1=82=D0=B8=D0=BC =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B8=D1=82=
+=D1=8C =D1=81=D0=BE=D0=B4=D0=B5=D1=80=D0=B6=D0=B8=D0=BC=D0=BE=D0=B5 =D0=BF=
+=D0=B5=D1=80=D0=B2=D0=BE=D0=B3=D0=BE =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=
+=D1=82=D0=B0 =D1=81=D0=BF=D0=B8=D1=81=D0=BA=D0=B0, </font></font><code>"Lis=
+t item one"</code><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">=D0=B0 =D1=82=D0=B0=D0=BA=D0=B6=D0=B5 =D0=B4=D0=BE=
+=D0=B1=D0=B0=D0=B2=D0=B8=D1=82=D1=8C =D0=B2=D1=82=D0=BE=D1=80=D0=BE=D0=B9 =
+=D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82 =D1=81=D0=BF=D0=B8=D1=81=D0=BA=
+=D0=B0. </font><font style=3D"vertical-align: inherit;">=D0=94=D0=BB=D1=8F =
+=D1=8D=D1=82=D0=BE=D0=B3=D0=BE =D0=BD=D0=B0=D0=BC =D0=BD=D1=83=D0=B6=D0=BD=
+=D0=BE =D0=B1=D1=83=D0=B4=D0=B5=D1=82 =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=
+=D0=B7=D0=BE=D0=B2=D0=B0=D1=82=D1=8C API DOM, =D1=87=D1=82=D0=BE=D0=B1=D1=
+=8B =D0=BD=D0=B0=D0=B9=D1=82=D0=B8 =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=
+=82=D1=8B, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=B5 =D0=BC=D1=8B =D1=85=
+=D0=BE=D1=82=D0=B8=D0=BC =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C, =
+=D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D1=82=D1=8C =D0=BD=D0=BE=D0=B2=D1=8B=D0=B5 =
+=D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D1=8B, =D0=B4=D0=BE=D0=B1=D0=B0=
+=D0=B2=D0=B8=D1=82=D1=8C =D0=B0=D1=82=D1=80=D0=B8=D0=B1=D1=83=D1=82=D1=8B =
+=D0=B8 =D0=BA=D0=BE=D0=BD=D1=82=D0=B5=D0=BD=D1=82, =D0=B0 =D0=B7=D0=B0=D1=
+=82=D0=B5=D0=BC, =D0=BD=D0=B0=D0=BA=D0=BE=D0=BD=D0=B5=D1=86, =D0=BE=D0=B1=
+=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C =D1=81=D0=B0=D0=BC=D0=B8 =D1=8D=D0=BB=
+=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D1=8B DOM.</font></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> listItemOne <span class=3D"token operator">=3D</sp=
+an> document<span class=3D"token punctuation">.</span><span class=3D"token =
+function">getElementsByClassName</span><span class=3D"token punctuation">(<=
+/span><span class=3D"token string">"list__item"</span><span class=3D"token =
+punctuation">)</span><span class=3D"token punctuation">[</span><span class=
+=3D"token number">0</span><span class=3D"token punctuation">]</span><span c=
+lass=3D"token punctuation">;</span>
+listItemOne<span class=3D"token punctuation">.</span>textContent <span clas=
+s=3D"token operator">=3D</span> <span class=3D"token string">"List item one=
+"</span><span class=3D"token punctuation">;</span><font></font>
+<font></font>
+<span class=3D"token keyword">const</span> list <span class=3D"token operat=
+or">=3D</span> document<span class=3D"token punctuation">.</span><span clas=
+s=3D"token function">getElementsByClassName</span><span class=3D"token punc=
+tuation">(</span><span class=3D"token string">"list"</span><span class=3D"t=
+oken punctuation">)</span><span class=3D"token punctuation">[</span><span c=
+lass=3D"token number">0</span><span class=3D"token punctuation">]</span><sp=
+an class=3D"token punctuation">;</span>
+<span class=3D"token keyword">const</span> listItemTwo <span class=3D"token=
+ operator">=3D</span> document<span class=3D"token punctuation">.</span><sp=
+an class=3D"token function">createElement</span><span class=3D"token punctu=
+ation">(</span><span class=3D"token string">"li"</span><span class=3D"token=
+ punctuation">)</span><span class=3D"token punctuation">;</span>
+listItemTwo<span class=3D"token punctuation">.</span>classList<span class=
+=3D"token punctuation">.</span><span class=3D"token function">add</span><sp=
+an class=3D"token punctuation">(</span><span class=3D"token string">"list__=
+item"</span><span class=3D"token punctuation">)</span><span class=3D"token =
+punctuation">;</span>
+listItemTwo<span class=3D"token punctuation">.</span>textContent <span clas=
+s=3D"token operator">=3D</span> <span class=3D"token string">"List item two=
+"</span><span class=3D"token punctuation">;</span>
+list<span class=3D"token punctuation">.</span><span class=3D"token function=
+">appendChild</span><span class=3D"token punctuation">(</span>listItemTwo<s=
+pan class=3D"token punctuation">)</span><span class=3D"token punctuation">;=
+</span>
+</code></pre>
+<h3 id=3D"thedomwasntmadeforthis"><font style=3D"vertical-align: inherit;">=
+<font style=3D"vertical-align: inherit;">DOM =D0=BD=D0=B5 =D0=B1=D1=8B=D0=
+=BB =D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=BD =D0=B4=D0=BB=D1=8F =D1=8D=D1=82=D0=
+=BE=D0=B3=D0=BE ...</font></font></h3>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9A=D0=BE=D0=B3=D0=B4=D0=B0 </font><font style=3D"vertical-ali=
+gn: inherit;">  =D0=B2 1998 =D0=B3=D0=BE=D0=B4=D1=83 =D0=B1=D1=8B=D0=BB=D0=
+=B0 =D0=B2=D1=8B=D0=BF=D1=83=D1=89=D0=B5=D0=BD=D0=B0 </font></font><a href=
+=3D"https://www.w3.org/TR/REC-DOM-Level-1/"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">=D0=BF=D0=B5=D1=80=D0=B2=
+=D0=B0=D1=8F =D1=81=D0=BF=D0=B5=D1=86=D0=B8=D1=84=D0=B8=D0=BA=D0=B0=D1=86=
+=D0=B8=D1=8F =D0=B4=D0=BB=D1=8F DOM</font></font></a><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;"> , =D0=BC=D1=8B=
+ =D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=B2=D0=B0=D0=BB=D0=B8 =D0=B8 =D1=83=D0=BF=
+=D1=80=D0=B0=D0=B2=D0=BB=D1=8F=D0=BB=D0=B8 =D0=B2=D0=B5=D0=B1-=D1=81=D1=82=
+=D1=80=D0=B0=D0=BD=D0=B8=D1=86=D0=B0=D0=BC=D0=B8 =D0=BF=D0=BE-=D1=80=D0=B0=
+=D0=B7=D0=BD=D0=BE=D0=BC=D1=83. </font><font style=3D"vertical-align: inher=
+it;">API DOM =D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=B2=D0=B0=D0=BB=D0=B8 =D0=B8 =
+=D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D1=8F=D0=BB=D0=B8 =D1=81=D0=BE=D0=B4=
+=D0=B5=D1=80=D0=B6=D0=B8=D0=BC=D0=BE=D0=B5 =D1=81=D1=82=D1=80=D0=B0=D0=BD=
+=D0=B8=D1=86=D1=8B =D0=B3=D0=BE=D1=80=D0=B0=D0=B7=D0=B4=D0=BE =D1=80=D0=B5=
+=D0=B6=D0=B5, =D1=87=D0=B5=D0=BC =D0=BC=D1=8B =D0=B4=D0=B5=D0=BB=D0=B0=D0=
+=B5=D0=BC =D1=81=D0=B5=D0=B3=D0=BE=D0=B4=D0=BD=D1=8F.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9F=D1=80=D0=BE=D1=81=D1=82=D1=8B=D0=B5 =D0=BC=D0=B5=D1=82=D0=
+=BE=D0=B4=D1=8B, =D1=82=D0=B0=D0=BA=D0=B8=D0=B5 =D0=BA=D0=B0=D0=BA, </font>=
+</font><code>document.getElementsByClassName()</code><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=BC=D0=BE=D0=
+=B6=D0=BD=D0=BE =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=
+=B0=D1=82=D1=8C =D0=B2 =D0=BD=D0=B5=D0=B1=D0=BE=D0=BB=D1=8C=D1=88=D0=B8=D1=
+=85 =D0=BC=D0=B0=D1=81=D1=88=D1=82=D0=B0=D0=B1=D0=B0=D1=85, =D0=BD=D0=BE =
+=D0=B5=D1=81=D0=BB=D0=B8 =D0=BC=D1=8B =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=
+=D1=8F=D0=B5=D0=BC =D0=BD=D0=B5=D1=81=D0=BA=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =
+=D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D0=BE=D0=B2 =D0=BD=D0=B0 =D1=81=
+=D1=82=D1=80=D0=B0=D0=BD=D0=B8=D1=86=D0=B5 =D0=BA=D0=B0=D0=B6=D0=B4=D1=8B=
+=D0=B5 =D0=BD=D0=B5=D1=81=D0=BA=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =D1=81=D0=B5=
+=D0=BA=D1=83=D0=BD=D0=B4, =D1=8D=D1=82=D0=BE =D0=BC=D0=BE=D0=B6=D0=B5=D1=82=
+ =D1=81=D1=82=D0=B0=D1=82=D1=8C =D0=BE=D1=87=D0=B5=D0=BD=D1=8C =D0=B4=D0=BE=
+=D1=80=D0=BE=D0=B3=D0=B8=D0=BC, =D1=87=D1=82=D0=BE=D0=B1=D1=8B =D0=BF=D0=BE=
+=D1=81=D1=82=D0=BE=D1=8F=D0=BD=D0=BD=D0=BE =D0=B7=D0=B0=D0=BF=D1=80=D0=B0=
+=D1=88=D0=B8=D0=B2=D0=B0=D1=82=D1=8C =D0=B8 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=
+=D0=BB=D1=8F=D1=82=D1=8C DOM.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=91=D0=BE=D0=BB=D0=B5=D0=B5 =D1=82=D0=BE=D0=B3=D0=BE, =D0=B8=
+=D0=B7-=D0=B7=D0=B0 =D1=81=D0=BF=D0=BE=D1=81=D0=BE=D0=B1=D0=B0 =D0=BD=D0=B0=
+=D1=81=D1=82=D1=80=D0=BE=D0=B9=D0=BA=D0=B8 API-=D0=B8=D0=BD=D1=82=D0=B5=D1=
+=80=D1=84=D0=B5=D0=B9=D1=81=D0=BE=D0=B2 =D0=BE=D0=B1=D1=8B=D1=87=D0=BD=D0=
+=BE =D0=BF=D1=80=D0=BE=D1=89=D0=B5 =D0=B2=D1=8B=D0=BF=D0=BE=D0=BB=D0=BD=D1=
+=8F=D1=82=D1=8C =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D0=B4=D0=BE=D1=80=D0=BE=D0=
+=B3=D0=BE=D1=81=D1=82=D0=BE=D1=8F=D1=89=D0=B8=D0=B5 =D0=BE=D0=BF=D0=B5=D1=
+=80=D0=B0=D1=86=D0=B8=D0=B8, =D0=BA=D0=BE=D0=B3=D0=B4=D0=B0 =D0=BC=D1=8B =
+=D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D1=8F=D0=B5=D0=BC =D0=B1=D0=BE=D0=BB=
+=D1=8C=D1=88=D0=B8=D0=B5 =D1=87=D0=B0=D1=81=D1=82=D0=B8 =D0=B4=D0=BE=D0=BA=
+=D1=83=D0=BC=D0=B5=D0=BD=D1=82=D0=B0, =D1=87=D0=B5=D0=BC =D0=BD=D0=B0=D1=85=
+=D0=BE=D0=B4=D0=B8=D1=82=D1=8C =D0=B8 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=
+=D1=8F=D1=82=D1=8C =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D1=8B=
+=D0=B5 =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D1=8B. </font><font style=
+=3D"vertical-align: inherit;">=D0=92=D0=BE=D0=B7=D0=B2=D1=80=D0=B0=D1=89=D0=
+=B0=D1=8F=D1=81=D1=8C =D0=BA =D0=BD=D0=B0=D1=88=D0=B5=D0=BC=D1=83 =D0=BF=D1=
+=80=D0=B8=D0=BC=D0=B5=D1=80=D1=83 =D1=81=D0=BE =D1=81=D0=BF=D0=B8=D1=81=D0=
+=BA=D0=BE=D0=BC, =D0=B2 =D0=BD=D0=B5=D0=BA=D0=BE=D1=82=D0=BE=D1=80=D0=BE=D0=
+=BC =D1=81=D0=BC=D1=8B=D1=81=D0=BB=D0=B5 =D0=BF=D1=80=D0=BE=D1=89=D0=B5 =D0=
+=B7=D0=B0=D0=BC=D0=B5=D0=BD=D0=B8=D1=82=D1=8C =D0=B2=D0=B5=D1=81=D1=8C =D0=
+=BD=D0=B5=D1=83=D0=BF=D0=BE=D1=80=D1=8F=D0=B4=D0=BE=D1=87=D0=B5=D0=BD=D0=BD=
+=D1=8B=D0=B9 =D1=81=D0=BF=D0=B8=D1=81=D0=BE=D0=BA =D0=BD=D0=BE=D0=B2=D1=8B=
+=D0=BC, =D1=87=D0=B5=D0=BC =D0=BC=D0=BE=D0=B4=D0=B8=D1=84=D0=B8=D1=86=D0=B8=
+=D1=80=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D0=BE=D0=BF=D1=80=D0=B5=D0=B4=D0=B5=
+=D0=BB=D0=B5=D0=BD=D0=BD=D1=8B=D0=B5 =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=
+=D1=82=D1=8B.</font></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> list <span class=3D"token operator">=3D</span> doc=
+ument<span class=3D"token punctuation">.</span><span class=3D"token functio=
+n">getElementsByClassName</span><span class=3D"token punctuation">(</span><=
+span class=3D"token string">"list"</span><span class=3D"token punctuation">=
+)</span><span class=3D"token punctuation">[</span><span class=3D"token numb=
+er">0</span><span class=3D"token punctuation">]</span><span class=3D"token =
+punctuation">;</span>
+list<span class=3D"token punctuation">.</span>innerHTML <span class=3D"toke=
+n operator">=3D</span> <span class=3D"token template-string"><span class=3D=
+"token string">`
+&lt;li class=3D"list__item"&gt;List item one&lt;/li&gt;
+&lt;li class=3D"list__item"&gt;List item two&lt;/li&gt;
+`</span></span><span class=3D"token punctuation">;</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=92 =D1=8D=D1=82=D0=BE=D0=BC =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=
+=B5=D1=82=D0=BD=D0=BE=D0=BC =D0=BF=D1=80=D0=B8=D0=BC=D0=B5=D1=80=D0=B5 =D1=
+=80=D0=B0=D0=B7=D0=BD=D0=B8=D1=86=D0=B0 =D0=B2 =D0=BF=D1=80=D0=BE=D0=B8=D0=
+=B7=D0=B2=D0=BE=D0=B4=D0=B8=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D0=BE=D1=81=D1=82=
+=D0=B8 =D0=BC=D0=B5=D0=B6=D0=B4=D1=83 =D0=BC=D0=B5=D1=82=D0=BE=D0=B4=D0=B0=
+=D0=BC=D0=B8, =D0=B2=D0=B5=D1=80=D0=BE=D1=8F=D1=82=D0=BD=D0=BE, =D0=BD=D0=
+=B5=D0=B7=D0=BD=D0=B0=D1=87=D0=B8=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D0=B0. </fo=
+nt><font style=3D"vertical-align: inherit;">=D0=9E=D0=B4=D0=BD=D0=B0=D0=BA=
+=D0=BE =D0=BF=D0=BE =D0=BC=D0=B5=D1=80=D0=B5 =D1=80=D0=BE=D1=81=D1=82=D0=B0=
+ =D1=80=D0=B0=D0=B7=D0=BC=D0=B5=D1=80=D0=B0 =D0=B2=D0=B5=D0=B1-=D1=81=D1=82=
+=D1=80=D0=B0=D0=BD=D0=B8=D1=86=D1=8B =D1=81=D1=82=D0=B0=D0=BD=D0=BE=D0=B2=
+=D0=B8=D1=82=D1=81=D1=8F =D0=B2=D1=81=D0=B5 =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =
+=D0=B2=D0=B0=D0=B6=D0=BD=D1=8B=D0=BC =D0=B2=D1=8B=D0=B1=D0=B8=D1=80=D0=B0=
+=D1=82=D1=8C =D0=B8 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D1=8F=D1=82=D1=8C =
+=D1=82=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =D1=82=D0=BE, =D1=87=D1=82=D0=BE =D0=
+=BD=D0=B5=D0=BE=D0=B1=D1=85=D0=BE=D0=B4=D0=B8=D0=BC=D0=BE.</font></font></p=
+>
+<h3 id=3D"butthevirtualdomwas"><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">... =D0=BD=D0=BE =D0=B2=D0=B8=D1=80=
+=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM =D0=B1=D1=8B=D0=BB!</f=
+ont></font></h3>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=92=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=
+=B9 DOM =D0=B1=D1=8B=D0=BB =D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=BD =D0=B4=D0=
+=BB=D1=8F =D1=80=D0=B5=D1=88=D0=B5=D0=BD=D0=B8=D1=8F =D1=8D=D1=82=D0=B8=D1=
+=85 =D0=BF=D1=80=D0=BE=D0=B1=D0=BB=D0=B5=D0=BC, =D1=81=D0=B2=D1=8F=D0=B7=D0=
+=B0=D0=BD=D0=BD=D1=8B=D1=85 =D1=81 =D0=BD=D0=B5=D0=BE=D0=B1=D1=85=D0=BE=D0=
+=B4=D0=B8=D0=BC=D0=BE=D1=81=D1=82=D1=8C=D1=8E =D1=87=D0=B0=D1=81=D1=82=D0=
+=BE=D0=B3=D0=BE =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D1=
+=8F DOM =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D0=BF=D1=80=D0=BE=D0=B8=D0=B7=D0=B2=
+=D0=BE=D0=B4=D0=B8=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D1=8B=D0=BC =D1=81=D0=BF=
+=D0=BE=D1=81=D0=BE=D0=B1=D0=BE=D0=BC. </font><font style=3D"vertical-align:=
+ inherit;">=D0=92 =D0=BE=D1=82=D0=BB=D0=B8=D1=87=D0=B8=D0=B5 =D0=BE=D1=82 D=
+OM =D0=B8=D0=BB=D0=B8 =D1=82=D0=B5=D0=BD=D0=B5=D0=B2=D0=BE=D0=B3=D0=BE DOM,=
+ =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM =D0=
+=BD=D0=B5 =D1=8F=D0=B2=D0=BB=D1=8F=D0=B5=D1=82=D1=81=D1=8F =D0=BE=D1=84=D0=
+=B8=D1=86=D0=B8=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B9 =D1=81=D0=BF=D0=B5=D1=
+=86=D0=B8=D1=84=D0=B8=D0=BA=D0=B0=D1=86=D0=B8=D0=B5=D0=B9, =D0=B0 =D0=BF=D1=
+=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D1=8F=D0=B5=D1=82 =D1=81=D0=
+=BE=D0=B1=D0=BE=D0=B9 =D0=BD=D0=BE=D0=B2=D1=8B=D0=B9 =D0=BC=D0=B5=D1=82=D0=
+=BE=D0=B4 =D0=B2=D0=B7=D0=B0=D0=B8=D0=BC=D0=BE=D0=B4=D0=B5=D0=B9=D1=81=D1=
+=82=D0=B2=D0=B8=D1=8F =D1=81 DOM.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=92=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=
+=B9 DOM =D0=BC=D0=BE=D0=B6=D0=B5=D1=82 =D1=80=D0=B0=D1=81=D1=81=D0=BC=D0=B0=
+=D1=82=D1=80=D0=B8=D0=B2=D0=B0=D1=82=D1=8C=D1=81=D1=8F =D0=BA=D0=B0=D0=BA =
+=D0=BA=D0=BE=D0=BF=D0=B8=D1=8F =D0=B8=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D0=BE=
+=D0=B3=D0=BE DOM. </font><font style=3D"vertical-align: inherit;">=D0=AD=D1=
+=82=D0=BE=D0=B9 =D0=BA=D0=BE=D0=BF=D0=B8=D0=B5=D0=B9 =D0=BC=D0=BE=D0=B6=D0=
+=BD=D0=BE =D1=87=D0=B0=D1=81=D1=82=D0=BE =D0=BC=D0=B0=D0=BD=D0=B8=D0=BF=D1=
+=83=D0=BB=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D0=B8 =D0=BE=D0=B1=D0=
+=BD=D0=BE=D0=B2=D0=BB=D1=8F=D1=82=D1=8C, =D0=BD=D0=B5 =D0=B8=D1=81=D0=BF=D0=
+=BE=D0=BB=D1=8C=D0=B7=D1=83=D1=8F API DOM. </font><font style=3D"vertical-a=
+lign: inherit;">=D0=9F=D0=BE=D1=81=D0=BB=D0=B5 =D1=82=D0=BE=D0=B3=D0=BE =D0=
+=BA=D0=B0=D0=BA =D0=B2=D1=81=D0=B5 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=
+=B5=D0=BD=D0=B8=D1=8F =D0=B1=D1=8B=D0=BB=D0=B8 =D0=B2=D0=BD=D0=B5=D1=81=D0=
+=B5=D0=BD=D1=8B =D0=B2 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=
+=BD=D1=8B=D0=B9 DOM, =D0=BC=D1=8B =D0=BC=D0=BE=D0=B6=D0=B5=D0=BC =D0=BF=D0=
+=BE=D1=81=D0=BC=D0=BE=D1=82=D1=80=D0=B5=D1=82=D1=8C, =D0=BA=D0=B0=D0=BA=D0=
+=B8=D0=B5 =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D0=
+=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F =D0=BD=D0=B5=D0=BE=D0=
+=B1=D1=85=D0=BE=D0=B4=D0=B8=D0=BC=D0=BE =D0=B2=D0=BD=D0=B5=D1=81=D1=82=D0=
+=B8 =D0=B2 =D0=B8=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=B9 DOM, =D0=B8 =D1=
+=81=D0=B4=D0=B5=D0=BB=D0=B0=D1=82=D1=8C =D0=B8=D1=85 =D1=86=D0=B5=D0=BB=D0=
+=B5=D0=B2=D1=8B=D0=BC =D0=B8 =D0=BE=D0=BF=D1=82=D0=B8=D0=BC=D0=B8=D0=B7=D0=
+=B8=D1=80=D0=BE=D0=B2=D0=B0=D0=BD=D0=BD=D1=8B=D0=BC =D1=81=D0=BF=D0=BE=D1=
+=81=D0=BE=D0=B1=D0=BE=D0=BC.</font></font></p>
+<h2 id=3D"whatdoesavirtualdomlooklike"><font style=3D"vertical-align: inher=
+it;"><font style=3D"vertical-align: inherit;">=D0=9A=D0=B0=D0=BA =D0=B2=D1=
+=8B=D0=B3=D0=BB=D1=8F=D0=B4=D0=B8=D1=82 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=
+=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM?</font></font></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9D=D0=B0=D0=B7=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5 =C2=AB=D0=B2=D0=
+=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM=C2=BB =D0=B8=
+=D0=BC=D0=B5=D0=B5=D1=82 =D1=82=D0=B5=D0=BD=D0=B4=D0=B5=D0=BD=D1=86=D0=B8=
+=D1=8E =D0=B4=D0=BE=D0=B1=D0=B0=D0=B2=D0=BB=D1=8F=D1=82=D1=8C =D0=BA =D0=B7=
+=D0=B0=D0=B3=D0=B0=D0=B4=D0=BA=D0=B5 =D1=82=D0=BE=D0=B3=D0=BE, =D1=87=D1=82=
+=D0=BE =D0=BD=D0=B0 =D1=81=D0=B0=D0=BC=D0=BE=D0=BC =D0=B4=D0=B5=D0=BB=D0=B5=
+ =D0=BF=D1=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D1=8F=D0=B5=D1=82 =
+=D1=81=D0=BE=D0=B1=D0=BE=D0=B9 =D0=BA=D0=BE=D0=BD=D1=86=D0=B5=D0=BF=D1=86=
+=D0=B8=D1=8F. </font><font style=3D"vertical-align: inherit;">=D0=A4=D0=B0=
+=D0=BA=D1=82=D0=B8=D1=87=D0=B5=D1=81=D0=BA=D0=B8, =D0=B2=D0=B8=D1=80=D1=82=
+=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM - =D1=8D=D1=82=D0=BE =D0=BF=
+=D1=80=D0=BE=D1=81=D1=82=D0=BE =D0=BE=D0=B1=D1=8B=D1=87=D0=BD=D1=8B=D0=B9 =
+=D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82 Javascript.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=94=D0=B0=D0=B2=D0=B0=D0=B9=D1=82=D0=B5 =D0=B2=D0=B5=D1=80=D0=
+=BD=D0=B5=D0=BC=D1=81=D1=8F =D0=BA =D0=B4=D0=B5=D1=80=D0=B5=D0=B2=D1=83 DOM=
+, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D0=BE=D0=B5 =D0=BC=D1=8B =D1=81=D0=BE=D0=
+=B7=D0=B4=D0=B0=D0=BB=D0=B8 =D1=80=D0=B0=D0=BD=D0=B5=D0=B5:</font></font></=
+p>
+<ul class=3D"dom-tree">
+  <li>
+    <span><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;">HTML</font></font></span>
+    <ul>
+      <li> <!-- start head -->
+          <span><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">head </font></font><span><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">lang =3D "en"</font>=
+</font></span></span>
+      </li> <!-- end head -->
+      <li> <!-- start body -->
+        <span><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">=D1=82=D0=B5=D0=BB=D0=BE</font></font></span>
+        <ul>
+          <li>
+            <span><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">ul </font></font><span><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">class =3D "=D1=81=D0=
+=BF=D0=B8=D1=81=D0=BE=D0=BA"</font></font></span></span>
+            <ul>
+              <li>
+                <span><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">li </font></font><span><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">class =3D "list=
+__item"</font></font></span></span>
+                <ul>
+                  <li>
+                    <span><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">"=D0=AD=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=
+=82 =D1=81=D0=BF=D0=B8=D1=81=D0=BA=D0=B0"</font></font></span>
+                  </li>
+                </ul>
+              </li> <!-- end li -->
+            </ul>
+          </li> <!-- end ul -->
+        </ul>
+      </li> <!-- end body -->
+    </ul>=20
+  </li> <!-- end html -->
+</ul>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=AD=D1=82=D0=BE =D0=B4=D0=B5=D1=80=D0=B5=D0=B2=D0=BE =D1=82=D0=
+=B0=D0=BA=D0=B6=D0=B5 =D0=BC=D0=BE=D0=B6=D0=B5=D1=82 =D0=B1=D1=8B=D1=82=D1=
+=8C =D0=BF=D1=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=
+=BE =D0=BA=D0=B0=D0=BA =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82 Javascript.</fo=
+nt></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> vdom <span class=3D"token operator">=3D</span> <sp=
+an class=3D"token punctuation">{</span>
+    tagName<span class=3D"token punctuation">:</span> <span class=3D"token =
+string">"html"</span><span class=3D"token punctuation">,</span>
+    children<span class=3D"token punctuation">:</span> <span class=3D"token=
+ punctuation">[</span>
+        <span class=3D"token punctuation">{</span> tagName<span class=3D"to=
+ken punctuation">:</span> <span class=3D"token string">"head"</span> <span =
+class=3D"token punctuation">}</span><span class=3D"token punctuation">,</sp=
+an>
+        <span class=3D"token punctuation">{</span>
+            tagName<span class=3D"token punctuation">:</span> <span class=
+=3D"token string">"body"</span><span class=3D"token punctuation">,</span>
+            children<span class=3D"token punctuation">:</span> <span class=
+=3D"token punctuation">[</span>
+                <span class=3D"token punctuation">{</span>
+                    tagName<span class=3D"token punctuation">:</span> <span=
+ class=3D"token string">"ul"</span><span class=3D"token punctuation">,</spa=
+n>
+                    attributes<span class=3D"token punctuation">:</span> <s=
+pan class=3D"token punctuation">{</span> <span class=3D"token string">"clas=
+s"</span><span class=3D"token punctuation">:</span> <span class=3D"token st=
+ring">"list"</span> <span class=3D"token punctuation">}</span><span class=
+=3D"token punctuation">,</span>
+                    children<span class=3D"token punctuation">:</span> <spa=
+n class=3D"token punctuation">[</span>
+                        <span class=3D"token punctuation">{</span>
+                            tagName<span class=3D"token punctuation">:</spa=
+n> <span class=3D"token string">"li"</span><span class=3D"token punctuation=
+">,</span>
+                            attributes<span class=3D"token punctuation">:</=
+span> <span class=3D"token punctuation">{</span> <span class=3D"token strin=
+g">"class"</span><span class=3D"token punctuation">:</span> <span class=3D"=
+token string">"list__item"</span> <span class=3D"token punctuation">}</span=
+><span class=3D"token punctuation">,</span>
+                            textContent<span class=3D"token punctuation">:<=
+/span> <span class=3D"token string">"List item"</span>
+                        <span class=3D"token punctuation">}</span> <span cl=
+ass=3D"token comment" spellcheck=3D"true">// end li</span>
+                    <span class=3D"token punctuation">]</span>
+                <span class=3D"token punctuation">}</span> <span class=3D"t=
+oken comment" spellcheck=3D"true">// end ul</span>
+            <span class=3D"token punctuation">]</span>
+        <span class=3D"token punctuation">}</span> <span class=3D"token com=
+ment" spellcheck=3D"true">// end body</span>
+    <span class=3D"token punctuation">]</span>
+<span class=3D"token punctuation">}</span> <span class=3D"token comment" sp=
+ellcheck=3D"true">// end html</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9C=D1=8B =D0=BC=D0=BE=D0=B6=D0=B5=D0=BC =D0=B4=D1=83=D0=BC=D0=
+=B0=D1=82=D1=8C =D0=BE=D0=B1 =D1=8D=D1=82=D0=BE=D0=BC =D0=BE=D0=B1=D1=8A=D0=
+=B5=D0=BA=D1=82=D0=B5 =D0=BA=D0=B0=D0=BA =D0=BE =D0=BD=D0=B0=D1=88=D0=B5=D0=
+=BC =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=BC DOM.=
+ </font><font style=3D"vertical-align: inherit;">=D0=9A=D0=B0=D0=BA =D0=B8 =
+=D0=B8=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=B9 DOM, =D1=8D=D1=82=D0=BE =
+=D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BD=D0=BE=D0=B5 =D0=BF=D1=80=D0=B5=
+=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=B5 =D0=BD=D0=B0=
+=D1=88=D0=B5=D0=B3=D0=BE HTML-=D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=
+=82=D0=B0. </font><font style=3D"vertical-align: inherit;">=D0=9D=D0=BE =D1=
+=82=D0=B0=D0=BA =D0=BA=D0=B0=D0=BA =D1=8D=D1=82=D0=BE =D0=BF=D1=80=D0=BE=D1=
+=81=D1=82=D0=BE=D0=B9 =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82 Javascript, =D0=
+=BC=D1=8B =D0=BC=D0=BE=D0=B6=D0=B5=D0=BC =D1=81=D0=B2=D0=BE=D0=B1=D0=BE=D0=
+=B4=D0=BD=D0=BE =D0=B8 =D1=87=D0=B0=D1=81=D1=82=D0=BE =D0=BC=D0=B0=D0=BD=D0=
+=B8=D0=BF=D1=83=D0=BB=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D0=B8=D0=
+=BC, =D0=BD=D0=B5 =D0=BA=D0=B0=D1=81=D0=B0=D1=8F=D1=81=D1=8C =D1=80=D0=B5=
+=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM, =D0=BF=D0=BE=D0=BA=D0=B0 =
+=D0=BD=D0=B0=D0=BC =D1=8D=D1=82=D0=BE =D0=BD=D0=B5 =D0=BF=D0=BE=D0=BD=D0=B0=
+=D0=B4=D0=BE=D0=B1=D0=B8=D1=82=D1=81=D1=8F.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=92=D0=BC=D0=B5=D1=81=D1=82=D0=BE =D1=82=D0=BE=D0=B3=D0=BE, =
+=D1=87=D1=82=D0=BE=D0=B1=D1=8B =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=
+=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D0=BE=D0=B4=D0=B8=D0=BD =D0=BE=D0=B1=D1=8A=
+=D0=B5=D0=BA=D1=82 =D0=B4=D0=BB=D1=8F =D0=B2=D1=81=D0=B5=D0=B3=D0=BE =D0=BE=
+=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=B0, =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D1=80=
+=D0=B0=D1=81=D0=BF=D1=80=D0=BE=D1=81=D1=82=D1=80=D0=B0=D0=BD=D0=B5=D0=BD=D0=
+=BD=D0=BE=D0=B9 =D1=8F=D0=B2=D0=BB=D1=8F=D0=B5=D1=82=D1=81=D1=8F =D1=80=D0=
+=B0=D0=B1=D0=BE=D1=82=D0=B0 =D1=81 =D0=BD=D0=B5=D0=B1=D0=BE=D0=BB=D1=8C=D1=
+=88=D0=B8=D0=BC=D0=B8 =D1=80=D0=B0=D0=B7=D0=B4=D0=B5=D0=BB=D0=B0=D0=BC=D0=
+=B8 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=
+=BE DOM. </font><font style=3D"vertical-align: inherit;">=D0=9D=D0=B0=D0=BF=
+=D1=80=D0=B8=D0=BC=D0=B5=D1=80, =D0=BC=D1=8B =D0=BC=D0=BE=D0=B6=D0=B5=D0=BC=
+ =D1=80=D0=B0=D0=B1=D0=BE=D1=82=D0=B0=D1=82=D1=8C =D1=81 </font></font><cod=
+e>list</code><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;">=D0=BA=D0=BE=D0=BC=D0=BF=D0=BE=D0=BD=D0=B5=D0=BD=D1=82=
+=D0=BE=D0=BC, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=B9 =D0=B1=D1=83=D0=B4=
+=D0=B5=D1=82 =D0=BF=D1=80=D0=B8=D0=B2=D1=8F=D0=B7=D0=B0=D0=BD =D0=BA =D0=BD=
+=D0=B0=D1=88=D0=B5=D0=BC=D1=83 =D0=BD=D0=B5=D1=83=D0=BF=D0=BE=D1=80=D1=8F=
+=D0=B4=D0=BE=D1=87=D0=B5=D0=BD=D0=BD=D0=BE=D0=BC=D1=83 =D1=8D=D0=BB=D0=B5=
+=D0=BC=D0=B5=D0=BD=D1=82=D1=83 =D1=81=D0=BF=D0=B8=D1=81=D0=BA=D0=B0.</font>=
+</font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> list <span class=3D"token operator">=3D</span> <sp=
+an class=3D"token punctuation">{</span>
+    tagName<span class=3D"token punctuation">:</span> <span class=3D"token =
+string">"ul"</span><span class=3D"token punctuation">,</span>
+    attributes<span class=3D"token punctuation">:</span> <span class=3D"tok=
+en punctuation">{</span> <span class=3D"token string">"class"</span><span c=
+lass=3D"token punctuation">:</span> <span class=3D"token string">"list"</sp=
+an> <span class=3D"token punctuation">}</span><span class=3D"token punctuat=
+ion">,</span>
+    children<span class=3D"token punctuation">:</span> <span class=3D"token=
+ punctuation">[</span>
+        <span class=3D"token punctuation">{</span>
+            tagName<span class=3D"token punctuation">:</span> <span class=
+=3D"token string">"li"</span><span class=3D"token punctuation">,</span>
+            attributes<span class=3D"token punctuation">:</span> <span clas=
+s=3D"token punctuation">{</span> <span class=3D"token string">"class"</span=
+><span class=3D"token punctuation">:</span> <span class=3D"token string">"l=
+ist__item"</span> <span class=3D"token punctuation">}</span><span class=3D"=
+token punctuation">,</span>
+            textContent<span class=3D"token punctuation">:</span> <span cla=
+ss=3D"token string">"List item"</span>
+        <span class=3D"token punctuation">}</span>
+    <span class=3D"token punctuation">]</span>
+<span class=3D"token punctuation">}</span><span class=3D"token punctuation"=
+>;</span>
+</code></pre>
+<h2 id=3D"underthehoodofthevirtualdom"><font style=3D"vertical-align: inher=
+it;"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=B4 =D0=BA=D0=
+=B0=D0=BF=D0=BE=D1=82=D0=BE=D0=BC =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=
+=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM</font></font></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=A2=D0=B5=D0=BF=D0=B5=D1=80=D1=8C, =D0=BA=D0=BE=D0=B3=D0=B4=D0=
+=B0 =D0=BC=D1=8B =D1=83=D0=B2=D0=B8=D0=B4=D0=B5=D0=BB=D0=B8, =D0=BA=D0=B0=
+=D0=BA =D0=B2=D1=8B=D0=B3=D0=BB=D1=8F=D0=B4=D0=B8=D1=82 =D0=B2=D0=B8=D1=80=
+=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM, =D0=BA=D0=B0=D0=BA =
+=D0=BE=D0=BD =D1=80=D0=B0=D0=B1=D0=BE=D1=82=D0=B0=D0=B5=D1=82 =D0=B4=D0=BB=
+=D1=8F =D1=80=D0=B5=D1=88=D0=B5=D0=BD=D0=B8=D1=8F =D0=BF=D1=80=D0=BE=D0=B1=
+=D0=BB=D0=B5=D0=BC =D0=BF=D1=80=D0=BE=D0=B8=D0=B7=D0=B2=D0=BE=D0=B4=D0=B8=
+=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D0=BE=D1=81=D1=82=D0=B8 =D0=B8 =D1=83=D0=B4=
+=D0=BE=D0=B1=D1=81=D1=82=D0=B2=D0=B0 =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=
+=D0=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=B8=D1=8F DOM?</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9A=D0=B0=D0=BA =D1=8F =D1=83=D0=B6=D0=B5 =D1=83=D0=BF=D0=BE=
+=D0=BC=D0=B8=D0=BD=D0=B0=D0=BB, =D0=BC=D1=8B =D0=BC=D0=BE=D0=B6=D0=B5=D0=BC=
+ =D0=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =
+=D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM, =D1=
+=87=D1=82=D0=BE=D0=B1=D1=8B =D0=B2=D1=8B=D0=B4=D0=B5=D0=BB=D0=B8=D1=82=D1=
+=8C =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D0=B8=D0=
+=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F, =D0=BA=D0=BE=D1=82=D0=BE=D1=
+=80=D1=8B=D0=B5 =D0=BD=D0=B5=D0=BE=D0=B1=D1=85=D0=BE=D0=B4=D0=B8=D0=BC=D0=
+=BE =D0=B2=D0=BD=D0=B5=D1=81=D1=82=D0=B8 =D0=B2 DOM, =D0=B8 =D1=81=D0=B4=D0=
+=B5=D0=BB=D0=B0=D1=82=D1=8C =D1=8D=D1=82=D0=B8 =D0=BA=D0=BE=D0=BD=D0=BA=D1=
+=80=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=
+=B5=D0=BD=D0=B8=D1=8F =D0=B2 =D0=BE=D0=B4=D0=B8=D0=BD=D0=BE=D1=87=D0=BA=D1=
+=83. </font><font style=3D"vertical-align: inherit;">=D0=94=D0=B0=D0=B2=D0=
+=B0=D0=B9=D1=82=D0=B5 =D0=B2=D0=B5=D1=80=D0=BD=D0=B5=D0=BC=D1=81=D1=8F =D0=
+=BA =D0=BD=D0=B0=D1=88=D0=B5=D0=BC=D1=83 =D0=BD=D0=B5=D1=83=D0=BF=D0=BE=D1=
+=80=D1=8F=D0=B4=D0=BE=D1=87=D0=B5=D0=BD=D0=BD=D0=BE=D0=BC=D1=83 =D1=81=D0=
+=BF=D0=B8=D1=81=D0=BA=D1=83 =D0=B8 =D0=B2=D0=BD=D0=B5=D1=81=D0=B5=D0=BC =D1=
+=82=D0=B5 =D0=B6=D0=B5 =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=
+=8F, =D1=87=D1=82=D0=BE =D0=B8 =D0=B2 DOM API.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9F=D0=B5=D1=80=D0=B2=D0=BE=D0=B5, =D1=87=D1=82=D0=BE =D0=BC=
+=D1=8B =D1=81=D0=B4=D0=B5=D0=BB=D0=B0=D0=B5=D0=BC, =D1=8D=D1=82=D0=BE =D1=
+=81=D0=B4=D0=B5=D0=BB=D0=B0=D0=B5=D0=BC =D0=BA=D0=BE=D0=BF=D0=B8=D1=8E =D0=
+=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM, =
+=D1=81=D0=BE=D0=B4=D0=B5=D1=80=D0=B6=D0=B0=D1=89=D0=B5=D0=B3=D0=BE =D0=B8=
+=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F, =D0=BA=D0=BE=D1=82=D0=BE=
+=D1=80=D1=8B=D0=B5 =D0=BC=D1=8B =D1=85=D0=BE=D1=82=D0=B8=D0=BC =D1=81=D0=B4=
+=D0=B5=D0=BB=D0=B0=D1=82=D1=8C. </font><font style=3D"vertical-align: inher=
+it;">=D0=9F=D0=BE=D1=81=D0=BA=D0=BE=D0=BB=D1=8C=D0=BA=D1=83 =D0=BD=D0=B0=D0=
+=BC =D0=BD=D0=B5 =D0=BD=D1=83=D0=B6=D0=BD=D0=BE =D0=B8=D1=81=D0=BF=D0=BE=D0=
+=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=B0=D1=82=D1=8C API DOM, =D0=BC=D1=8B =D1=84=
+=D0=B0=D0=BA=D1=82=D0=B8=D1=87=D0=B5=D1=81=D0=BA=D0=B8 =D0=BC=D0=BE=D0=B6=
+=D0=B5=D0=BC =D0=BF=D1=80=D0=BE=D1=81=D1=82=D0=BE =D1=81=D0=BE=D0=B7=D0=B4=
+=D0=B0=D1=82=D1=8C =D0=BD=D0=BE=D0=B2=D1=8B=D0=B9 =D0=BE=D0=B1=D1=8A=D0=B5=
+=D0=BA=D1=82 =D0=BF=D0=BE=D0=BB=D0=BD=D0=BE=D1=81=D1=82=D1=8C=D1=8E.</font>=
+</font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> copy <span class=3D"token operator">=3D</span> <sp=
+an class=3D"token punctuation">{</span>
+    tagName<span class=3D"token punctuation">:</span> <span class=3D"token =
+string">"ul"</span><span class=3D"token punctuation">,</span>
+    attributes<span class=3D"token punctuation">:</span> <span class=3D"tok=
+en punctuation">{</span> <span class=3D"token string">"class"</span><span c=
+lass=3D"token punctuation">:</span> <span class=3D"token string">"list"</sp=
+an> <span class=3D"token punctuation">}</span><span class=3D"token punctuat=
+ion">,</span>
+    children<span class=3D"token punctuation">:</span> <span class=3D"token=
+ punctuation">[</span>
+        <span class=3D"token punctuation">{</span>
+            tagName<span class=3D"token punctuation">:</span> <span class=
+=3D"token string">"li"</span><span class=3D"token punctuation">,</span>
+            attributes<span class=3D"token punctuation">:</span> <span clas=
+s=3D"token punctuation">{</span> <span class=3D"token string">"class"</span=
+><span class=3D"token punctuation">:</span> <span class=3D"token string">"l=
+ist__item"</span> <span class=3D"token punctuation">}</span><span class=3D"=
+token punctuation">,</span>
+            textContent<span class=3D"token punctuation">:</span> <span cla=
+ss=3D"token string">"List item one"</span>
+        <span class=3D"token punctuation">}</span><span class=3D"token punc=
+tuation">,</span>
+        <span class=3D"token punctuation">{</span>
+            tagName<span class=3D"token punctuation">:</span> <span class=
+=3D"token string">"li"</span><span class=3D"token punctuation">,</span>
+            attributes<span class=3D"token punctuation">:</span> <span clas=
+s=3D"token punctuation">{</span> <span class=3D"token string">"class"</span=
+><span class=3D"token punctuation">:</span> <span class=3D"token string">"l=
+ist__item"</span> <span class=3D"token punctuation">}</span><span class=3D"=
+token punctuation">,</span>
+            textContent<span class=3D"token punctuation">:</span> <span cla=
+ss=3D"token string">"List item two"</span>
+        <span class=3D"token punctuation">}</span>
+    <span class=3D"token punctuation">]</span>
+<span class=3D"token punctuation">}</span><span class=3D"token punctuation"=
+>;</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=AD=D1=82=D0=BE </font></font><code>copy</code><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=B8=
+=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D1=83=D0=B5=D1=82=D1=81=D1=8F =D0=B4=
+=D0=BB=D1=8F =D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=BD=D0=B8=D1=8F =D1=82=D0=BE=
+=D0=B3=D0=BE, =D1=87=D1=82=D0=BE =D0=BD=D0=B0=D0=B7=D1=8B=D0=B2=D0=B0=D0=B5=
+=D1=82=D1=81=D1=8F =C2=ABdiff=C2=BB =D0=BC=D0=B5=D0=B6=D0=B4=D1=83 =D0=B8=
+=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=BC =D0=B2=D0=B8=D1=80=D1=82=D1=83=
+=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=BC DOM, =D0=B2 =D0=B4=D0=B0=D0=BD=D0=BD=
+=D0=BE=D0=BC =D1=81=D0=BB=D1=83=D1=87=D0=B0=D0=B5 </font></font><code>list<=
+/code><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;">, =D0=B8 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=
+=BD=D1=8B=D0=BC. </font><font style=3D"vertical-align: inherit;">=D0=94=D0=
+=B8=D1=84=D1=84 =D0=BC=D0=BE=D0=B6=D0=B5=D1=82 =D0=B2=D1=8B=D0=B3=D0=BB=D1=
+=8F=D0=B4=D0=B5=D1=82=D1=8C =D0=BF=D1=80=D0=B8=D0=BC=D0=B5=D1=80=D0=BD=D0=
+=BE =D1=82=D0=B0=D0=BA:</font></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> diffs <span class=3D"token operator">=3D</span> <s=
+pan class=3D"token punctuation">[</span>
+    <span class=3D"token punctuation">{</span>
+        newNode<span class=3D"token punctuation">:</span> <span class=3D"to=
+ken punctuation">{</span> <span class=3D"token comment" spellcheck=3D"true"=
+>/* new version of list item one */</span> <span class=3D"token punctuation=
+">}</span><span class=3D"token punctuation">,</span>
+        oldNode<span class=3D"token punctuation">:</span> <span class=3D"to=
+ken punctuation">{</span> <span class=3D"token comment" spellcheck=3D"true"=
+>/* original version of list item one */</span> <span class=3D"token punctu=
+ation">}</span><span class=3D"token punctuation">,</span>
+        index<span class=3D"token punctuation">:</span> <span class=3D"toke=
+n comment" spellcheck=3D"true">/* index of element in parent's list of chil=
+d nodes */</span>
+    <span class=3D"token punctuation">}</span><span class=3D"token punctuat=
+ion">,</span>
+    <span class=3D"token punctuation">{</span>
+        newNode<span class=3D"token punctuation">:</span> <span class=3D"to=
+ken punctuation">{</span> <span class=3D"token comment" spellcheck=3D"true"=
+>/* list item two */</span> <span class=3D"token punctuation">}</span><span=
+ class=3D"token punctuation">,</span>
+        index<span class=3D"token punctuation">:</span> <span class=3D"toke=
+n punctuation">{</span> <span class=3D"token comment" spellcheck=3D"true">/=
+* */</span> <span class=3D"token punctuation">}</span>
+    <span class=3D"token punctuation">}</span>
+<span class=3D"token punctuation">]</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=92 =D1=8D=D1=82=D0=BE=D0=BC =D1=80=D0=B0=D0=B7=D0=B4=D0=B5=D0=
+=BB=D0=B5 =D0=BF=D1=80=D0=B8=D0=B2=D0=B5=D0=B4=D0=B5=D0=BD=D1=8B =D0=B8=D0=
+=BD=D1=81=D1=82=D1=80=D1=83=D0=BA=D1=86=D0=B8=D0=B8 =D0=BF=D0=BE =D0=BE=D0=
+=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D1=8E =D1=84=D0=B0=D0=BA=D1=
+=82=D0=B8=D1=87=D0=B5=D1=81=D0=BA=D0=BE=D0=B3=D0=BE DOM. </font><font style=
+=3D"vertical-align: inherit;">=D0=9A=D0=B0=D0=BA =D1=82=D0=BE=D0=BB=D1=8C=
+=D0=BA=D0=BE =D0=B2=D1=81=D0=B5 =D1=80=D0=B0=D0=B7=D0=BB=D0=B8=D1=87=D0=B8=
+=D1=8F =D1=81=D0=BE=D0=B1=D1=80=D0=B0=D0=BD=D1=8B, =D0=BC=D1=8B =D0=BC=D0=
+=BE=D0=B6=D0=B5=D0=BC =D0=BF=D0=B0=D0=BA=D0=B5=D1=82=D0=BD=D0=BE =D0=B2=D0=
+=BD=D0=BE=D1=81=D0=B8=D1=82=D1=8C =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=
+=BD=D0=B8=D1=8F =D0=B2 DOM, =D0=B4=D0=B5=D0=BB=D0=B0=D1=8F =D1=82=D0=BE=D0=
+=BB=D1=8C=D0=BA=D0=BE =D0=BD=D0=B5=D0=BE=D0=B1=D1=85=D0=BE=D0=B4=D0=B8=D0=
+=BC=D1=8B=D0=B5 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D1=
+=8F.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9D=D0=B0=D0=BF=D1=80=D0=B8=D0=BC=D0=B5=D1=80, =D0=BC=D1=8B =
+=D0=BC=D0=BE=D0=B3=D0=BB=D0=B8 =D0=B1=D1=8B =D0=BF=D0=B5=D1=80=D0=B5=D0=B1=
+=D1=80=D0=B0=D1=82=D1=8C =D0=BA=D0=B0=D0=B6=D0=B4=D1=8B=D0=B9 diff =D0=B8 =
+=D0=B4=D0=BE=D0=B1=D0=B0=D0=B2=D0=B8=D1=82=D1=8C =D0=BD=D0=BE=D0=B2=D0=BE=
+=D0=B3=D0=BE =D0=BF=D0=BE=D1=82=D0=BE=D0=BC=D0=BA=D0=B0 =D0=B8=D0=BB=D0=B8 =
+=D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C =D1=81=D1=82=D0=B0=D1=80=
+=D0=BE=D0=B3=D0=BE =D0=B2 =D0=B7=D0=B0=D0=B2=D0=B8=D1=81=D0=B8=D0=BC=D0=BE=
+=D1=81=D1=82=D0=B8 =D0=BE=D1=82 =D1=82=D0=BE=D0=B3=D0=BE, =D1=87=D1=82=D0=
+=BE =D1=83=D0=BA=D0=B0=D0=B7=D0=B0=D0=BD=D0=BE =D0=B2 diff.</font></font></=
+p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> domElement <span class=3D"token operator">=3D</spa=
+n> document<span class=3D"token punctuation">.</span><span class=3D"token f=
+unction">getElementsByClassName</span><span class=3D"token punctuation">(</=
+span><span class=3D"token string">"list"</span><span class=3D"token punctua=
+tion">)</span><span class=3D"token punctuation">[</span><span class=3D"toke=
+n number">0</span><span class=3D"token punctuation">]</span><span class=3D"=
+token punctuation">;</span><font></font>
+<font></font>
+diffs<span class=3D"token punctuation">.</span><span class=3D"token functio=
+n">forEach</span><span class=3D"token punctuation">(</span><span class=3D"t=
+oken punctuation">(</span>diff<span class=3D"token punctuation">)</span> <s=
+pan class=3D"token operator">=3D</span><span class=3D"token operator">&gt;<=
+/span> <span class=3D"token punctuation">{</span><font></font>
+<font></font>
+    <span class=3D"token keyword">const</span> newElement <span class=3D"to=
+ken operator">=3D</span> document<span class=3D"token punctuation">.</span>=
+<span class=3D"token function">createElement</span><span class=3D"token pun=
+ctuation">(</span>diff<span class=3D"token punctuation">.</span>newNode<spa=
+n class=3D"token punctuation">.</span>tagName<span class=3D"token punctuati=
+on">)</span><span class=3D"token punctuation">;</span>
+    <span class=3D"token comment" spellcheck=3D"true">/* Add attributes ...=
+ */</span><font></font>
+    <font></font>
+    <span class=3D"token keyword">if</span> <span class=3D"token punctuatio=
+n">(</span>diff<span class=3D"token punctuation">.</span>oldNode<span class=
+=3D"token punctuation">)</span> <span class=3D"token punctuation">{</span>
+        <span class=3D"token comment" spellcheck=3D"true">// If there is an=
+ old version, replace it with the new version</span>
+        domElement<span class=3D"token punctuation">.</span><span class=3D"=
+token function">replaceChild</span><span class=3D"token punctuation">(</spa=
+n>diff<span class=3D"token punctuation">.</span>newNode<span class=3D"token=
+ punctuation">,</span> diff<span class=3D"token punctuation">.</span>index<=
+span class=3D"token punctuation">)</span><span class=3D"token punctuation">=
+;</span>
+    <span class=3D"token punctuation">}</span> <span class=3D"token keyword=
+">else</span> <span class=3D"token punctuation">{</span>
+        <span class=3D"token comment" spellcheck=3D"true">// If no old vers=
+ion exists, create a new node</span>
+        domElement<span class=3D"token punctuation">.</span><span class=3D"=
+token function">appendChild</span><span class=3D"token punctuation">(</span=
+>diff<span class=3D"token punctuation">.</span>newNode<span class=3D"token =
+punctuation">)</span><span class=3D"token punctuation">;</span>
+    <span class=3D"token punctuation">}</span>
+<span class=3D"token punctuation">}</span><span class=3D"token punctuation"=
+>)</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9E=D0=B1=D1=80=D0=B0=D1=82=D0=B8=D1=82=D0=B5 =D0=B2=D0=BD=D0=
+=B8=D0=BC=D0=B0=D0=BD=D0=B8=D0=B5, =D1=87=D1=82=D0=BE =D1=8D=D1=82=D0=BE =
+=D0=B4=D0=B5=D0=B9=D1=81=D1=82=D0=B2=D0=B8=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D0=
+=BE =D1=83=D0=BF=D1=80=D0=BE=D1=89=D0=B5=D0=BD=D0=BD=D0=B0=D1=8F =D0=B8 =D1=
+=83=D0=BF=D1=80=D0=BE=D1=89=D0=B5=D0=BD=D0=BD=D0=B0=D1=8F =D0=B2=D0=B5=D1=
+=80=D1=81=D0=B8=D1=8F =D1=82=D0=BE=D0=B3=D0=BE, =D0=BA=D0=B0=D0=BA =D0=BC=
+=D0=BE=D0=B6=D0=B5=D1=82 =D1=80=D0=B0=D0=B1=D0=BE=D1=82=D0=B0=D1=82=D1=8C =
+=D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM, =D0=
+=B8 =D0=B5=D1=81=D1=82=D1=8C =D0=BC=D0=BD=D0=BE=D0=B3=D0=BE =D1=81=D0=BB=D1=
+=83=D1=87=D0=B0=D0=B5=D0=B2, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=B5 =D1=
+=8F =D0=B7=D0=B4=D0=B5=D1=81=D1=8C =D0=BD=D0=B5 =D0=BE=D1=81=D0=B2=D0=B5=D1=
+=89=D0=B0=D0=BB.</font></font></p>
+<h2 id=3D"thevirtualdomandframeworks"><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;">=D0=92=D0=B8=D1=80=D1=82=D1=83=
+=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM =D0=B8 =D1=84=D1=80=D0=B5=D0=B9=D0=
+=BC=D0=B2=D0=BE=D1=80=D0=BA=D0=B8</font></font></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=A7=D0=B0=D1=89=D0=B5 =D0=B2=D1=81=D1=82=D1=80=D0=B5=D1=87=D0=
+=B0=D0=B5=D1=82=D1=81=D1=8F =D1=80=D0=B0=D0=B1=D0=BE=D1=82=D0=B0 =D1=81 =D0=
+=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=BC DOM =D1=87=
+=D0=B5=D1=80=D0=B5=D0=B7 =D1=84=D1=80=D0=B5=D0=B9=D0=BC=D0=B2=D0=BE=D1=80=
+=D0=BA, =D0=B0 =D0=BD=D0=B5 =D0=B2=D0=B7=D0=B0=D0=B8=D0=BC=D0=BE=D0=B4=D0=
+=B5=D0=B9=D1=81=D1=82=D0=B2=D0=B8=D0=B5 =D1=81 =D0=BD=D0=B8=D0=BC =D0=BD=D0=
+=B0=D0=BF=D1=80=D1=8F=D0=BC=D1=83=D1=8E, =D0=BA=D0=B0=D0=BA =D1=8F =D0=BF=
+=D0=BE=D0=BA=D0=B0=D0=B7=D0=B0=D0=BB =D0=B2 =D0=BF=D1=80=D0=B8=D0=BC=D0=B5=
+=D1=80=D0=B5 =D0=B2=D1=8B=D1=88=D0=B5.</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=A4=D1=80=D0=B5=D0=B9=D0=BC=D0=B2=D0=BE=D1=80=D0=BA=D0=B8, =D1=
+=82=D0=B0=D0=BA=D0=B8=D0=B5 =D0=BA=D0=B0=D0=BA React =D0=B8 Vue, =D0=B8=D1=
+=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D1=83=D1=8E=D1=82 =D0=BA=D0=BE=D0=BD=D1=
+=86=D0=B5=D0=BF=D1=86=D0=B8=D1=8E =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=
+=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE DOM =D0=B4=D0=BB=D1=8F =D0=B1=D0=BE=D0=BB=
+=D0=B5=D0=B5 =D0=BF=D1=80=D0=BE=D0=B8=D0=B7=D0=B2=D0=BE=D0=B4=D0=B8=D1=82=
+=D0=B5=D0=BB=D1=8C=D0=BD=D1=8B=D1=85 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=
+=D0=B5=D0=BD=D0=B8=D0=B9 DOM. </font><font style=3D"vertical-align: inherit=
+;">=D0=9D=D0=B0=D0=BF=D1=80=D0=B8=D0=BC=D0=B5=D1=80, =D0=BD=D0=B0=D1=88 </f=
+ont></font><code>list</code><font style=3D"vertical-align: inherit;"><font =
+style=3D"vertical-align: inherit;">=D0=BA=D0=BE=D0=BC=D0=BF=D0=BE=D0=BD=D0=
+=B5=D0=BD=D1=82 =D0=BC=D0=BE=D0=B6=D0=B5=D1=82 =D0=B1=D1=8B=D1=82=D1=8C =D0=
+=BD=D0=B0=D0=BF=D0=B8=D1=81=D0=B0=D0=BD =D0=B2 React =D1=81=D0=BB=D0=B5=D0=
+=B4=D1=83=D1=8E=D1=89=D0=B8=D0=BC =D0=BE=D0=B1=D1=80=D0=B0=D0=B7=D0=BE=D0=
+=BC.</font></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">import</span> React <span class=3D"token keyword">from</span> <=
+span class=3D"token string">'react'</span><span class=3D"token punctuation"=
+>;</span>
+<span class=3D"token keyword">import</span> ReactDOM <span class=3D"token k=
+eyword">from</span> <span class=3D"token string">'react-dom'</span><span cl=
+ass=3D"token punctuation">;</span><font></font>
+<font></font>
+<span class=3D"token keyword">const</span> list <span class=3D"token operat=
+or">=3D</span> React<span class=3D"token punctuation">.</span><span class=
+=3D"token function">createElement</span><span class=3D"token punctuation">(=
+</span><span class=3D"token string">"ul"</span><span class=3D"token punctua=
+tion">,</span> <span class=3D"token punctuation">{</span> className<span cl=
+ass=3D"token punctuation">:</span> <span class=3D"token string">"list"</spa=
+n> <span class=3D"token punctuation">}</span><span class=3D"token punctuati=
+on">,</span>
+    React<span class=3D"token punctuation">.</span><span class=3D"token fun=
+ction">createElement</span><span class=3D"token punctuation">(</span><span =
+class=3D"token string">"li"</span><span class=3D"token punctuation">,</span=
+> <span class=3D"token punctuation">{</span> className<span class=3D"token =
+punctuation">:</span> <span class=3D"token string">"list__item"</span> <spa=
+n class=3D"token punctuation">}</span><span class=3D"token punctuation">,</=
+span> <span class=3D"token string">"List item"</span><span class=3D"token p=
+unctuation">)</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span><font></font>
+<font></font>
+ReactDOM<span class=3D"token punctuation">.</span><span class=3D"token func=
+tion">render</span><span class=3D"token punctuation">(</span>list<span clas=
+s=3D"token punctuation">,</span> document<span class=3D"token punctuation">=
+.</span>body<span class=3D"token punctuation">)</span><span class=3D"token =
+punctuation">;</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=95=D1=81=D0=BB=D0=B8 =D0=B1=D1=8B =D0=BC=D1=8B =D1=85=D0=BE=
+=D1=82=D0=B5=D0=BB=D0=B8 =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C =
+=D0=BD=D0=B0=D1=88 =D1=81=D0=BF=D0=B8=D1=81=D0=BE=D0=BA, =D0=BC=D1=8B =D0=
+=BC=D0=BE=D0=B3=D0=BB=D0=B8 =D0=B1=D1=8B =D0=BF=D1=80=D0=BE=D1=81=D1=82=D0=
+=BE =D0=BF=D0=B5=D1=80=D0=B5=D0=BF=D0=B8=D1=81=D0=B0=D1=82=D1=8C =D0=B2=D0=
+=B5=D1=81=D1=8C =D1=88=D0=B0=D0=B1=D0=BB=D0=BE=D0=BD =D1=81=D0=BF=D0=B8=D1=
+=81=D0=BA=D0=B0 =D0=B8 </font></font><code>ReactDOM.render()</code><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+=D1=81=D0=BD=D0=BE=D0=B2=D0=B0 </font><font style=3D"vertical-align: inheri=
+t;">=D0=BF=D0=BE=D0=B7=D0=B2=D0=BE=D0=BD=D0=B8=D1=82=D1=8C </font><font sty=
+le=3D"vertical-align: inherit;">, =D0=BF=D0=B5=D1=80=D0=B5=D0=B4=D0=B0=D0=
+=B2 =D0=BD=D0=BE=D0=B2=D1=8B=D0=B9 =D1=81=D0=BF=D0=B8=D1=81=D0=BE=D0=BA.</f=
+ont></font></p>
+<pre class=3D" language-js"><code class=3D" language-js"><span class=3D"tok=
+en keyword">const</span> newList <span class=3D"token operator">=3D</span> =
+React<span class=3D"token punctuation">.</span><span class=3D"token functio=
+n">createElement</span><span class=3D"token punctuation">(</span><span clas=
+s=3D"token string">"ul"</span><span class=3D"token punctuation">,</span> <s=
+pan class=3D"token punctuation">{</span> className<span class=3D"token punc=
+tuation">:</span> <span class=3D"token string">"list"</span> <span class=3D=
+"token punctuation">}</span><span class=3D"token punctuation">,</span>
+    React<span class=3D"token punctuation">.</span><span class=3D"token fun=
+ction">createElement</span><span class=3D"token punctuation">(</span><span =
+class=3D"token string">"li"</span><span class=3D"token punctuation">,</span=
+> <span class=3D"token punctuation">{</span> className<span class=3D"token =
+punctuation">:</span> <span class=3D"token string">"list__item"</span> <spa=
+n class=3D"token punctuation">}</span><span class=3D"token punctuation">,</=
+span> <span class=3D"token string">"List item one"</span><span class=3D"tok=
+en punctuation">)</span><span class=3D"token punctuation">,</span>
+    React<span class=3D"token punctuation">.</span><span class=3D"token fun=
+ction">createElement</span><span class=3D"token punctuation">(</span><span =
+class=3D"token string">"li"</span><span class=3D"token punctuation">,</span=
+> <span class=3D"token punctuation">{</span> className<span class=3D"token =
+punctuation">:</span> <span class=3D"token string">"list__item"</span> <spa=
+n class=3D"token punctuation">}</span><span class=3D"token punctuation">,</=
+span> <span class=3D"token string">"List item two"</span><span class=3D"tok=
+en punctuation">)</span><span class=3D"token punctuation">;</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span><font></font>
+<font></font>
+<span class=3D"token function">setTimeout</span><span class=3D"token punctu=
+ation">(</span><span class=3D"token punctuation">(</span><span class=3D"tok=
+en punctuation">)</span> <span class=3D"token operator">=3D</span><span cla=
+ss=3D"token operator">&gt;</span> ReactDOM<span class=3D"token punctuation"=
+>.</span><span class=3D"token function">render</span><span class=3D"token p=
+unctuation">(</span>newList<span class=3D"token punctuation">,</span> docum=
+ent<span class=3D"token punctuation">.</span>body<span class=3D"token punct=
+uation">)</span><span class=3D"token punctuation">,</span> <span class=3D"t=
+oken number">5000</span><span class=3D"token punctuation">)</span><span cla=
+ss=3D"token punctuation">;</span>
+</code></pre>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9F=D0=BE=D1=81=D0=BA=D0=BE=D0=BB=D1=8C=D0=BA=D1=83 React =D0=
+=B8=D1=81=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D1=83=D0=B5=D1=82 =D0=B2=D0=B8=D1=
+=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM, =D0=B4=D0=B0=D0=B6=
+=D0=B5 =D0=B5=D1=81=D0=BB=D0=B8 =D0=BC=D1=8B =D0=BF=D0=B5=D1=80=D0=B5=D1=80=
+=D0=B8=D1=81=D0=BE=D0=B2=D1=8B=D0=B2=D0=B0=D0=B5=D0=BC =D0=B2=D0=B5=D1=81=
+=D1=8C =D1=88=D0=B0=D0=B1=D0=BB=D0=BE=D0=BD, =D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=
+=D0=BB=D1=8F=D1=8E=D1=82=D1=81=D1=8F =D1=82=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =
+=D1=82=D0=B5 =D1=87=D0=B0=D1=81=D1=82=D0=B8, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=
+=D1=8B=D0=B5 =D0=B4=D0=B5=D0=B9=D1=81=D1=82=D0=B2=D0=B8=D1=82=D0=B5=D0=BB=
+=D1=8C=D0=BD=D0=BE =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D1=8F=D1=8E=D1=82=D1=81=
+=D1=8F. </font><font style=3D"vertical-align: inherit;">=D0=95=D1=81=D0=BB=
+=D0=B8 =D0=BC=D1=8B =D0=BF=D0=BE=D1=81=D0=BC=D0=BE=D1=82=D1=80=D0=B8=D0=BC =
+=D0=BD=D0=B0 =D0=BD=D0=B0=D1=88=D0=B8 =D0=B8=D0=BD=D1=81=D1=82=D1=80=D1=83=
+=D0=BC=D0=B5=D0=BD=D1=82=D1=8B =D1=80=D0=B0=D0=B7=D1=80=D0=B0=D0=B1=D0=BE=
+=D1=82=D1=87=D0=B8=D0=BA=D0=B0, =D0=BA=D0=BE=D0=B3=D0=B4=D0=B0 =D0=BF=D1=80=
+=D0=BE=D0=B8=D0=B7=D0=BE=D0=B9=D0=B4=D1=83=D1=82 =D0=B8=D0=B7=D0=BC=D0=B5=
+=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F, =D0=BC=D1=8B =D1=83=D0=B2=D0=B8=D0=B4=D0=B8=
+=D0=BC =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D1=8D=
+=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D1=8B =D0=B8 =D0=BA=D0=BE=D0=BD=D0=BA=
+=D1=80=D0=B5=D1=82=D0=BD=D1=8B=D0=B5 =D1=87=D0=B0=D1=81=D1=82=D0=B8 =D1=8D=
+=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D0=BE=D0=B2, =D0=BA=D0=BE=D1=82=D0=BE=
+=D1=80=D1=8B=D0=B5 =D0=BC=D0=B5=D0=BD=D1=8F=D1=8E=D1=82=D1=81=D1=8F.</font>=
+</font></p>
+<video autoplay=3D"" loop=3D"" muted=3D"" playsinline=3D"" poster=3D"https:=
+//res.cloudinary.com/ireaderinokun/video/upload/v1545416044/bitsofcode/reac=
+t-virtual-dom.jpg">
+    <source type=3D"video/webm" src=3D"https://res.cloudinary.com/ireaderin=
+okun/video/upload/v1545416044/bitsofcode/react-virtual-dom.webm">
+    <img src=3D"https://res.cloudinary.com/ireaderinokun/video/upload/v1545=
+416044/bitsofcode/react-virtual-dom.jpg" alt=3D"">
+</video>
+<h2 id=3D"thedomvsthevirtualdom"><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">DOM =D0=BF=D1=80=D0=BE=D1=82=D0=B8=
+=D0=B2 =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=
+=D0=BE DOM</font></font></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=9D=D0=B0=D0=BF=D0=BE=D0=BC=D0=BD=D0=B8=D0=BC, =D1=87=D1=82=D0=
+=BE =D0=B2=D0=B8=D1=80=D1=82=D1=83=D0=B0=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 DOM =
+- =D1=8D=D1=82=D0=BE =D0=B8=D0=BD=D1=81=D1=82=D1=80=D1=83=D0=BC=D0=B5=D0=BD=
+=D1=82, =D0=BA=D0=BE=D1=82=D0=BE=D1=80=D1=8B=D0=B9 =D0=BF=D0=BE=D0=B7=D0=B2=
+=D0=BE=D0=BB=D1=8F=D0=B5=D1=82 =D0=BD=D0=B0=D0=BC =D0=B2=D0=B7=D0=B0=D0=B8=
+=D0=BC=D0=BE=D0=B4=D0=B5=D0=B9=D1=81=D1=82=D0=B2=D0=BE=D0=B2=D0=B0=D1=82=D1=
+=8C =D1=81 =D1=8D=D0=BB=D0=B5=D0=BC=D0=B5=D0=BD=D1=82=D0=B0=D0=BC=D0=B8 DOM=
+ =D0=B1=D0=BE=D0=BB=D0=B5=D0=B5 =D0=BF=D1=80=D0=BE=D1=81=D1=82=D1=8B=D0=BC =
+=D0=B8 =D0=BF=D1=80=D0=BE=D0=B8=D0=B7=D0=B2=D0=BE=D0=B4=D0=B8=D1=82=D0=B5=
+=D0=BB=D1=8C=D0=BD=D1=8B=D0=BC =D1=81=D0=BF=D0=BE=D1=81=D0=BE=D0=B1=D0=BE=
+=D0=BC. </font><font style=3D"vertical-align: inherit;">=D0=AD=D1=82=D0=BE =
+Javascript-=D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82=D0=BD=D0=BE=D0=B5 =D0=BF=D1=
+=80=D0=B5=D0=B4=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D0=B5=D0=BD=D0=B8=D0=B5 DOM, =
+=D0=BA=D0=BE=D1=82=D0=BE=D1=80=D0=BE=D0=B5 =D0=BC=D1=8B =D0=BC=D0=BE=D0=B6=
+=D0=B5=D0=BC =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D1=8F=D1=82=D1=8C =D1=82=D0=B0=
+=D0=BA =D1=87=D0=B0=D1=81=D1=82=D0=BE, =D0=BA=D0=B0=D0=BA =D0=BD=D0=B0=D0=
+=BC =D0=BD=D1=83=D0=B6=D0=BD=D0=BE. </font><font style=3D"vertical-align: i=
+nherit;">=D0=98=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F, =D0=B2=D0=
+=BD=D0=B5=D1=81=D0=B5=D0=BD=D0=BD=D1=8B=D0=B5 =D0=B2 =D1=8D=D1=82=D0=BE=D1=
+=82 =D0=BE=D0=B1=D1=8A=D0=B5=D0=BA=D1=82, =D0=B7=D0=B0=D1=82=D0=B5=D0=BC =
+=D1=81=D0=BE=D0=BF=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BB=D1=8F=D1=8E=D1=82=D1=
+=81=D1=8F, =D0=B0 =D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D1=8F =
+=D0=B2 =D1=80=D0=B5=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=BC DOM =D0=BD=D0=B0=D0=
+=BC=D0=B5=D1=87=D0=B0=D1=8E=D1=82=D1=81=D1=8F =D0=B8 =D0=BF=D1=80=D0=BE=D0=
+=B8=D0=B7=D0=B2=D0=BE=D0=B4=D1=8F=D1=82=D1=81=D1=8F =D1=80=D0=B5=D0=B6=D0=
+=B5.</font></font></p>
+</div>
+    </div>
+
+    <footer class=3D"post__footer p-b-md m-b-lg">
+        <ul class=3D"post__share">
+    <li class=3D"m-r-sm">
+        <a href=3D"https://twitter.com/intent/tweet/?text=3D%27Understandin=
+g%20the%20Virtual%20DOM%27%20from%20bitsofco.de&amp;url=3Dhttps://bitsofco.=
+de/understanding-the-virtual-dom/&amp;via=3Direaderinokun" target=3D"_blank=
+" class=3D"post__share__item">
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=B4=D0=B5=D0=BB=
+=D0=B8=D1=82=D1=8C=D1=81=D1=8F =D1=81=D1=82=D0=B0=D1=82=D1=8C=D0=B5=D0=B9 =
+=D0=B2 Twitter</font></font></span>
+            <svg width=3D"19px" height=3D"15px" viewBox=3D"0 0 19 15">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" fill-rule=3D"nonzero" fill=3D"#3C3C3C">
+            <path d=3D"M18.9999991,1.77490775 C18.3009891,2.07601476 17.549=
+6341,2.27942804 16.7612291,2.37094096 C17.5658791,1.90249077 18.1840441,1.1=
+6070111 18.4751241,0.276752768 C17.7218691,0.710608856 16.8876741,1.0255535=
+1 15.9997091,1.1952952 C15.2887291,0.459594096 14.2756491,0 13.1544591,0 C1=
+1.0017591,0 9.25634305,1.6947417 9.25634305,3.7851476 C9.25634305,4.0818265=
+7 9.29080905,4.37075646 9.35728055,4.64778598 C6.11762855,4.48994465 3.2452=
+8455,2.98293358 1.32276005,0.692804428 C0.98718205,1.25184502 0.7949562,1.9=
+0212177 0.7949562,2.59584871 C0.7949562,3.90913284 1.48311055,5.06771218 2.=
+52911755,5.74649446 C1.89012855,5.72684502 1.28903505,5.55654982 0.7635245,=
+5.27306273 C0.763154,5.28883764 0.763154,5.30461255 0.763154,5.32066421 C0.=
+763154,7.15464022 2.1068435,8.68445572 3.8900315,9.03230627 C3.5629845,9.11=
+879151 3.2186095,9.16510148 2.8631005,9.16510148 C2.611911,9.16510148 2.367=
+723,9.14131919 2.129672,9.0971679 C2.6257145,10.6009317 4.065297,11.6954059=
+ 5.77106,11.725821 C4.4369845,12.7411531 2.7562255,13.3463007 0.9298866,13.=
+3463007 C0.61523615,13.3463007 0.30492815,13.328321 0,13.2933672 C1.725067,=
+14.3673303 3.774065,14.9940959 5.975386,14.9940959 C13.14534,14.9940959 17.=
+066275,9.22621771 17.066275,4.22407749 C17.066275,4.0599631 17.06238,3.8967=
+7122 17.054875,3.73440959 C17.8165841,3.20064576 18.4774041,2.53404059 18.9=
+999991,1.77490775"></path>
+        </g>
+    </g>
+</svg>        </a>
+    </li>
+
+    <li class=3D"m-r-sm">
+        <a href=3D"https://www.facebook.com/sharer/sharer.php?u=3Dhttps://b=
+itsofco.de/understanding-the-virtual-dom/" target=3D"_blank" class=3D"post_=
+_share__item">
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=B4=D0=B5=D0=BB=
+=D0=B8=D1=82=D1=8C=D1=81=D1=8F =D1=81=D1=82=D0=B0=D1=82=D1=8C=D0=B5=D0=B9 =
+=D0=BD=D0=B0 Facebook</font></font></span>
+            <svg width=3D"15px" height=3D"15px" viewBox=3D"0 0 15 15">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g transform=3D"translate(-162.000000, -200.000000)" fill-rule=3D"n=
+onzero">
+            <g transform=3D"translate(126.000000, 127.000000)">
+                <g transform=3D"translate(3.000000, 73.000000)">
+                    <g transform=3D"translate(33.000000, 0.000000)">
+                        <path d=3D"M14.1360232,14.9598649 C14.590888,14.959=
+8649 14.959749,14.5910039 14.959749,14.1360232 L14.959749,0.857837838 C14.9=
+59749,0.402799228 14.5909459,0.0340540541 14.1360232,0.0340540541 L0.857837=
+838,0.0340540541 C0.402799228,0.0340540541 0.0340540541,0.402799228 0.03405=
+40541,0.857837838 L0.0340540541,14.1360232 C0.0340540541,14.5909459 0.40274=
+1313,14.9598649 0.857837838,14.9598649 L14.1360232,14.9598649 Z" class=3D"f=
+ill" fill=3D"#3C3C3C"></path>
+                        <path d=3D"M10.3325676,14.9598649 L10.3325676,9.179=
+76834 L12.2726641,9.17976834 L12.563166,6.92716216 L10.3325676,6.92716216 L=
+10.3325676,5.48901544 C10.3325676,4.83683398 10.513668,4.39239382 11.448880=
+3,4.39239382 L12.6416988,4.39187259 L12.6416988,2.37712355 C12.4354054,2.34=
+967181 11.7273359,2.28833977 10.9035521,2.28833977 C9.18376448,2.28833977 8=
+.00635135,3.33810811 8.00635135,5.26592664 L8.00635135,6.92716216 L6.061274=
+13,6.92716216 L6.06127413,9.17976834 L8.00635135,9.17976834 L8.00635135,14.=
+9598649 L10.3325676,14.9598649 Z" fill=3D"#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>        </a>
+    </li>
+
+    <li>
+        <a href=3D"https://www.reddit.com/submit?url=3Dhttps://bitsofco.de/=
+understanding-the-virtual-dom/" target=3D"_blank" class=3D"post__share__ite=
+m">
+            <span class=3D"sr-only"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=9E=D0=BF=D1=83=D0=B1=D0=BB=
+=D0=B8=D0=BA=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D1=81=D1=82=D0=B0=D1=82=D1=8C=
+=D1=8E =D0=B2 Reddit</font></font></span>
+            <svg width=3D"18px" height=3D"15px" viewBox=3D"0 0 18 15">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" transform=3D"translate(-189.000000, -200.000000)"=
+ fill-rule=3D"nonzero" fill=3D"#3C3C3C">
+            <g transform=3D"translate(126.000000, 127.000000)">
+                <g transform=3D"translate(3.000000, 73.000000)">
+                    <g transform=3D"translate(60.000000, 0.000000)">
+                        <path d=3D"M12.8134583,8.16925 C12.8597083,8.2875 1=
+2.8807083,8.409625 12.8807083,8.53095833 C12.8807083,8.77520833 12.7963333,=
+9.01245833 12.65475,9.206125 C12.51475,9.3975 12.316375,9.54604167 12.083,9=
+.61141667 L12.0834167,9.61141667 C12.0814583,9.61220833 12.0795,9.61220833 =
+12.0785417,9.61295833 C12.0775833,9.61295833 12.076,9.61375 12.07525,9.6137=
+5 C11.9659583,9.65108333 11.8539167,9.66858333 11.74275,9.66858333 C11.4821=
+667,9.66858333 11.22625,9.57466667 11.0216667,9.41458333 C10.8186667,9.2551=
+6667 10.665,9.02608333 10.6167917,8.754375 L10.616375,8.754375 C10.616375,8=
+.75358333 10.616375,8.752625 10.616,8.7515 C10.616,8.75070833 10.616,8.7499=
+1667 10.6152083,8.74879167 L10.616,8.74879167 C10.6008333,8.67875 10.593041=
+7,8.60879167 10.5930417,8.53958333 C10.5930417,8.30429167 10.6731667,8.0783=
+3333 10.8054167,7.891625 C10.93725,7.70608333 11.1231667,7.55870833 11.3407=
+5,7.48283333 C11.3415417,7.48283333 11.3423333,7.48241667 11.3423333,7.4824=
+1667 C11.3434583,7.48241667 11.3434583,7.48129167 11.3444583,7.48129167 C11=
+.4675417,7.43579167 11.5974583,7.413 11.726,7.413 C11.960125,7.413 12.19075=
+,7.484 12.3852083,7.613875 C12.5773333,7.741625 12.7332917,7.92891667 12.81=
+14583,8.1615 C12.81225,8.16304167 12.81225,8.16441667 12.813,8.16579167 C12=
+.813,8.16733333 12.8137917,8.16816667 12.8145417,8.16929167 L12.8134583,8.1=
+6929167 L12.8134583,8.16925 Z M12.0970417,11.0562083 C12.0052917,10.9967083=
+ 11.8990833,10.96075 11.7867083,10.96075 C11.6960833,10.96075 11.6019583,10=
+.986625 11.5181667,11.0422083 L11.5181667,11.0422083 C10.7263333,11.5147917=
+ 9.79504167,11.7737917 8.870375,11.7737917 C8.176625,11.7737917 7.48708333,=
+11.627375 6.862375,11.3205 L6.85916667,11.3189583 L6.85604167,11.3177917 C6=
+.76183333,11.2792917 6.6545,11.1974167 6.53741667,11.1194583 C6.47791667,11=
+.0809167 6.41579167,11.042625 6.34683333,11.0144167 C6.27879167,10.9854583 =
+6.20320833,10.9652083 6.12241667,10.9652083 C6.05554167,10.9652083 5.98525,=
+10.9801667 5.915875,11.0116667 C5.91229167,11.0130417 5.908875,11.014375 5.=
+905375,11.01575 L5.90575,11.01575 C5.79675,11.057375 5.71158333,11.133625 5=
+.65683333,11.2238333 C5.59966667,11.31675 5.57158333,11.4249167 5.57158333,=
+11.532625 C5.57158333,11.629875 5.59454167,11.7270833 5.64204167,11.815375 =
+C5.68725,11.899 5.75679167,11.972125 5.84779167,12.021125 C6.74066667,12.62=
+3375 7.79204167,12.8962083 8.84745833,12.89525 C9.79904167,12.89525 10.7563=
+75,12.6749583 11.6087083,12.2739583 L11.6131667,12.27125 L11.6174583,12.268=
+9167 C11.7298333,12.202375 11.8792083,12.1427083 12.02,12.0557917 C12.08962=
+5,12.0114583 12.1576667,11.960125 12.216,11.8934167 C12.2743333,11.827125 1=
+2.3212083,11.7454583 12.3476667,11.648625 L12.3476667,11.6482083 C12.35875,=
+11.6054583 12.364,11.5638333 12.364,11.5222083 C12.364,11.4430833 12.344541=
+7,11.368 12.3122917,11.3005417 C12.2650417,11.1989583 12.1876667,11.11575 1=
+2.0970417,11.0562083 Z M5.828125,9.607875 C5.82966667,9.607875 5.83170833,9=
+.60845833 5.83345833,9.60941667 C5.94741667,9.65104167 6.064875,9.671625 6.=
+18116667,9.671625 C6.47129167,9.671625 6.75325,9.55279167 6.96670833,9.3591=
+25 C7.17983333,9.164875 7.32579167,8.89008333 7.32579167,8.57683333 C7.3257=
+9167,8.56866667 7.32579167,8.5605 7.32541667,8.55079167 C7.32620833,8.53679=
+167 7.32658333,8.52141667 7.32658333,8.50566667 C7.32658333,8.19491667 7.18=
+258333,7.919 6.9715,7.72391667 C6.759625,7.52866667 6.47833333,7.40929167 6=
+.187125,7.40929167 C6.10933333,7.40929167 6.03008333,7.41841667 5.952625,7.=
+4365 C5.95145833,7.4365 5.95058333,7.436875 5.94941667,7.436875 L5.94825,7.=
+436875 C5.56275,7.51758333 5.224375,7.80366667 5.0995,8.19720833 L5.0995,8.=
+19720833 L5.0995,8.197625 C5.0995,8.19841667 5.099125,8.19916667 5.099125,8=
+.19916667 C5.06325,8.30691667 5.04654167,8.418125 5.04654167,8.52816667 C5.=
+04654167,8.76929167 5.12625,9.00425 5.26366667,9.1975 C5.399875,9.3875 5.59=
+258333,9.536875 5.824,9.606625 C5.82566667,9.60670833 5.82645833,9.607125 5=
+.828125,9.607875 Z M17.9180417,6.79558333 L17.9180417,6.79716667 C17.920791=
+7,6.83633333 17.9215417,6.87541667 17.9215417,6.91425 C17.9215417,7.3495416=
+7 17.7819167,7.768125 17.549,8.12325 C17.3315833,8.45558333 17.03175,8.7336=
+25 16.686375,8.92229167 C16.7085417,9.09554167 16.721375,9.27016667 16.7213=
+75,9.44420833 C16.7209583,10.3815 16.3977917,11.3028333 15.8350417,12.04125=
+ L15.8350417,12.041625 L15.833875,12.041625 C14.7935,13.425625 13.1958333,1=
+4.2417917 11.5825833,14.6534583 L11.5821667,14.6534583 L11.5810417,14.65441=
+67 C10.72075,14.8632917 9.833625,14.97 8.94675,14.97 C7.62470833,14.97 6.30=
+370833,14.7315833 5.071,14.2372917 L5.070625,14.236125 L5.06945833,14.23612=
+5 C3.79145833,13.7093333 2.57375,12.872 1.827,11.645125 C1.42525,10.9905417=
+ 1.20470833,10.2225833 1.20470833,9.451 C1.20470833,9.27641667 1.2165,9.101=
+54167 1.23983333,8.92866667 C0.9035,8.73929167 0.612208333,8.47075 0.395875=
+,8.15004167 C0.164958333,7.805625 0.0185416667,7.402125 4.16666666e-05,6.97=
+558333 L4.16666666e-05,6.97391667 L4.16666666e-05,6.972375 L4.16666666e-05,=
+6.96895833 C0.000416666667,6.37158333 0.259916667,5.80570833 0.663166667,5.=
+38845833 C1.066375,4.97133333 1.61716667,4.69870833 2.20795833,4.69870833 L=
+2.23245833,4.69870833 C2.29441667,4.6945 2.35691667,4.69208333 2.41945833,4=
+.69208333 C2.71620833,4.69208333 3.013625,4.740125 3.29608333,4.84841667 L3=
+.297625,4.84958333 L3.29920833,4.85008333 C3.54033333,4.951625 3.77991667,5=
+.074125 3.99345833,5.24379167 C4.06266667,5.2075 4.138125,5.16666667 4.2227=
+9167,5.13441667 C5.517125,4.36795833 7.02158333,4.07229167 8.48770833,3.987=
+ C8.50045833,3.26070833 8.58970833,2.50033333 8.94391667,1.83491667 C9.2389=
+1667,1.28204167 9.75095833,0.851625 10.3605833,0.702458333 L10.363125,0.701=
+208333 L10.3664167,0.700833333 C10.598625,0.655916667 10.83275,0.635208333 =
+11.0653333,0.635208333 C11.684875,0.635208333 12.2970417,0.781916667 12.869=
+9167,1.01091667 C13.1235,0.628208333 13.4855833,0.3295 13.9103333,0.1619583=
+33 L13.9144167,0.159625 L13.9185,0.158083333 C14.1677917,0.0804166667 14.43=
+1125,0.035 14.6954167,0.035 C14.97425,0.035 15.2552917,0.0859583333 15.5185=
+833,0.203583333 L15.5185833,0.202625 C15.5189583,0.203583333 15.519375,0.20=
+3583333 15.519375,0.203583333 C15.5213333,0.20425 15.522875,0.205416667 15.=
+5242083,0.205416667 C15.9016667,0.350791667 16.2211667,0.619458333 16.44770=
+83,0.953333333 C16.6744583,1.28866667 16.807875,1.69033333 16.807875,2.1032=
+9167 C16.807875,2.17941667 16.8035833,2.25566667 16.7946667,2.332 L16.79387=
+5,2.33354167 C16.793875,2.33470833 16.793875,2.336375 16.7934583,2.33754167=
+ C16.7491667,2.87125 16.4788333,3.3395 16.096125,3.6735 C15.711125,4.008833=
+33 15.2125,4.211375 14.7007083,4.211375 C14.618625,4.211375 14.5357917,4.20=
+679167 14.4533333,4.19579167 C13.94575,4.157 13.4724583,3.911375 13.12475,3=
+.546 C12.775875,3.18120833 12.5510833,2.69379167 12.5510833,2.16766667 C12.=
+5510833,2.14220833 12.5534167,2.116125 12.5541667,2.090875 C12.0777083,1.87=
+870833 11.57175,1.70270833 11.0689167,1.703125 C10.9961667,1.703125 10.9234=
+583,1.707125 10.8507083,1.7145 L10.8499167,1.7145 C10.4734583,1.75079167 10=
+.1234167,1.98808333 9.95383333,2.329375 L9.95383333,2.32975 L9.95383333,2.3=
+3091667 C9.696375,2.83233333 9.64504167,3.41845833 9.63725,4.00025 C11.0805=
+417,4.094375 12.532375,4.44070833 13.8057083,5.17266667 L13.8076667,5.17266=
+667 L13.8259167,5.18345833 C13.8500417,5.19775 13.89475,5.22225 13.9352083,=
+5.24383333 C14.02275,5.17283333 14.1152917,5.09983333 14.220875,5.03691667 =
+C14.606875,4.77983333 15.06425,4.652 15.5218333,4.652 C15.7248333,4.652 15.=
+9280417,4.677875 16.1252083,4.72841667 L16.126,4.72841667 L16.1341667,4.730=
+83333 C16.1370833,4.73125 16.1392083,4.73220833 16.1415833,4.73220833 L16.1=
+415833,4.73258333 C16.6075417,4.851125 17.0290833,5.11870833 17.3464583,5.4=
+7954167 C17.663625,5.84095833 17.8769167,6.29820833 17.9185417,6.79458333 L=
+17.9185417,6.795625 L17.9180417,6.795625 L17.9180417,6.79558333 Z M13.66675=
+,2.07220833 C13.66675,2.09175 13.6671667,2.11179167 13.669125,2.13220833 L1=
+3.669125,2.133375 L13.669125,2.13570833 C13.6784583,2.38645833 13.7968333,2=
+.61983333 13.97675,2.79220833 C14.1575833,2.96470833 14.3975833,3.07145833 =
+14.641,3.07241667 L14.6443333,3.07241667 L14.647625,3.07241667 C14.665125,3=
+.07379167 14.6830417,3.07379167 14.700125,3.07379167 C14.9459167,3.07416667=
+ 15.1897917,2.96829167 15.3729583,2.7965 C15.5565,2.62383333 15.6775,2.389 =
+15.6872083,2.136125 L15.6875833,2.13495833 L15.6875833,2.13341667 C15.68916=
+67,2.11408333 15.6899583,2.09579167 15.6899583,2.07604167 C15.6899583,1.815=
+75 15.5682083,1.567625 15.377625,1.383875 C15.1878333,1.20029167 14.9322917=
+,1.08654167 14.6803333,1.08720833 C14.5990417,1.08720833 14.5185,1.09829167=
+ 14.4395833,1.12279167 L14.436875,1.123 L14.4345417,1.12395833 C14.226875,1=
+.17791667 14.0322083,1.30595833 13.892375,1.476 C13.7519167,1.64525 13.6667=
+5,1.8545 13.66675,2.07220833 Z M3.013,5.94075 C2.82008333,5.85091667 2.6205=
+8333,5.78675 2.42341667,5.78758333 C2.39033333,5.78758333 2.356875,5.789541=
+67 2.32383333,5.793125 L2.31925,5.793125 L2.31466667,5.79370833 C2.03154167=
+,5.8015 1.74579167,5.92495833 1.53129167,6.12283333 C1.316625,6.32 1.174666=
+67,6.58625 1.16375,6.87979167 L1.16375,6.8825 L1.16325,6.88491667 C1.161333=
+33,6.90866667 1.16054167,6.93229167 1.16054167,6.95504167 C1.16054167,7.136=
+08333 1.21608333,7.31108333 1.31025,7.470375 C1.37995833,7.589 1.471375,7.6=
+9708333 1.57475,7.79125 C1.905625,7.06675 2.42258333,6.451875 3.013,5.94075=
+ Z M15.5860833,9.48479167 C15.5860833,8.83895833 15.3530833,8.19025 14.9758=
+333,7.66795833 C14.223625,6.62133333 13.056875,5.93870833 11.8430417,5.5581=
+25 L11.8345,5.555125 C11.6015,5.48366667 11.36625,5.420375 11.1289583,5.366=
+20833 C10.4195833,5.20470833 9.69229167,5.12429167 8.96575,5.12429167 C7.99=
+016667,5.12429167 7.014625,5.26866667 6.08054167,5.55675 C4.867,5.941875 3.=
+69633333,6.61966667 2.94583333,7.66966667 L2.94583333,7.67045833 C2.5654583=
+3,8.19491667 2.34270833,8.84579167 2.34270833,9.49391667 C2.34270833,9.7325=
+4167 2.37254167,9.971125 2.435625,10.2032917 L2.43641667,10.2037083 C2.573,=
+10.724875 2.840125,11.19 3.18595833,11.5950833 C3.53158333,12.001125 3.9556=
+25,12.3475 4.401625,12.6300417 C4.50041667,12.6912917 4.59958333,12.749625 =
+4.70108333,12.8065833 C5.99666667,13.52975 7.4885,13.84675 8.969625,13.8467=
+5 C9.220125,13.84675 9.472125,13.8378333 9.721,13.8199167 C11.2125417,13.69=
+6625 12.71025,13.256375 13.921,12.3567917 L13.9214167,12.3558333 C14.306833=
+3,12.0709583 14.6638333,11.7261667 14.9462083,11.3339583 C15.22975,10.94154=
+17 15.4374167,10.5028333 15.529625,10.026375 L15.529625,10.025 L15.53,10.02=
+45833 C15.5677917,9.84666667 15.5860833,9.66604167 15.5860833,9.48479167 Z =
+M16.7633333,6.91458333 C16.7629583,6.75783333 16.7271667,6.60179167 16.6486=
+25,6.45625 L16.6466667,6.45441667 L16.645875,6.45208333 C16.5408333,6.23583=
+333 16.3759167,6.0725 16.1772083,5.96116667 C15.9784583,5.84908333 15.74587=
+5,5.79216667 15.5125417,5.79216667 C15.3015833,5.79216667 15.0917083,5.8393=
+3333 14.9054583,5.93295833 C15.4977917,6.44729167 16.0174167,7.06541667 16.=
+3532083,7.79279167 C16.4613333,7.69866667 16.5535417,7.58370833 16.6225417,=
+7.45595833 C16.7124167,7.28833333 16.7633333,7.10020833 16.7633333,6.914583=
+33 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>        </a>
+    </li>
+</ul>
+        <!-- Begin MailChimp Signup Form -->
+<section id=3D"mc_embed_signup" class=3D"subscribe-form box">
+    <form action=3D"https://bitsofco.us10.list-manage.com/subscribe/post?u=
+=3D282459d63a019df7bb8ca2e92&amp;id=3D7c802d4eab" method=3D"post" id=3D"mc-=
+embedded-subscribe-form" name=3D"mc-embedded-subscribe-form" class=3D"valid=
+ate" target=3D"_blank" novalidate=3D"">
+        <div id=3D"mc_embed_signup_scroll">
+            <h2 class=3D"h3 m-b-xsm"><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;">=D0=9F=D0=BE=D0=B4=D0=BF=D0=B8=
+=D1=81=D0=B0=D1=82=D1=8C=D1=81=D1=8F =D0=BD=D0=B0 =D1=80=D0=B0=D1=81=D1=81=
+=D1=8B=D0=BB=D0=BA=D1=83</font></font></h2>
+            <p class=3D"subscribe-form__description m-b-md"><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=9F=
+=D0=BE=D0=BB=D1=83=D1=87=D0=B8=D1=82=D0=B5 =D0=BA=D0=B0=D1=87=D0=B5=D1=81=
+=D1=82=D0=B2=D0=B5=D0=BD=D0=BD=D1=8B=D0=B5 =D1=81=D1=82=D0=B0=D1=82=D1=8C=
+=D0=B8, =D0=BD=D0=B0=D0=BF=D0=B8=D1=81=D0=B0=D0=BD=D0=BD=D1=8B=D0=B5 Ire Ad=
+erinokun, Front-End Developer =D0=B8 =D0=B4=D0=B8=D0=B7=D0=B0=D0=B9=D0=BD=
+=D0=B5=D1=80=D0=BE=D0=BC =D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=B0=
+=D1=82=D0=B5=D0=BB=D1=8C=D1=81=D0=BA=D0=BE=D0=B3=D0=BE =D0=B8=D0=BD=D1=82=
+=D0=B5=D1=80=D1=84=D0=B5=D0=B9=D1=81=D0=B0.</font></font></p>
+
+            <picture class=3D"subscribe-form__image">
+                <source type=3D"image/webp">
+                <source type=3D"image/png">
+                <img src=3D"https://bitsofco.de/assets/images/profile.png?v=
+=3Db2bce31307" alt=3D"=D0=9C=D1=83=D0=BB=D1=8C=D1=82=D1=84=D0=B8=D0=BB=D1=
+=8C=D0=BC =D0=BF=D1=80=D0=BE=D1=84=D0=B8=D0=BB=D1=8C =D0=BC=D0=B5=D0=BD=D1=
+=8F, =D0=B3=D0=BD=D0=B5=D0=B2">
+            </picture>
+
+            <div class=3D"subscribe-form__fields">
+
+
+                <div class=3D"subscribe-form__field subscribe-form__field--=
+input mc-field-group">
+                    <label for=3D"mce-EMAIL" class=3D"sr-only"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=
+=90=D0=B4=D1=80=D0=B5=D1=81 =D1=8D=D0=BB=D0=B5=D0=BA=D1=82=D1=80=D0=BE=D0=
+=BD=D0=BD=D0=BE=D0=B9 =D0=BF=D0=BE=D1=87=D1=82=D1=8B </font></font></label>
+                    <input type=3D"email" value=3D"" name=3D"EMAIL" class=
+=3D"required email" id=3D"mce-EMAIL" placeholder=3D"Email Address*">
+                </div>
+                <div class=3D"subscribe-form__field subscribe-form__field--=
+input mc-field-group">
+                    <label for=3D"mce-FNAME" class=3D"sr-only"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=
+=98=D0=BC=D1=8F </font></font></label>
+                    <input type=3D"text" value=3D"" name=3D"FNAME" class=3D=
+"" id=3D"mce-FNAME" placeholder=3D"First Name">
+                </div>
+
+                <div class=3D"subscribe-form__field subscribe-form__field--=
+submit clear">
+                    <font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;"><input type=3D"submit" value=3D"=D0=9F=D0=BE=D0=
+=B4=D0=BF=D0=B8=D1=81=D1=8B=D0=B2=D0=B0=D0=B9=D1=81=D1=8F" name=3D"subscrib=
+e" id=3D"mc-embedded-subscribe" class=3D"button"></font></font>
+                </div>
+
+                <div id=3D"mce-responses" class=3D"clear">
+                    <div class=3D"response" id=3D"mce-error-response" style=
+=3D"display:none"></div>
+                    <div class=3D"response" id=3D"mce-success-response" sty=
+le=3D"display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good th=
+ings - do not remove this or risk form bot signups-->
+                <div style=3D"position: absolute; left: -5000px;" aria-hidd=
+en=3D"true"></div>
+            </div>
+        </div>
+    </form>
+</section>
+<!--End mc_embed_signup-->        <section class=3D"post__suggestions m-b-m=
+d">
+    <h2 class=3D"sr-only"><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">=D0=91=D0=BE=D0=BB=D1=8C=D1=88=D0=B5 =D1=
+=81=D0=BE=D0=BE=D0=B1=D1=89=D0=B5=D0=BD=D0=B8=D0=B9</font></font></h2>
+
+    <article class=3D"post__suggestion">
+        <h3 class=3D"h3 no-ul">
+            <a href=3D"https://bitsofco.de/my-css-reset-base/">
+                <span><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">=E2=86=90</font></font></span><br><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=20
+                =D0=9C=D0=BE=D0=B9 CSS Reset / Base
+            </font></font></a>
+        </h3>
+        <p class=3D"post__meta"><em><a href=3D"https://bitsofco.de/tag/css/=
+"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">CSS</font></font></a></em></p>
+    </article>
+
+        <article class=3D"post__suggestion">
+            <h3 class=3D"h3 no-ul">
+                <a href=3D"https://bitsofco.de/a-siri-shortcut-to-generate-=
+pwa-icons-and-web-app-manifest/">
+                    <span><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">=E2=86=92</font></font></span><br><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+=20
+                    =D0=AF=D1=80=D0=BB=D1=8B=D0=BA Siri =D0=B4=D0=BB=D1=8F =
+=D1=81=D0=BE=D0=B7=D0=B4=D0=B0=D0=BD=D0=B8=D1=8F =D0=B7=D0=BD=D0=B0=D1=87=
+=D0=BA=D0=BE=D0=B2 PWA =D0=B8 =D0=BC=D0=B0=D0=BD=D0=B8=D1=84=D0=B5=D1=81=D1=
+=82=D0=B0 =D0=B2=D0=B5=D0=B1-=D0=BF=D1=80=D0=B8=D0=BB=D0=BE=D0=B6=D0=B5=D0=
+=BD=D0=B8=D1=8F
+                </font></font></a>
+            </h3>
+            <p class=3D"post__meta"><em><a href=3D"https://bitsofco.de/tag/=
+pwa/"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;">PWA</font></font></a></em></p>
+        </article>
+
+</section>    </footer>
+
+    <div id=3D"disqus_thread"></div>
+
+
+<a href=3D"http://disqus.com/" class=3D"dsq-brlink"><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">=D0=BA=D0=BE=D0=
+=BC=D0=BC=D0=B5=D0=BD=D1=82=D0=B0=D1=80=D0=B8=D0=B8 =D0=B2 =D0=B1=D0=BB=D0=
+=BE=D0=B3=D0=B5 =D0=BF=D1=80=D0=B8 =D0=BF=D0=BE=D0=B4=D0=B4=D0=B5=D1=80=D0=
+=B6=D0=BA=D0=B5 </font></font><span class=3D"logo-disqus"><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">Disqus</fo=
+nt></font></span></a>
+</article>
+
+
+
+</main>
+        <aside class=3D"site__sidebar">
+    <div class=3D"box p-a-sm m-b-md">
+        <p class=3D"m-b-sm"><strong><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=B1=D0=B8=D1=82=D0=BE=D0=B2=
+=D1=8B=D0=B9 =D0=BA=D0=BE=D0=B4</font></font></strong><font style=3D"vertic=
+al-align: inherit;"><font style=3D"vertical-align: inherit;"> . </font><fon=
+t style=3D"vertical-align: inherit;">=D0=A1=D1=82=D0=B0=D1=82=D1=8C=D0=B8 =
+=D0=BF=D0=BE =D1=80=D0=B0=D0=B7=D0=B2=D0=B8=D1=82=D0=B8=D1=8E =D0=B2=D0=B5=
+=D0=B1-=D0=B8=D0=BD=D1=82=D0=B5=D1=80=D1=84=D0=B5=D0=B9=D1=81=D0=B0. </font=
+><font style=3D"vertical-align: inherit;">=D0=92=D1=81=D0=B5 =D1=81=D1=82=
+=D0=B0=D1=82=D1=8C=D0=B8 =D0=BD=D0=B0=D0=BF=D0=B8=D1=81=D0=B0=D0=BD=D1=8B <=
+/font></font><a href=3D"https://ireaderinokun.com/"><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">Ire Aderinokun</=
+font></font></a><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;"> , =D1=80=D0=B0=D0=B7=D1=80=D0=B0=D0=B1=D0=BE=D1=82=
+=D1=87=D0=B8=D0=BA=D0=BE=D0=BC Frontend =D0=B8 =D0=B4=D0=B8=D0=B7=D0=B0=D0=
+=B9=D0=BD=D0=B5=D1=80=D0=BE=D0=BC =D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=
+=B2=D0=B0=D1=82=D0=B5=D0=BB=D1=8C=D1=81=D0=BA=D0=BE=D0=B3=D0=BE =D0=B8=D0=
+=BD=D1=82=D0=B5=D1=80=D1=84=D0=B5=D0=B9=D1=81=D0=B0.</font></font></p>
+
+        <a href=3D"https://twitter.com/ireaderinokun" class=3D"twitter-foll=
+ow-button" data-show-count=3D"true"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">=D0=A1=D0=BB=D0=B5=D0=B4=D1=83=
+=D0=B9=D1=82=D0=B5 @ireaderinokun</font></font></a>
+    </div>
+
+    <div class=3D"ad p-a-sm m-b-md no-ul box">
+
+</div>
+    <div class=3D"social">
+        <ul>
+            <li>
+                <a href=3D"https://bitsofco.de/rss" target=3D"_blank" rel=
+=3D"noopener">
+                    <span class=3D"sr-only"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">=D0=9D=D0=BE=D0=B2=D0=BE=
+=D1=81=D1=82=D0=BD=D0=B0=D1=8F =D0=BB=D0=B5=D0=BD=D1=82=D0=B0</font></font>=
+</span>
+                    <svg viewBox=3D"0 0 75 75">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <path d=3D"M25.922,61.664 C25.922,68.617 20.285,74.25 13.336,74.25 =
+C6.383,74.25 0.75,68.617 0.75,61.664 C0.75,54.715 6.383,49.078 13.336,49.07=
+8 C20.285,49.078 25.922,54.715 25.922,61.664 Z M67.957,74.25 C64.48,74.25 6=
+1.664,71.434 61.664,67.957 C61.664,34.258 40.73,13.336 7.043,13.336 C3.566,=
+13.336 0.75,10.52 0.75,7.043 C0.75,3.566 3.566,0.75 7.043,0.75 C26.941,0.75=
+ 43.793,7.109 55.852,19.148 C67.914,31.184 74.25,48.066 74.25,67.957 C74.25=
+,69.625 73.586,71.227 72.406,72.406 C71.227,73.586 69.625,74.25 67.957,74.2=
+5 Z M44.137,74.25 C40.66,74.25 37.844,71.434 37.844,67.957 C37.844,47.52 27=
+.48,37.156 7.043,37.156 C3.566,37.156 0.75,34.34 0.75,30.863 C0.75,27.387 3=
+.566,24.57 7.043,24.57 C34.613,24.57 50.43,40.379 50.43,67.949 C50.434,69.6=
+21 49.77,71.223 48.59,72.402 C47.41,73.586 45.809,74.25 44.137,74.25 Z" fil=
+l=3D"#3C3C3C"></path>
+    </g>
+</svg>                </a>
+            </li>
+            <li>
+                <a href=3D"https://twitter.com/botsofcode" target=3D"_blank=
+" rel=3D"noopener">
+                    <span class=3D"sr-only"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">=D1=89=D0=B5=D0=B1=D0=B5=
+=D1=82</font></font></span>
+                    <svg width=3D"19px" height=3D"15px" viewBox=3D"0 0 19 1=
+5">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g class=3D"fill" fill-rule=3D"nonzero" fill=3D"#3C3C3C">
+            <path d=3D"M18.9999991,1.77490775 C18.3009891,2.07601476 17.549=
+6341,2.27942804 16.7612291,2.37094096 C17.5658791,1.90249077 18.1840441,1.1=
+6070111 18.4751241,0.276752768 C17.7218691,0.710608856 16.8876741,1.0255535=
+1 15.9997091,1.1952952 C15.2887291,0.459594096 14.2756491,0 13.1544591,0 C1=
+1.0017591,0 9.25634305,1.6947417 9.25634305,3.7851476 C9.25634305,4.0818265=
+7 9.29080905,4.37075646 9.35728055,4.64778598 C6.11762855,4.48994465 3.2452=
+8455,2.98293358 1.32276005,0.692804428 C0.98718205,1.25184502 0.7949562,1.9=
+0212177 0.7949562,2.59584871 C0.7949562,3.90913284 1.48311055,5.06771218 2.=
+52911755,5.74649446 C1.89012855,5.72684502 1.28903505,5.55654982 0.7635245,=
+5.27306273 C0.763154,5.28883764 0.763154,5.30461255 0.763154,5.32066421 C0.=
+763154,7.15464022 2.1068435,8.68445572 3.8900315,9.03230627 C3.5629845,9.11=
+879151 3.2186095,9.16510148 2.8631005,9.16510148 C2.611911,9.16510148 2.367=
+723,9.14131919 2.129672,9.0971679 C2.6257145,10.6009317 4.065297,11.6954059=
+ 5.77106,11.725821 C4.4369845,12.7411531 2.7562255,13.3463007 0.9298866,13.=
+3463007 C0.61523615,13.3463007 0.30492815,13.328321 0,13.2933672 C1.725067,=
+14.3673303 3.774065,14.9940959 5.975386,14.9940959 C13.14534,14.9940959 17.=
+066275,9.22621771 17.066275,4.22407749 C17.066275,4.0599631 17.06238,3.8967=
+7122 17.054875,3.73440959 C17.8165841,3.20064576 18.4774041,2.53404059 18.9=
+999991,1.77490775"></path>
+        </g>
+    </g>
+</svg>                </a>
+            </li>
+            <li>
+                <a href=3D"https://www.facebook.com/bitsofcodeblog" target=
+=3D"_blank" rel=3D"noopener">
+                    <span class=3D"sr-only"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">facebook</font></font></=
+span>
+                    <svg width=3D"15px" height=3D"15px" viewBox=3D"0 0 15 1=
+5">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g transform=3D"translate(-162.000000, -200.000000)" fill-rule=3D"n=
+onzero">
+            <g transform=3D"translate(126.000000, 127.000000)">
+                <g transform=3D"translate(3.000000, 73.000000)">
+                    <g transform=3D"translate(33.000000, 0.000000)">
+                        <path d=3D"M14.1360232,14.9598649 C14.590888,14.959=
+8649 14.959749,14.5910039 14.959749,14.1360232 L14.959749,0.857837838 C14.9=
+59749,0.402799228 14.5909459,0.0340540541 14.1360232,0.0340540541 L0.857837=
+838,0.0340540541 C0.402799228,0.0340540541 0.0340540541,0.402799228 0.03405=
+40541,0.857837838 L0.0340540541,14.1360232 C0.0340540541,14.5909459 0.40274=
+1313,14.9598649 0.857837838,14.9598649 L14.1360232,14.9598649 Z" class=3D"f=
+ill" fill=3D"#3C3C3C"></path>
+                        <path d=3D"M10.3325676,14.9598649 L10.3325676,9.179=
+76834 L12.2726641,9.17976834 L12.563166,6.92716216 L10.3325676,6.92716216 L=
+10.3325676,5.48901544 C10.3325676,4.83683398 10.513668,4.39239382 11.448880=
+3,4.39239382 L12.6416988,4.39187259 L12.6416988,2.37712355 C12.4354054,2.34=
+967181 11.7273359,2.28833977 10.9035521,2.28833977 C9.18376448,2.28833977 8=
+.00635135,3.33810811 8.00635135,5.26592664 L8.00635135,6.92716216 L6.061274=
+13,6.92716216 L6.06127413,9.17976834 L8.00635135,9.17976834 L8.00635135,14.=
+9598649 L10.3325676,14.9598649 Z" fill=3D"#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>                </a>
+            </li>
+            <li>
+                <a href=3D"https://www.youtube.com/c/bitsofcode" target=3D"=
+_blank" rel=3D"noopener">
+                    <span class=3D"sr-only"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">YouTube</font></font></s=
+pan>
+                    <svg viewBox=3D"0 0 36 25">
+    <g stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-rule=3D"evenod=
+d">
+        <g>
+            <polyline fill=3D"#FFFFFF" points=3D"14.0898818 17.1168637 23.6=
+865438 12.1446801 14.0898818 7.13772601 14.0898818 17.1168637"></polyline>
+            <polyline fill=3D"#DEDED9" points=3D"22.5058067 12.7575104 22.5=
+049026 12.7569193 23.6865438 12.1446801 22.5058067 12.7575104"></polyline>
+            <mask id=3D"youtube-mask-1" fill=3D"white">
+                <polygon points=3D"0.00208623088 24.9979138 0.00208623088 0=
+.0200625869 35.5163421 0.0200625869 35.5163421 24.9979138"></polygon>
+            </mask>
+            <polyline fill=3D"#DEDED9" mask=3D"url(#youtube-mask-1)" points=
+=3D"22.5049026 12.7569193 14.0898818 7.13772601 23.6865438 12.1446801 22.50=
+49026 12.7569193"></polyline>
+            <path d=3D"M14.091516,17.1168637 L14.0898818,7.13772601 L23.686=
+5438,12.1446801 L14.091516,17.1168637 Z M35.1616829,5.40897079 C35.1616829,=
+5.40897079 34.8146732,2.96150904 33.7497218,1.8837274 C32.3991655,0.4691585=
+54 30.8853268,0.46213491 30.1910987,0.379346314 C25.2211057,0.0200625869 17=
+.7658554,0.0200625869 17.7658554,0.0200625869 L17.7504172,0.0200625869 C17.=
+7504172,0.0200625869 10.2953408,0.0200625869 5.32517385,0.379346314 C4.6309=
+1099,0.46213491 3.11762865,0.469158554 1.76658554,1.8837274 C0.701703755,2.=
+96150904 0.355180807,5.40897079 0.355180807,5.40897079 C0.355180807,5.40897=
+079 0,8.28310153 0,11.1571975 L0,13.851669 C0,16.7257302 0.355180807,19.599=
+8261 0.355180807,19.5998261 C0.355180807,19.5998261 0.701703755,22.0473227 =
+1.76658554,23.1251043 C3.11762865,24.5397079 4.89231572,24.4949583 5.682753=
+82,24.6432197 C8.52409597,24.9156815 17.7581711,25 17.7581711,25 C17.758171=
+1,25 25.2211057,24.9887691 30.1910987,24.6295202 C30.8853268,24.5466968 32.=
+3991655,24.5397079 33.7497218,23.1251043 C34.8146732,22.0473227 35.1616829,=
+19.5998261 35.1616829,19.5998261 C35.1616829,19.5998261 35.5163421,16.72573=
+02 35.5163421,13.851669 L35.5163421,11.1571975 C35.5163421,8.28310153 35.16=
+16829,5.40897079 35.1616829,5.40897079 L35.1616829,5.40897079 Z" class=3D"f=
+ill" fill=3D"#3C3C3C" mask=3D"url(#youtube-mask-1)"></path>
+        </g>
+    </g>
+</svg>                </a>
+            </li>
+        </ul>
+    </div>
+</aside>    </div>
+</div>
+
+<footer class=3D"site__footer p-t-md p-b-md">
+    <div class=3D"wrapper">
+        <p class=3D"fs-i m-b-sm"><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">=D0=92=D1=81=D0=B5 =D1=81=D1=82=D0=
+=B0=D1=82=D1=8C=D0=B8, =D0=BD=D0=B0=D0=BF=D0=B8=D1=81=D0=B0=D0=BD=D0=BD=D1=
+=8B=D0=B5 =D1=81 </font></font><a href=3D"https://www.ireaderinokun.com/"><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">I Ire Aderinokun</font></font></a></p>
+        <nav id=3D"site__footer__nav" class=3D"site__footer__nav m-b-sm no-=
+ul"><ul class=3D"nav" role=3D"menu">
+    <li class=3D"nav-home" role=3D"menuitem"><a href=3D"https://bitsofco.de=
+/"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=D0=93=D0=BB=D0=B0=D0=B2=D0=BD=D0=B0=D1=8F</font></font></a></li>
+    <li class=3D"nav-your-saved-articles" role=3D"menuitem"><a href=3D"http=
+s://bitsofco.de/saved/"><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">=D0=92=D0=B0=D1=88=D0=B8 =D1=81=D0=BE=D1=85=
+=D1=80=D0=B0=D0=BD=D0=B5=D0=BD=D0=BD=D1=8B=D0=B5 =D1=81=D1=82=D0=B0=D1=82=
+=D1=8C=D0=B8</font></font></a></li>
+    <li class=3D"nav-subscribe" role=3D"menuitem"><a href=3D"https://bitsof=
+co.de/subscribe"><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">=D0=9F=D0=BE=D0=B4=D0=BF=D0=B8=D1=81=D1=8B=D0=B2=D0=
+=B0=D0=B9=D1=81=D1=8F</font></font></a></li>
+</ul>
+</nav>
+    </div>
+</footer>
+
+<div class=3D"dialog-overlay" aria-hidden=3D"true"></div>
+
+
+
+
+<div id=3D"goog-gt-tt" class=3D"skiptranslate" dir=3D"ltr"><div style=3D"pa=
+dding: 8px;"><div><div class=3D"logo"><img src=3D"https://www.gstatic.com/i=
+mages/branding/product/1x/translate_24dp.png" width=3D"20" height=3D"20" al=
+t=3D"Google =D0=9F=D0=B5=D1=80=D0=B5=D0=B2=D0=BE=D0=B4=D1=87=D0=B8=D0=BA"><=
+/div></div></div><div class=3D"top" style=3D"padding: 8px; float: left; wid=
+th: 100%;"><h1 class=3D"title gray">=D0=98=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=
+=8B=D0=B9 =D1=82=D0=B5=D0=BA=D1=81=D1=82</h1></div><div class=3D"middle" st=
+yle=3D"padding: 8px;"><div class=3D"original-text"></div></div><div class=
+=3D"bottom" style=3D"padding: 8px;"><div class=3D"activity-links"><span cla=
+ss=3D"activity-link">=D0=9F=D1=80=D0=B5=D0=B4=D0=BB=D0=BE=D0=B6=D0=B8=D1=82=
+=D1=8C =D0=BB=D1=83=D1=87=D1=88=D0=B8=D0=B9 =D0=B2=D0=B0=D1=80=D0=B8=D0=B0=
+=D0=BD=D1=82 =D0=BF=D0=B5=D1=80=D0=B5=D0=B2=D0=BE=D0=B4=D0=B0</span><span c=
+lass=3D"activity-link"></span></div><div class=3D"started-activity-containe=
+r"><hr style=3D"color: #CCC; background-color: #CCC; height: 1px; border: n=
+one;"><div class=3D"activity-root"></div></div></div><div class=3D"status-m=
+essage" style=3D"display: none;"></div></div>
+
+<div class=3D"goog-te-spinner-pos"><div class=3D"goog-te-spinner-animation"=
+><svg xmlns=3D"http://www.w3.org/2000/svg" class=3D"goog-te-spinner" width=
+=3D"96px" height=3D"96px" viewBox=3D"0 0 66 66"><circle class=3D"goog-te-sp=
+inner-path" fill=3D"none" stroke-width=3D"6" stroke-linecap=3D"round" cx=3D=
+"33" cy=3D"33" r=3D"30"></circle></svg></div></div></body></html>
+------MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://bitsofco.de/assets/built/global.css?v=b2bce31307
+
+@charset "utf-8";
+
+a, abbr, address, article, aside, audio, blockquote, body, canvas, caption,=
+ cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, =
+figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe,=
+ img, ins, label, legend, li, main, mark, nav, ol, p, pre, q, section, smal=
+l, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, tim=
+e, tr, ul, video { margin: 0px; padding: 0px; border: 0px; }
+
+html { font-size: 62.5%; }
+
+body { font-size: 1.6rem; line-height: 1.4; }
+
+* { font: inherit; }
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
+
+small, sub, sup { font-size: small; }
+
+a, a:visited { color: inherit; }
+
+article, aside, footer, header, main, nav, section { display: block; }
+
+* { box-sizing: border-box; }
+
+::after, ::before { box-sizing: inherit; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+ol, ul { list-style: none; }
+
+img, video { max-width: 100%; }
+
+img { border-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote::after, blockquote::before, q::after, q::before { content: none;=
+ }
+
+[hidden] { display: none !important; }
+
+[disabled] { cursor: not-allowed; }
+
+.sr-only { position: absolute; clip: rect(1px, 1px, 1px, 1px); left: -9999p=
+x; top: -9999px; }
+
+body { font-size: 1.5rem; line-height: 1.6; font-family: -apple-system, Bli=
+nkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Ubuntu,=
+ Cantarell, sans-serif; font-weight: 300; }
+
+small { font-size: 1.3rem; }
+
+strong { font-weight: 600; }
+
+mark { background-color: rgb(255, 219, 58); }
+
+.h1 { font-size: 2.6rem; font-weight: 600; }
+
+.h2, .post__content h2 { font-size: 2.3rem; font-weight: 600; }
+
+.h3, .post__content h3 { font-size: 1.9rem; font-weight: 600; }
+
+.h4, .post__content h4 { font-size: 1.8rem; font-weight: 600; }
+
+.focus--theme { outline: 0px; }
+
+.focus--theme:focus, .focus--theme:hover { color: rgb(255, 219, 58); }
+
+.focus--theme:focus .fill, .focus--theme:hover .fill { fill: rgb(255, 219, =
+58); }
+
+* { outline-color: rgb(255, 219, 58); }
+
+p::selection { background: rgb(255, 219, 58); }
+
+a::selection { background: rgb(255, 219, 58); }
+
+h1::selection { background: rgb(255, 219, 58); }
+
+h2::selection { background: rgb(255, 219, 58); }
+
+h3::selection { background: rgb(255, 219, 58); }
+
+h4::selection { background: rgb(255, 219, 58); }
+
+div::selection { background: rgb(255, 219, 58); }
+
+code::selection { background: rgb(255, 219, 58); }
+
+pre::selection { background: rgb(255, 219, 58); }
+
+strong::selection { background: rgb(255, 219, 58); }
+
+em::selection { background: rgb(255, 219, 58); }
+
+li::selection { background: rgb(255, 219, 58); }
+
+table::selection { background: rgb(255, 219, 58); }
+
+img::selection { background: rgb(255, 219, 58); }
+
+img { position: relative; font-size: 1.4rem; font-style: italic; }
+
+img::after { content: "Uh Oh! This image is broken! (" attr(alt) ")"; displ=
+ay: block; position: absolute; top: 0px; left: 0px; min-height: 100%; heigh=
+t: auto; width: 100%; padding: 5px 10px; border: 2px solid rgb(230, 230, 23=
+0); background-color: rgb(245, 245, 245); z-index: 1; }
+
+.ad img, img.show-broken { font-style: normal; }
+
+.ad img::after, img.show-broken::after { content: ""; border: 0px; backgrou=
+nd-color: initial; z-index: initial; padding: 0px; position: relative; }
+
+.no-ul, .no-ul a { text-decoration: none; }
+
+.ta-center { text-align: center; }
+
+.ta-right { text-align: right; }
+
+.ta-left { text-align: left; }
+
+.fw-100 { font-weight: 100; }
+
+.fw-200 { font-weight: 200; }
+
+.fw-300 { font-weight: 300; }
+
+.fw-400 { font-weight: 400; }
+
+.fw-500 { font-weight: 500; }
+
+.fw-600 { font-weight: 600; }
+
+.fw-700 { font-weight: 700; }
+
+.fw-800 { font-weight: 800; }
+
+.fw-900 { font-weight: 900; }
+
+.fs-i { font-style: italic; }
+
+.fs-o { font-style: oblique; }
+
+.fs-n { font-style: normal; }
+
+.m-t-xsm { margin-top: 5px; }
+
+.m-r-xsm { margin-right: 5px; }
+
+.m-b-xsm { margin-bottom: 5px; }
+
+.m-l-xsm { margin-left: 5px; }
+
+.m-a-xsm { margin: 5px; }
+
+.m-t-sm { margin-top: 10px; }
+
+.m-r-sm { margin-right: 10px; }
+
+.m-b-sm { margin-bottom: 10px; }
+
+.m-l-sm { margin-left: 10px; }
+
+.m-a-sm { margin: 10px; }
+
+.m-t-md { margin-top: 25px; }
+
+.m-r-md { margin-right: 25px; }
+
+.m-b-md { margin-bottom: 25px; }
+
+.m-l-md { margin-left: 25px; }
+
+.m-a-md { margin: 25px; }
+
+.m-t-lg { margin-top: 50px; }
+
+.m-r-lg { margin-right: 50px; }
+
+.m-b-lg { margin-bottom: 50px; }
+
+.m-l-lg { margin-left: 50px; }
+
+.m-a-lg { margin: 50px; }
+
+.m-t-xlg { margin-top: 80px; }
+
+.m-r-xlg { margin-right: 80px; }
+
+.m-b-xlg { margin-bottom: 80px; }
+
+.m-l-xlg { margin-left: 80px; }
+
+.m-a-xlg { margin: 80px; }
+
+.p-t-xsm { padding-top: 5px; }
+
+.p-r-xsm { padding-right: 5px; }
+
+.p-b-xsm { padding-bottom: 5px; }
+
+.p-l-xsm { padding-left: 5px; }
+
+.p-a-xsm { padding: 5px; }
+
+.p-t-sm { padding-top: 10px; }
+
+.p-r-sm { padding-right: 10px; }
+
+.p-b-sm { padding-bottom: 10px; }
+
+.p-l-sm { padding-left: 10px; }
+
+.p-a-sm { padding: 10px; }
+
+.p-t-md { padding-top: 25px; }
+
+.p-r-md { padding-right: 25px; }
+
+.p-b-md { padding-bottom: 25px; }
+
+.p-l-md { padding-left: 25px; }
+
+.p-a-md { padding: 25px; }
+
+.p-t-lg { padding-top: 50px; }
+
+.p-r-lg { padding-right: 50px; }
+
+.p-b-lg { padding-bottom: 50px; }
+
+.p-l-lg { padding-left: 50px; }
+
+.p-a-lg { padding: 50px; }
+
+.p-t-xlg { padding-top: 80px; }
+
+.p-r-xlg { padding-right: 80px; }
+
+.p-b-xlg { padding-bottom: 80px; }
+
+.p-l-xlg { padding-left: 80px; }
+
+.p-a-xlg { padding: 80px; }
+
+body { background: rgb(245, 245, 245); border: 3px solid rgb(255, 219, 58);=
+ min-height: 100vh; }
+
+@media screen and (min-width: 400px) {
+  body { border: 5px solid rgb(255, 219, 58); }
+}
+
+.wrapper { width: 90%; max-width: 980px; margin-left: auto; margin-right: a=
+uto; }
+
+.wrapper--flex { display: flex; min-height: 100%; }
+
+.site__header { height: 60px; border-bottom: 2px solid rgb(230, 230, 230); =
+margin-bottom: 40px; }
+
+@media screen and (min-width: 500px) {
+  .site__header { margin-bottom: 70px; }
+}
+
+.site__header .wrapper--flex { justify-content: space-between; align-items:=
+ center; }
+
+.site__title a { outline: 0px; }
+
+.no-btn { border: 0px; background: 0px 0px; font-family: -apple-system, Bli=
+nkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Ubuntu,=
+ Cantarell, sans-serif; font-size: 1.5rem; cursor: pointer; padding: 0px; w=
+idth: auto; }
+
+.site__nav ul { display: flex; flex-wrap: wrap; width: 100%; margin-top: 30=
+px; }
+
+.site__nav li { width: 100%; font-size: 2.4rem; font-weight: 600; margin-bo=
+ttom: 10px; }
+
+.site__nav li a { text-decoration: none; outline: 0px; }
+
+.site__nav li a:focus, .site__nav li a:hover { color: rgb(255, 219, 58); }
+
+.site__nav li a[href*=3D"patreon.com"] { position: relative; }
+
+.site__nav li a[href*=3D"patreon.com"]::after { content: "=E2=86=97"; posit=
+ion: absolute; right: -25px; top: 7px; font-size: 2rem; line-height: 1; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li { animation-name: navItem=
+FadeIn; animation-duration: 0.5s; animation-fill-mode: both; animation-dire=
+ction: normal; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(2) { animation-=
+delay: 0.2s; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(3) { animation-=
+delay: 0.4s; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(4) { animation-=
+delay: 0.6s; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(5) { animation-=
+delay: 0.8s; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(6) { animation-=
+delay: 1s; }
+
+.dialog:not([aria-hidden=3D"true"]) .site__nav li:nth-child(7) { animation-=
+delay: 1.2s; }
+
+@keyframes navItemFadeIn {=20
+  0% { transform: translateY(0px); opacity: 0; }
+  100% { transform: translateY(-10px); opacity: 1; }
+}
+
+.site__footer { border-top: 2px solid rgb(230, 230, 230); text-align: cente=
+r; }
+
+.site__footer__nav ul { text-align: center; }
+
+.site__footer__nav li { display: inline-block; position: relative; padding-=
+right: 10px; padding-left: 10px; }
+
+.site__footer__nav li:not(:last-child)::after { content: ""; height: 5px; w=
+idth: 5px; background: rgb(60, 60, 60); border-radius: 50%; position: absol=
+ute; right: -5px; top: 8px; }
+
+.site__footer__nav a { font-weight: 600; }
+
+.site__footer__nav a[href*=3D"patreon.com"] { background: rgb(255, 219, 58)=
+; }
+
+.site__body { margin-bottom: 50px; }
+
+.site__body .wrapper--flex { display: flex; justify-content: space-between;=
+ flex-wrap: wrap; }
+
+.site__main { width: 100%; min-height: calc(100vh - 350px); margin-bottom: =
+30px; }
+
+@media screen and (min-width: 850px) {
+  .site__main { width: 65%; }
+}
+
+.site__sidebar { width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .site__sidebar { width: 30%; }
+}
+
+#logo { height: 16px; width: auto; overflow: visible; }
+
+.site__title a:focus .logo-section-left, .site__title a:focus .logo-section=
+-middle, .site__title a:focus .logo-section-right, .site__title a:hover .lo=
+go-section-left, .site__title a:hover .logo-section-middle, .site__title a:=
+hover .logo-section-right { animation-duration: 3s; animation-timing-functi=
+on: ease-in-out; animation-iteration-count: infinite; }
+
+.site__title a:focus .logo-section-left, .site__title a:hover .logo-section=
+-left { animation-name: logoSectionLeft; }
+
+.site__title a:focus .logo-section-middle, .site__title a:hover .logo-secti=
+on-middle { animation-name: logoSectionMiddle; }
+
+.site__title a:focus .logo-section-right, .site__title a:hover .logo-sectio=
+n-right { animation-name: logoSectionRight; }
+
+@keyframes logoSectionLeft {=20
+  0% { transform: none; }
+  12.5% { transform: translateX(-15px); }
+  25%, 50% { transform: none; }
+  62.5% { transform: translateX(-15px); }
+  67%, 72% { transform: translateX(-15px) rotate(-10deg); }
+  82% { transform: translateX(-15px) rotate(-15deg); }
+  87.5% { transform: translateX(-15px); }
+  100% { transform: none; }
+}
+
+@keyframes logoSectionMiddle {=20
+  0% { transform: none; }
+  12.5% { transform: translateX(-15px); }
+  25% { transform: none; }
+  37.5% { transform: translateX(15px); }
+  50%, 62.5% { transform: none; }
+  67%, 72% { transform: rotate(7deg); }
+  82% { transform: rotate(12deg); }
+  100%, 87.5% { transform: none; }
+}
+
+@keyframes logoSectionRight {=20
+  0%, 25% { transform: none; }
+  37.5% { transform: translateX(15px); }
+  50% { transform: none; }
+  62.5% { transform: translateX(15px); }
+  67%, 72% { transform: translateX(15px) rotate(-7deg); }
+  82% { transform: translateX(15px) rotate(-12deg); }
+  87.5% { transform: translateX(15px); }
+  100% { transform: none; }
+}
+
+.excerpt { padding-bottom: 30px; margin-bottom: 30px; }
+
+.excerpt:not(:last-of-type) { border-bottom: 2px solid rgb(230, 230, 230); =
+}
+
+.post__suggestions { display: flex; justify-content: space-between; }
+
+.post__suggestion { width: 100%; }
+
+@media screen and (min-width: 400px) {
+  .post__suggestion { width: 50%; }
+}
+
+.post__suggestion:only-of-type { width: 100%; }
+
+.post__suggestion:last-child { text-align: right; }
+
+.post__meta > :not(:last-child) { margin-right: 10px; padding-right: 10px; =
+position: relative; }
+
+.post__meta > :not(:last-child)::after { content: ""; height: 5px; width: 5=
+px; background: rgb(60, 60, 60); border-radius: 50%; position: absolute; ri=
+ght: -5px; top: 6px; }
+
+.post__content { border-bottom: 2px solid rgb(230, 230, 230); line-height: =
+1.7; font-size: 1.65rem; }
+
+.post__content p { margin-bottom: 1rem; }
+
+.post__content small { font-size: 1.45rem; }
+
+.post__content a > code, .post__content h2 > code, .post__content h3 > code=
+, .post__content li > code, .post__content p > code, .post__content span > =
+code, .post__content td > code, .post__content th > code { font-family: "Da=
+nk Mono", Inconsolata, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", mono=
+space; font-weight: 600; }
+
+.post__content p > code { font-size: 0.9em; }
+
+.post__content h2 { margin-top: 4rem; margin-bottom: 1rem; }
+
+.post__content h3 { margin-top: 3rem; margin-bottom: 1rem; }
+
+.post__content h4 { margin-top: 3rem; margin-bottom: 1rem; }
+
+.h4, .post__content h4 { font-size: 1.6rem; }
+
+.post__content ol, .post__content ul { margin-left: 4rem; margin-top: 3rem;=
+ margin-bottom: 3rem; }
+
+.post__content ol ol, .post__content ol ul, .post__content ul ol, .post__co=
+ntent ul ul { margin-top: 5px; margin-bottom: 5px; }
+
+.post__content ul { list-style-type: disc; }
+
+.post__content blockquote { border-left: 5px solid rgb(255, 219, 58); paddi=
+ng-top: 1rem; padding-bottom: 1rem; padding-left: 1.5rem; margin-top: 3rem;=
+ margin-bottom: 3rem; }
+
+.post__content blockquote p { margin: 0px; font-style: italic; }
+
+.post__content cite { margin-top: -1rem; display: block; padding-left: 3rem=
+; padding-bottom: 1rem; }
+
+.post__content cite::before { content: "=E2=80=94"; padding-right: 1rem; }
+
+.post__content blockquote cite { padding: 0px; }
+
+.post__content table { border: 0px; width: 100%; margin-top: 3rem; margin-b=
+ottom: 3rem; font-size: 1.55rem; }
+
+.post__content table thead { font-weight: 600; text-align: left; background=
+-color: rgb(230, 230, 230); }
+
+.post__content table thead th, .post__content table thead tr { padding: 10p=
+x; }
+
+.post__content table tr { border-bottom: 2px solid rgb(230, 230, 230); }
+
+.post__content table td { padding: 10px; }
+
+.post__content img:not(.d-ib) { width: 100%; height: auto; margin-top: 3rem=
+; margin-bottom: 3rem; }
+
+.post__content img.d-ib { max-width: 100%; height: auto; display: inline-bl=
+ock; margin: 0px auto; padding: 0px 10px 10px; }
+
+.post__content .img-inline img { display: inline-block; margin: 0px 10px 20=
+px; }
+
+.post__content .img-inline { text-align: center; }
+
+.post__content .img-subheading { font-size: 1.4rem; font-style: italic; tex=
+t-align: center; display: block; margin-top: -20px; margin-bottom: 20px; }
+
+.post__content video { max-width: 100%; margin-top: 3rem; margin-bottom: 3r=
+em; }
+
+.post__content video[autoplay] { width: 100%; }
+
+.post__content .ta-center { text-align: center; }
+
+.post__content blockquote.twitter-tweet { display: block; margin: 0px auto;=
+ }
+
+.post__content #twitter-widget-0 { margin: 10px auto; }
+
+.post__content .twitter-tweet-container [data-tweet-id=3D"78842537458997248=
+1"] { width: 300px !important; }
+
+.post__content .youtube-container { position: relative; padding-bottom: 56.=
+25%; padding-top: 30px; height: 0px; overflow: hidden; width: 100%; margin-=
+bottom: 1.5em; }
+
+.post__content .youtube-container iframe { position: absolute; top: 0px; le=
+ft: 0px; width: 100%; height: 100%; }
+
+.post__content .email-display { display: none; }
+
+.post__content hr { border-width: 0px 0px 2px; border-top-style: initial; b=
+order-right-style: initial; border-left-style: initial; border-top-color: i=
+nitial; border-right-color: initial; border-left-color: initial; border-ima=
+ge: initial; border-bottom-style: solid; border-bottom-color: rgb(230, 230,=
+ 230); margin-bottom: 3rem; }
+
+.post__content .code-addendum { font-family: -apple-system, BlinkMacSystemF=
+ont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Ubuntu, Cantarell, =
+sans-serif; font-size: 1.2rem; font-weight: 400; color: rgb(255, 255, 255);=
+ margin-top: -22px; margin-bottom: 2rem; border-bottom-left-radius: 3px; bo=
+rder-bottom-right-radius: 3px; padding-left: 10px; padding-right: 10px; }
+
+.post__content .code-addendum.warning { background-color: rgb(221, 74, 104)=
+; }
+
+.post__content .code-addendum.success { background-color: rgb(39, 174, 96);=
+ }
+
+.post__content .code-heading { font-family: -apple-system, BlinkMacSystemFo=
+nt, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Ubuntu, Cantarell, s=
+ans-serif; font-size: 1.2rem; font-weight: 400; margin-bottom: -22px; margi=
+n-top: 2rem; border-top-left-radius: 3px; border-top-right-radius: 3px; pad=
+ding: 3px 10px; position: relative; background-color: rgb(0, 0, 0); color: =
+rgb(255, 255, 255); }
+
+.post__content .code-heading p { margin: 0px; }
+
+.post__content span.checkmark { font-size: 1.8rem; font-weight: 600; text-a=
+lign: center; display: block; }
+
+.post__content span.checkmark.green { color: rgb(61, 125, 61); }
+
+.post__content span.checkmark.red { color: rgb(195, 64, 91); }
+
+.post__content table.pseudo-selectors td, .post__content table.pseudo-selec=
+tors th { width: 50%; text-align: center; }
+
+.post__content #target-test { background-color: transparent; border-bottom:=
+ 3px solid rgb(255, 219, 58); font-weight: 700; }
+
+.post__content #target-test:target { background-color: rgb(255, 219, 58); }
+
+.footnotes { margin-top: 2em; margin-bottom: -2em; padding-top: 2em; border=
+-top: 2px solid rgb(230, 230, 230); }
+
+ul.dom-tree, ul.dom-tree li, ul.dom-tree ul { padding: 0px; margin: 0px; li=
+st-style: none; }
+
+ul.dom-tree { display: block; margin-top: 2rem; margin-bottom: 2rem; }
+
+ul.dom-tree ul { padding-left: 2em; }
+
+ul.dom-tree li { position: relative; }
+
+ul.dom-tree ul li:first-child::before { content: ""; position: absolute; to=
+p: -1em; height: 2em; left: -0.75em; width: 1em; border-style: none none so=
+lid solid; border-width: 0.1em; border-color: rgb(60, 60, 60); }
+
+ul.dom-tree li:not(:last-child)::after { content: ""; position: absolute; t=
+op: 0px; bottom: -0.6em; left: -0.75em; width: 1em; border-style: none none=
+ solid solid; border-width: 0.1em; border-color: rgb(60, 60, 60); }
+
+ul.dom-tree li span { background-color: rgb(60, 60, 60); color: rgb(255, 25=
+5, 255); padding: 0px 7px; margin-bottom: 10px; display: inline-block; bord=
+er-radius: 3px; min-width: 2em; text-align: center; }
+
+.post__share { display: flex; margin-top: -15px; margin-bottom: 30px; }
+
+.post__footer { border-bottom: 2px solid rgb(230, 230, 230); }
+
+.page__content { border-bottom: 0px; }
+
+.box { border: 2px solid rgb(230, 230, 230); border-radius: 3px; }
+
+.pagination { position: relative; text-align: center; display: flex; justif=
+y-content: space-between; }
+
+#save { background: 0px 0px; border: 0px; font-family: inherit; font-size: =
+1.3rem; font-weight: 600; cursor: pointer; padding-left: 0px; position: rel=
+ative; }
+
+#save .icon { vertical-align: sub; }
+
+#save .label { position: absolute; width: 300px; height: 100%; top: 0px; le=
+ft: 100%; z-index: 1; text-align: left; background-color: rgb(245, 245, 245=
+); opacity: 0; transform: translate(-9999px, -9999px); transition: opacity =
+0.5s ease 0s; }
+
+#save:focus .label, #save:hover .label { transform: none; opacity: 1; }
+
+#save.saved path { fill: rgb(144, 205, 78); }
+
+.ad { text-align: center; }
+
+#carbonads .carbon-text { display: block; font-size: 1.3rem; margin-top: 10=
+px; margin-bottom: 10px; }
+
+#carbonads .carbon-poweredby { font-size: 1.3rem; font-style: italic; }
+
+code[class*=3D"language-"], pre, pre[class*=3D"language-"] { color: rgb(255=
+, 255, 255); background: 0px 0px; font-family: "Dank Mono", Inconsolata, Co=
+nsolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; text-align: left; =
+white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: =
+normal; line-height: 1.5; tab-size: 4; hyphens: none; font-size: 1.5rem; }
+
+:not(pre) > code[class*=3D"language-"], pre, pre[class*=3D"language-"] { ba=
+ckground: rgb(60, 60, 60); }
+
+pre, pre[class*=3D"language-"] { overflow: auto; border: 0px; border-radius=
+: 3px; padding: 1.5rem; margin-top: 2rem; margin-bottom: 2rem; }
+
+pre[class*=3D"language-"]::selection { background: rgb(39, 41, 42); }
+
+code[class*=3D"language-"]::selection, pre[class*=3D"language-"]::selection=
+ { text-shadow: none; background: rgba(237, 237, 237, 0.15); }
+
+:not(pre) > code[class*=3D"language-"] { border-radius: 0.3em; border: 0.13=
+em solid rgb(84, 84, 84); box-shadow: rgb(0, 0, 0) 1px 1px 0.3em -0.1em ins=
+et; padding: 0.15em 0.2em 0.05em; white-space: normal; }
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog { color: rgb(12=
+0, 120, 120); }
+
+.token.punctuation { opacity: 0.7; }
+
+.namespace { opacity: 0.7; }
+
+.token.boolean, .token.deleted, .token.number { color: rgb(103, 179, 221); =
+}
+
+.token.builtin, .token.constant, .token.keyword, .token.selector, .token.sy=
+mbol, .token.tag { color: rgb(255, 219, 58); }
+
+.language-css .token.string, .style .token.string, .token.char, .token.enti=
+ty, .token.inserted, .token.operator, .token.url, .token.variable { color: =
+rgb(103, 179, 221); }
+
+.token.attr-name, .token.attr-value, .token.function, .token.property { col=
+or: rgb(242, 133, 150); }
+
+.token.atrule { color: rgb(115, 134, 165); }
+
+.token.important, .token.regex { color: rgb(233, 193, 99); }
+
+.token.bold, .token.important { font-weight: 700; }
+
+.token.italic { font-style: italic; }
+
+.token.entity { cursor: help; }
+
+pre[data-line] { padding: 1em 0px 1em 3em; position: relative; }
+
+.token { position: relative; z-index: 1; }
+
+.line-highlight { background: linear-gradient(to right, rgba(84, 84, 84, 0.=
+1) 70%, rgba(84, 84, 84, 0)); border-bottom: 1px dashed rgb(84, 84, 84); bo=
+rder-top: 1px dashed rgb(84, 84, 84); left: 0px; line-height: inherit; marg=
+in-top: 0.75em; pointer-events: none; position: absolute; right: 0px; white=
+-space: pre; z-index: 0; }
+
+.line-highlight::before, .line-highlight[data-end]::after { background-colo=
+r: rgb(135, 148, 166); border-radius: 999px; box-shadow: rgb(255, 255, 255)=
+ 0px 1px; color: rgb(245, 242, 240); content: attr(data-start); font: 700 6=
+5%/1.5 sans-serif; left: 0.6em; min-width: 1em; padding: 0px 0.5em; positio=
+n: absolute; text-align: center; text-shadow: none; top: 0.4em; vertical-al=
+ign: 0.3em; }
+
+.line-highlight[data-end]::after { bottom: 0.4em; content: attr(data-end); =
+top: auto; }
+
+pre[data-line] { position: relative; padding: 1em 0px 1em 3em; }
+
+.line-highlight { position: absolute; left: 0px; right: 0px; margin-top: 1e=
+m; background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba=
+(153, 122, 102, 0)); pointer-events: none; line-height: inherit; white-spac=
+e: pre; }
+
+.line-highlight::before, .line-highlight[data-end]::after { content: attr(d=
+ata-start); position: absolute; top: 0.4em; left: 0.6em; min-width: 1em; pa=
+dding: 0px 0.5em; background-color: rgba(153, 122, 102, 0.4); color: rgb(24=
+5, 242, 240); font: 700 65%/1.5 sans-serif; text-align: center; vertical-al=
+ign: 0.3em; border-radius: 999px; text-shadow: none; box-shadow: rgb(255, 2=
+55, 255) 0px 1px; }
+
+.line-highlight[data-end]::after { content: attr(data-end); top: auto; bott=
+om: 0.4em; }
+
+.subscribe-form { background: rgb(255, 255, 255); margin-bottom: 30px; padd=
+ing: 20px; position: relative; }
+
+@media screen and (min-width: 500px) {
+  .subscribe-form__description { max-width: 60%; }
+}
+
+.subscribe-form__image { position: absolute; right: 10px; bottom: 0px; widt=
+h: 25%; z-index: 1; }
+
+.subscribe-form__image img { width: 100%; }
+
+@media screen and (min-width: 500px) {
+  .subscribe-form__image { width: 20%; }
+}
+
+.subscribe-form__fields { display: flex; justify-content: space-between; fl=
+ex-wrap: wrap; position: relative; z-index: 2; }
+
+.subscribe-form__field input { border: 0px; }
+
+.subscribe-form__field--input { width: 75%; margin-bottom: 10px; }
+
+@media screen and (min-width: 500px) {
+  .subscribe-form__field--input { width: 35%; margin-bottom: 0px; }
+}
+
+.subscribe-form__field--input input { background-color: rgb(230, 230, 230);=
+ padding-left: 10px; padding-right: 10px; }
+
+.subscribe-form__field--submit { width: 100%; max-width: 130px; }
+
+@media screen and (min-width: 500px) {
+  .subscribe-form__field--submit { width: 25%; }
+}
+
+.subscribe-form__field--submit input { background-color: rgb(255, 219, 58);=
+ font-size: 1.4rem; font-weight: 600; box-shadow: rgba(0, 0, 0, 0.17) 0px 1=
+px 3px 0px; cursor: pointer; }
+
+.search-form { display: block; }
+
+form input { height: 40px; border-radius: 3px; }
+
+form input:not([type=3D"submit"]) { width: 100%; }
+
+.search-form__input { display: block; -webkit-appearance: none; border-radi=
+us: 3px; border: 2px solid rgb(230, 230, 230); padding-left: 10px; padding-=
+right: 10px; }
+
+.search-form__input:active, .search-form__input:focus { border-color: rgb(2=
+55, 219, 58); }
+
+.social ul { display: flex; justify-content: center; }
+
+.social ul li { margin-left: 7px; margin-right: 7px; }
+
+.social ul li svg { height: 15px; width: auto; }
+
+.dialog-overlay { z-index: 15; position: fixed; top: 0px; left: 0px; width:=
+ 100vw; height: 100%; background-color: rgba(255, 255, 255, 0.9); }
+
+.dialog { z-index: 20; position: fixed; top: 0px; left: 0px; height: 100%; =
+width: 100vw; text-align: center; display: flex; justify-content: center; a=
+lign-items: center; }
+
+.dialog-overlay[aria-hidden=3D"true"], .dialog[aria-hidden=3D"true"] { disp=
+lay: none; }
+
+.message--count { display: block; }
+
+.message--count span { font-weight: 600; }
+
+.kg-width-wide img { max-width: 85vw; }
+
+.kg-width-full img { max-width: 100vw; }
+
+.kg-width-wide { position: relative; width: 85vw; min-width: 100%; margin: =
+auto calc(50% - 50vw); transform: translateX(calc(50vw - 50%)); }
+
+.kg-width-full { position: relative; width: 100vw; left: 50%; right: 50%; m=
+argin-left: -50vw; margin-right: -50vw; }
+
+.kg-gallery-container { display: flex; flex-direction: column; max-width: 1=
+040px; width: 100vw; }
+
+.kg-gallery-row { display: flex; flex-direction: row; justify-content: cent=
+er; }
+
+.kg-gallery-image img { display: block; margin: 0px; width: 100%; height: 1=
+00%; }
+------MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://translate.googleapis.com/translate_static/css/translateelement.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: https://bitsofco.de/assets/images/profile.png?v=b2bce31307
+
+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
+HB1Cy6fgH3/AYD3/+3i4AAA=
+
+------MultipartBoundary--8PfQzM4ZTnp6WaEIXMmMKNBcefHF6zggJAYmDLY9I3------
