@@ -208,7 +208,7 @@ const list = React.createElement("ul", { className: "list" },
 ReactDOM.render(list, document.body);
 ```
 
-Если бы мы захотели обновить содержимое нашего списка, то мы должны просто изменить шаблон (template) списка и снова вызвать метод `ReactDOM.render()`, передав ему в качестве аргумента новый список.
+Если бы мы захотели обновить cодержимое нашего списка, то мы должны просто изменить шаблон (template) списка и снова вызвать метод `ReactDOM.render()`, передав ему в качестве аргумента новый список.
 
 ```js
 const newList = React.createElement("ul", { className: "list" },
